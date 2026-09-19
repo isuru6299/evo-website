@@ -6,7 +6,8 @@
 3. `docs/ARCHITECTURE.md`
 4. `docs/DECISIONS.md`
 5. `docs/ROADMAP.md`
-6. this file
+6. `docs/CHECKPOINT.md`
+7. this file
 
 ## Project
 Repository: `isuru6299/evo-website`
@@ -14,11 +15,19 @@ Repository: `isuru6299/evo-website`
 Internal project name: **EVO Digital Platform**
 
 ## Current implementation state
-The repository currently contains a working static company website built with HTML, CSS and JavaScript and deployed/previewed through GitHub Pages.
+The old static HTML/CSS/JavaScript prototype has been retired from `main` and preserved on the `legacy-static-test` branch.
 
-The current static site is a prototype and visual/content baseline. It must not be casually destroyed during architectural migration.
+`main` now contains the first working platform scaffold:
+- `apps/web` — Astro public frontend scaffold
+- `apps/admin` — React + Vite admin scaffold
+- `apps/api` — FastAPI backend scaffold
+- PostgreSQL wired through Docker Compose
+- SQLAlchemy connection foundation
+- `/health` and `/health/db` API checks
+- root `docker-compose.yml`
+- canonical `docs/` memory and checkpoint files
 
-The long-term target is documented in `ARCHITECTURE.md`, but the Astro/FastAPI/PostgreSQL/React/Docker structure is not yet fully implemented.
+This scaffold has **not yet been run and verified on Isuru's local Windows development PC**. Do not describe it as fully tested until the local verification checkpoint is completed.
 
 ## Current direction
 - Public frontend -> Astro
@@ -62,15 +71,26 @@ For visual website work, the owner prefers section-by-section approval rather th
 - Do not merge VMS streaming/recording engines into the website backend.
 - Do not commit secrets or passwords.
 - Do not change `evo.lk` DNS/mail records as part of code work.
-- Do not break the existing public site simply to create a cleaner folder structure.
 - Do not assume chat memory is authoritative if repository docs state otherwise.
+- Do not claim local verification unless the stack has actually been run on the development PC.
 
 ## Next recommended technical milestone
-Before major feature development:
-1. create/tag a clean checkpoint of the current static site
-2. establish local Docker/PostgreSQL development foundation
-3. create `apps/web` Astro project
-4. port the existing site section-by-section while keeping GitHub Pages working
+**Local Foundation Verified**
+
+On Isuru's development PC:
+1. clone `isuru6299/evo-website`
+2. copy `.env.example` to `.env`
+3. run `docker compose up --build`
+4. verify:
+   - `http://localhost:4321`
+   - `http://localhost:5173`
+   - `http://localhost:8000/health`
+   - `http://localhost:8000/health/db`
+   - `http://localhost:8000/docs`
+5. fix any environment-specific issues
+6. update `CHECKPOINT.md` to **Local Foundation Verified**
+
+After that, proceed to Alembic, the first real database models (organizations/catalog), design-system tokens and the new public website build.
 
 ## How to update this handoff
 Whenever a major milestone is completed, replace the "Current implementation state" and "Next recommended technical milestone" sections so a new AI session can continue without reconstructing history from chat.
