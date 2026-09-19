@@ -10,15 +10,15 @@ This file records architectural decisions so future sessions do not accidentally
 ## D-002 — Continue current repository
 **Decision:** Continue using `isuru6299/evo-website` rather than starting a disconnected repository.
 
-**Reason:** Preserve existing work, history and GitHub Pages workflow.
+**Reason:** Preserve existing work and repository history.
 
 ## D-003 — Local development first, VPS later
 **Decision:** Develop the full future stack on the owner's PC. Keep backend private/local for now. Deploy to a VPS later without redesigning the architecture.
 
 ## D-004 — Public frontend: Astro
-**Decision:** Migrate the public site toward Astro.
+**Decision:** Use Astro for the public site.
 
-**Reason:** Component structure, static-first performance, strong SEO, minimal client-side JavaScript by default, good GitHub Pages compatibility and easy future VPS deployment.
+**Reason:** Component structure, static-first performance, strong SEO, minimal client-side JavaScript by default, good static deployment compatibility and easy future VPS deployment.
 
 ## D-005 — Admin: React + Vite
 **Decision:** Use React/Vite for the future admin application.
@@ -72,5 +72,10 @@ This file records architectural decisions so future sessions do not accidentally
 
 **Rule:** Future AI sessions must read `docs/README.md` and referenced files before architectural work.
 
-## D-017 — Do not break current public site during migration
-**Decision:** Migrate in checkpoints and preserve a working public version while the new architecture is developed.
+## D-017 — Preserve a recoverable prototype during migration
+**Original decision:** Do not lose the previous test website while restructuring.
+
+## D-018 — Retire the static prototype from `main`
+**Decision:** The owner confirmed the existing static website was only a test and did not need to remain live. It was removed from `main` so the repository can move directly to the EVO Digital Platform structure.
+
+**Safety:** The previous static prototype is preserved on the `legacy-static-test` branch. This decision supersedes D-017's requirement to keep the old prototype on `main`, while retaining recoverability.
