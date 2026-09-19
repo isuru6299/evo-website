@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+const apiBase = import.meta.env.PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>EVO Digital Platform</title>
+    <meta name="description" content="EVO Digital Platform development foundation." />
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">EVO DIGITAL PLATFORM · FOUNDATION</p>
+      <h1>Public web foundation is ready.</h1>
+      <p class="lead">This Astro application is the future public-facing evo.lk experience. The production design will be built here section by section.</p>
+      <div class="cards">
+        <a href={`${apiBase}/docs`} target="_blank" rel="noreferrer"><strong>API Docs</strong><span>FastAPI / OpenAPI</span></a>
+        <a href="http://localhost:5173" target="_blank" rel="noreferrer"><strong>Admin</strong><span>React management UI</span></a>
+      </div>
+      <p class="note">Local target: <code>http://localhost:4321</code></p>
+    </main>
+  </body>
+</html>
