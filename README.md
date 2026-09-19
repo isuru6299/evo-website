@@ -1,7 +1,19 @@
-# EVO Website
+# EVO Digital Platform
 
-Official website for EVO (Pvt) Ltd.
+This repository is the long-term digital platform for EVO (Pvt) Ltd.
 
-Development preview: https://isuru6299.github.io/evo-website/
+## Architecture
+- `apps/web` — public EVO website (Astro)
+- `apps/admin` — internal management UI (React + Vite)
+- `apps/api` — backend API (Python FastAPI)
+- `packages` — shared design system, types and configuration
+- `content` — structured content/data sources used by the platform
+- `infrastructure` — Docker/Nginx/deployment configuration
+- `docs` — canonical project memory, architecture, decisions and AI/Codex handoff
+- `scripts` — development/maintenance scripts
+- `tests` — integration and system tests
 
-Built as a responsive static site for industrial automation, engineering, smart home and building automation services.
+## Current state
+The previous static test website has been retired. Development now continues on the modular EVO Digital Platform architecture.
+
+Before making architectural changes, read `docs/README.md` and the linked canonical documents.
