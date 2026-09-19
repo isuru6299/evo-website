@@ -1,44 +1,50 @@
 # EVO Digital Platform — Roadmap
 
 ## Current state
-- Existing repository contains a working static HTML/CSS/JavaScript company website.
-- GitHub Pages is used for public preview/deployment.
-- The hero and visual direction are still being refined.
-- No full Astro/FastAPI/PostgreSQL/Docker migration has been started yet.
-- `docs/` now holds canonical project memory.
+- The old static test website has been retired from `main` and preserved on the `legacy-static-test` branch.
+- `main` now holds the EVO Digital Platform structure.
+- Astro public web scaffold exists in `apps/web`.
+- React/Vite admin scaffold exists in `apps/admin`.
+- FastAPI backend scaffold exists in `apps/api`.
+- PostgreSQL and all applications are wired through `docker-compose.yml`.
+- Canonical project memory lives in `docs/`.
+- The stack has not yet been cloned and verified on Isuru's local PC; that is the next checkpoint.
 
 ## Phase 0 — Preserve and document
-- [x] Keep current repo.
+- [x] Keep the existing repository.
 - [x] Add canonical project documentation.
-- [ ] Create a clean checkpoint/tag for the current static working site.
-- [ ] Remove/clean temporary experimental files only after confirming they are not needed.
+- [x] Preserve the old static prototype on `legacy-static-test`.
+- [x] Remove the old test site from `main` and establish the new platform structure.
 
 ## Phase 1 — Local development foundation
-- [ ] Install/verify Docker Desktop, Git, Node.js, Python tooling as required.
-- [ ] Add `docker-compose.yml`.
-- [ ] Add local PostgreSQL service.
-- [ ] Establish environment-variable pattern and `.env.example`.
-- [ ] Define one-command local startup target.
+- [ ] Install/verify Docker Desktop and Git on the local PC.
+- [x] Add `docker-compose.yml`.
+- [x] Add local PostgreSQL service.
+- [x] Establish environment-variable pattern and `.env.example`.
+- [x] Define one-command local startup target: `docker compose up --build`.
+- [ ] Clone to the local PC and verify all four services actually start.
 
-## Phase 2 — Public website migration to Astro
-- [ ] Create `apps/web` Astro project.
-- [ ] Port global design tokens/styles.
-- [ ] Port header/navigation.
-- [ ] Port hero section.
-- [ ] Port solutions/services sections.
-- [ ] Port smart living section.
-- [ ] Port industrial section.
-- [ ] Port projects.
-- [ ] Port company/about/contact/footer.
-- [ ] Verify desktop/mobile parity.
-- [ ] Replace old static GitHub Pages deployment with Astro build.
+## Phase 2 — Public website / Astro
+- [x] Create `apps/web` Astro project scaffold.
+- [ ] Create production design-system tokens.
+- [ ] Build header/navigation.
+- [ ] Build final hero.
+- [ ] Build solutions/services.
+- [ ] Build smart living section.
+- [ ] Build industrial section.
+- [ ] Build projects.
+- [ ] Build company/about/contact/footer.
+- [ ] Verify desktop/mobile behaviour.
+- [ ] Add production GitHub Pages/hosting build when needed.
 
 ## Phase 3 — API foundation
-- [ ] Create `apps/api` FastAPI project.
-- [ ] Add config/security/logging foundation.
-- [ ] Add `/health` endpoint.
-- [ ] Add SQLAlchemy/Alembic.
-- [ ] Connect PostgreSQL.
+- [x] Create `apps/api` FastAPI project scaffold.
+- [x] Add configuration foundation.
+- [x] Add `/health` endpoint.
+- [x] Add SQLAlchemy and PostgreSQL connection foundation.
+- [x] Add database health endpoint.
+- [ ] Configure Alembic migrations.
+- [ ] Add security/logging conventions.
 - [ ] Add OpenAPI organization/tags/versioning conventions.
 
 ## Phase 4 — Core business model
@@ -51,9 +57,9 @@
 - [ ] Audit log.
 
 ## Phase 5 — Admin foundation
-- [ ] Create `apps/admin` React/Vite project.
+- [x] Create `apps/admin` React/Vite project scaffold.
+- [x] Create initial dashboard shell/navigation placeholder.
 - [ ] Authentication.
-- [ ] Dashboard shell/navigation.
 - [ ] Service catalog management.
 - [ ] Project management.
 - [ ] Media management.
@@ -94,7 +100,7 @@
 - [ ] Human review/publish flow for high-impact changes.
 
 ## Phase 11 — VPS production deployment
-- [ ] Purchase/provision Ubuntu VPS.
+- [ ] Provision Ubuntu VPS.
 - [ ] Nginx reverse proxy.
 - [ ] Docker/Compose production configuration.
 - [ ] PostgreSQL production database.
@@ -105,4 +111,4 @@
 - [ ] Add subdomains only as services actually need them.
 
 ## Delivery rule
-Work phase-by-phase and checkpoint working states. Do not attempt to build the entire future platform before the public website and core foundation are stable.
+Work phase-by-phase and checkpoint working states. The immediate next milestone is **Local Foundation Verified**: clone this repository to the development PC and confirm web, admin, API and PostgreSQL all start together.
