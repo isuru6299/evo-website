@@ -1,0 +1,15 @@
+{
+  "name": "evo-digital-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "apps/admin"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev -- --host 0.0.0.0",
+    "dev:admin": "npm --workspace apps/admin run dev -- --host 0.0.0.0",
+    "build:web": "npm --workspace apps/web run build",
+    "build:admin": "npm --workspace apps/admin run build"
+  }
+}
