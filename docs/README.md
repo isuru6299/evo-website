@@ -9,17 +9,19 @@ Future ChatGPT/Codex/AI sessions should read these files before making architect
 2. `ARCHITECTURE.md` — target technical architecture and module boundaries.
 3. `DECISIONS.md` — architectural decisions already agreed; do not silently reverse them.
 4. `ROADMAP.md` — phased delivery plan and current stage.
-5. `CODEX_HANDOFF.md` — current implementation state, how to continue, what not to change.
+5. `CHECKPOINT.md` — exact current working checkpoint and what is/not yet verified.
+6. `CODEX_HANDOFF.md` — current implementation state, how to continue, what not to change.
 
 ## Rule
 Do not treat chat history as the only source of truth. Important decisions must be written into this folder.
 
 When a decision changes, update the relevant document and add an entry to `DECISIONS.md`.
 
-When a milestone is completed, update `ROADMAP.md` and `CODEX_HANDOFF.md`.
+When a milestone is completed, update `ROADMAP.md`, `CHECKPOINT.md` and `CODEX_HANDOFF.md`.
 
 ## Project identity
 - Repository: `isuru6299/evo-website`
 - Project: EVO Digital Platform
 - Primary public brand/domain: `evo.lk`
-- Current repository began as a static company website and is planned to evolve into a modular digital platform.
+- The original static prototype is preserved on the `legacy-static-test` branch.
+- `main` now contains the modular platform foundation.
