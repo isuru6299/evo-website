@@ -168,3 +168,17 @@ This file records architectural decisions so future sessions do not accidentally
 - Do not rework the hero unless a future explicit request asks for a change.
 
 **Next public design task:** Continue with the Solutions section while preserving the same bright spatial design language.
+
+## D-025 — Solutions section compact object-led reference locked
+**Decision:** Use the owner's second uploaded Solutions reference as the design baseline for the homepage Solutions section.
+
+**Locked characteristics:**
+- Four compact white cards in one clean row on desktop.
+- Each card has concise copy at the upper-left and a strong object-led visual occupying the right/bottom area.
+- Industrial Automation, Smart Living, Custom Engineering and Systems & Integrations are the four public pillars.
+- Orange circular arrow actions remain the primary card CTA treatment.
+- The card layout should feel tighter and more image-led than the earlier tall/staggered card draft.
+- A slim rounded information strip sits directly below the four cards, echoing the approved reference without relying on unverified marketing metrics.
+- The section continues the same `#f5f8fa` studio canvas, white cards, near-black type, EVO orange primary accent and restrained logo-green details.
+
+**Reason:** The owner explicitly preferred the second uploaded reference because it is simpler, denser, more polished and visually stronger than the first implementation.
