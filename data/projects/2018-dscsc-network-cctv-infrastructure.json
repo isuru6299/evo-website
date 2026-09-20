@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "dscsc-network-cctv-2018",
+  "slug": "dscsc-network-cctv-infrastructure",
+  "title": "DSCSC Network & CCTV Infrastructure",
+  "year": 2018,
+  "date": {
+    "value": "2018-2019",
+    "precision": "range",
+    "notes": "Project work took place during 2018-2019."
+  },
+  "status": "archived",
+  "client": {
+    "name": "Defence Services Command and Staff College (DSCSC)",
+    "publish_name": "Defence Services Command and Staff College (DSCSC)",
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Batalanda",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Defence education and institutional infrastructure",
+  "categories": [
+    "Network Infrastructure",
+    "Structured Cabling",
+    "Fiber Optic Networking",
+    "Network Configuration",
+    "IP CCTV",
+    "Fiber Splicing & Termination"
+  ],
+  "tags": [
+    "pre-EVO",
+    "contractor collaboration",
+    "network infrastructure",
+    "fiber optic",
+    "structured cabling",
+    "managed switching",
+    "CCTV",
+    "Dahua",
+    "HPE OfficeConnect"
+  ],
+  "summary": "A major pre-EVO professional network and IP CCTV infrastructure project completed during 2018-2019 in collaboration with Sarasi Technologies (Pvt) Ltd as a contractor for the Defence Services Command and Staff College (DSCSC), Batalanda, Sri Lanka. The work covered structured network cabling, fiber-optic installation and splicing, network design involvement, access-layer and other non-core switch configuration, network implementation, testing, troubleshooting and commissioning. A substantial portion of the network configuration work was handled under this contractor scope. The CCTV network solution was handled as a complete technical scope, including CCTV network design, configuration, integration and commissioning.",
+  "problem": null,
+  "scope": [
+    "Structured network cabling",
+    "Fiber-optic cabling",
+    "Fiber splicing and termination",
+    "Network design involvement",
+    "Configuration of access-layer and other non-core network switches",
+    "Substantial network configuration and implementation work",
+    "Network testing, troubleshooting and commissioning",
+    "Complete CCTV network design",
+    "Complete CCTV network configuration",
+    "CCTV integration and commissioning",
+    "Technical documentation and configuration support"
+  ],
+  "technologies": [
+    "Single-mode fiber networking",
+    "10 Gigabit core fiber connectivity",
+    "1 Gigabit access-layer fiber connectivity",
+    "VLAN-based network segmentation",
+    "Managed Ethernet switching",
+    "IP CCTV networking",
+    "Structured copper cabling"
+  ],
+  "equipment": [
+    "HPE OfficeConnect 1920S 24G 2SFP managed access switches",
+    "Dahua NVR4232-4KS2 NVR platform",
+    "Dahua IP camera systems including IPC-HFW1230S, IPC-HFW1431S and IPC-HFW5231E-Z families",
+    "Fiber patch panels, patch cords and splice/termination enclosures",
+    "Structured network racks and patch panels"
+  ],
+  "outcome": null,
+  "evo_role": "Pre-EVO professional experience. Completed in collaboration with Sarasi Technologies (Pvt) Ltd while working as a contractor; this project predates EVO (Pvt) Ltd.",
+  "partners": [
+    {
+      "name": "Sarasi Technologies (Pvt) Ltd",
+      "relationship": "Collaboration / contractor engagement"
+    }
+  ],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "A major pre-EVO professional network and CCTV infrastructure project involving structured cabling, fiber-optic installation and splicing, network configuration and commissioning, together with the complete design and configuration of the IP CCTV network solution.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "46850098_1929057667210691_5558671722456023040_n.jpg",
+      "role": "installation",
+      "description": "Network rack and structured cabling work.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "51368799_2026176387498818_2623109455935438848_n.jpg",
+      "role": "configuration",
+      "description": "On-site network configuration activity.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "unnamed.webp",
+      "role": "site",
+      "description": "DSCSC site identification photograph.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "101966657_177311373741426_8418993811287441408_n.jpg",
+      "role": "fiber-splicing",
+      "description": "Fiber splice/termination enclosure and fiber work.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "83078731_177311947074702_8455021753607913472_n.jpg",
+      "role": "rack-detail",
+      "description": "Network/CCTV rack equipment and patching detail.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "Project period was 2018-2019.",
+      "Client/site was Defence Services Command and Staff College (DSCSC), Batalanda, Sri Lanka.",
+      "Work was completed in collaboration with Sarasi Technologies (Pvt) Ltd as a contractor before EVO (Pvt) Ltd existed.",
+      "Scope included cabling, configuration, fiber splicing and related implementation work.",
+      "The contractor was involved in the broader network design and implementation process.",
+      "Core switches were not configured under this contractor scope; the other/access network switches were configured under this scope.",
+      "A substantial portion of the network configuration work was handled under this scope.",
+      "The CCTV network solution was fully designed and configured under this scope, including integration and commissioning."
+    ],
+    "photo_observations": [
+      "Full-height network racks are visible.",
+      "Managed network switching equipment is visible.",
+      "Structured copper patching and patch panels are visible.",
+      "Fiber patching and fiber termination/splicing hardware are visible.",
+      "On-site configuration activity using a laptop is visible.",
+      "Network/CCTV equipment integration and rack cable management are visible.",
+      "A DSCSC site identification/entrance photograph is included."
+    ],
+    "needs_confirmation": [
+      "Permission to publish the client name on the public EVO website.",
+      "Permission to publish Batalanda as the project location.",
+      "Which project photographs are approved for public website use.",
+      "Final outcome/performance results, if any are to be claimed publicly."
+    ],
+    "do_not_claim": [
+      "Do not present this as a project completed by EVO (Pvt) Ltd; it predates EVO.",
+      "Do not claim sole authorship of the complete data-network design.",
+      "Do not publish internal building names or detailed internal site mappings.",
+      "Do not publish IP addresses, VLAN IDs, subnet information, MAC addresses, switch serial numbers or credentials.",
+      "Do not publish camera-by-camera internal locations or detailed operational topology mappings.",
+      "Do not publish sensitive troubleshooting access information from the technical report.",
+      "Do not claim exact project value, duration, total switch count, fiber-core count, total cable length or measured performance improvements unless later confirmed by the owner."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history and role clarification in chat.",
+    "Owner-provided project photographs reviewed as visual evidence.",
+    "Owner-provided document: Technical Report of DSCSC Network And CCTV solutions (21 pages).",
+    "The technical report contains security-sensitive operational details; only public-safe technical facts should be used for website copy.",
+    "A separate Sarasi Technologies apprentice survey form was reviewed as company/training context but is not treated as evidence of this project's specific scope."
+  ],
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21"
+}
