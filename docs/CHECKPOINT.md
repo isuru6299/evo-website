@@ -1,8 +1,8 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Public Website v1 — Multi-Page Foundation + Technical Site Shell Built**
+Checkpoint: **Public Website v1 Frozen / Real Project Archive Ready**
 
-Verified architecture and earlier local foundation through 2026-09-21. The current multi-page public website and latest site-shell/SEO changes are committed and ready for local review.
+Verified architecture and local platform foundation through 2026-09-21. The current multi-page public website is good enough for now and should be treated as visually frozen until real project photos/content are brought in.
 
 ## Completed foundation
 - Old static test website removed from `main` and preserved on `legacy-static-test`.
@@ -30,65 +30,48 @@ Verified architecture and earlier local foundation through 2026-09-21. The curre
   - Smart Living — active, website visible
   - Custom Engineering — active, website visible
   - EVO VMS — beta, website hidden
-- Seed is designed to be repeatable without creating duplicates.
-- `/api/v1/organizations` verified locally.
-- `/api/v1/services` verified locally.
+- `/api/v1/organizations` and `/api/v1/services` verified locally.
 
-## Homepage visual foundation
-- EVO light premium spatial design direction locked.
-- Bright cool-white website canvas locked to `#f5f8fa`.
-- Final homepage hero approved and locked on 2026-09-21.
-- Hero headline locked: `Smarter Systems for a Brighter Tomorrow`.
-- Hero smart-home + industrial artwork, copy/image balance and synchronized four-edge fade treatment approved.
-- Solutions section approved and locked on 2026-09-21.
-- Solutions section uses four compact visual cards with final generated assets:
-  - Industrial Automation
-  - Smart Living
-  - Custom Engineering
-  - Integrations & EVO VMS
-- The corrected 02/03 top-edge image seam treatment is part of the locked implementation.
-- Hero and Solutions should not be visually reworked unless explicitly requested.
+## Public website state
+The current multi-page public website first pass is complete enough to pause further visual work.
 
-## Homepage sections implemented
-1. Hero — approved and locked
-2. Solutions — approved and locked
-3. Smart Living detail
-4. Industrial Automation detail
-5. Selected Projects
-6. Company / About EVO
-7. Contact CTA
-8. Footer
-
-## Public multi-page website implemented
-Core routes:
+Current routes include:
 - `/`
 - `/solutions`
 - `/industries`
 - `/projects`
 - `/company`
 - `/contact`
-- `/404`
-
-Solution detail routes:
 - `/solutions/industrial-automation`
 - `/solutions/smart-living`
 - `/solutions/custom-engineering`
 - `/solutions/systems-integrations`
+- `/404`
 
-Shared inner-page foundation:
-- `apps/web/src/layouts/InnerLayout.astro`
-- `apps/web/src/styles/inner-pages.css`
-- `apps/web/src/styles/site-shell.css`
+The homepage Hero and Solutions remain the approved visual baseline. Other sections/pages are first-pass implementations and can be refined later after real project content is available.
 
-## Public site technical foundation now added
-- Shared canonical/SEO metadata component: `apps/web/src/components/SeoHead.astro`.
-- Open Graph and Twitter card metadata.
-- EVO Organization JSON-LD structured data.
-- `robots.txt` and current-route `sitemap.xml`.
-- Active navigation state using `aria-current`.
-- Mobile menu and active mobile navigation state.
-- Keyboard focus-visible treatment.
-- Fixed-header scroll-margin behaviour for anchored sections.
+Do not spend time on additional random website polishing now. Real project evidence should drive the next major public-site refinement.
+
+## Real Project Archive foundation — added 2026-09-21
+A chat-independent project intake system is now established for the owner's large history of work across different fields.
+
+Canonical locations:
+- workflow: `docs/PROJECT_ARCHIVE.md`
+- records: `data/projects/<year>-<project-slug>.json`
+- index: `data/projects/index.json`
+- template: `data/projects/_template.json`
+- future web-ready media: `apps/web/public/projects/<project-slug>/`
+
+Rules:
+- one real project = one canonical record,
+- future chats must check the index before creating a project,
+- new photos/facts update the existing project,
+- owner-confirmed facts, photo observations and unconfirmed details stay separate,
+- archived projects are not automatically public,
+- client/location publishing permission defaults to unknown,
+- website publishing defaults to false.
+
+This allows the owner to start a separate chat and submit projects one by one with rough notes and photos, without needing to keep one giant conversation alive.
 
 ## Current local stack
 - Web: Astro
@@ -100,17 +83,18 @@ Shared inner-page foundation:
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
 ## Next milestone
-**Inquiry Flow v1 — Public Contact → FastAPI → PostgreSQL → Admin**
+**Real Project Ingestion — build the archive from actual completed work**
 
-Planned order:
-1. Create inquiry database model + migration.
-2. Add public inquiry POST API.
-3. Add real contact form on the public website.
-4. Store submissions in PostgreSQL.
-5. Add admin inquiry list/detail view.
-6. Add basic inquiry status workflow.
-7. Verify locally end-to-end.
+Recommended workflow:
+1. Start a dedicated `EVO Project Archive` chat.
+2. Read `docs/PROJECT_ARCHIVE.md` and `data/projects/index.json`.
+3. Owner sends one project at a time with any remembered facts and available photos.
+4. Analyze photos and distinguish visible evidence from assumptions.
+5. Create/update the canonical project record.
+6. Update the project index.
+7. Later select strong projects/photos for the public website.
+8. Only after the real archive grows, rebuild/refine the Projects section and case-study pages around actual work.
 
-After Inquiry Flow v1, continue full responsive/visual refinement and replace temporary project visuals/copy where required.
+Inquiry/CRM, admin and further backend work are intentionally deferred until the owner chooses to resume them.
 
-Do not deploy or change `evo.lk` DNS yet. Keep mail DNS records untouched until the production VPS/hosting move is explicitly planned.
+Do not deploy or change `evo.lk` DNS yet. Keep mail DNS records untouched until the production hosting move is explicitly planned.
