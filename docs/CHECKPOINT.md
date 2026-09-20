@@ -1,8 +1,8 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Public Website v1 — Full Multi-Page First Pass Built**
+Checkpoint: **Public Website v1 — Multi-Page Foundation + Technical Site Shell Built**
 
-Verified architecture and earlier local foundation through 2026-09-21. The new multi-page public website build has been committed and is awaiting the next local visual/build review.
+Verified architecture and earlier local foundation through 2026-09-21. The current multi-page public website and latest site-shell/SEO changes are committed and ready for local review.
 
 ## Completed foundation
 - Old static test website removed from `main` and preserved on `legacy-static-test`.
@@ -33,7 +33,6 @@ Verified architecture and earlier local foundation through 2026-09-21. The new m
 - Seed is designed to be repeatable without creating duplicates.
 - `/api/v1/organizations` verified locally.
 - `/api/v1/services` verified locally.
-- PostgreSQL query confirmed all four service records and visibility/status values.
 
 ## Homepage visual foundation
 - EVO light premium spatial design direction locked.
@@ -47,21 +46,20 @@ Verified architecture and earlier local foundation through 2026-09-21. The new m
   - Smart Living
   - Custom Engineering
   - Integrations & EVO VMS
-- Solutions compact proportions, image crops/positions, card copy, CTA styling, and bottom highlight strip are approved.
 - The corrected 02/03 top-edge image seam treatment is part of the locked implementation.
 - Hero and Solutions should not be visually reworked unless explicitly requested.
 
 ## Homepage sections implemented
 1. Hero — approved and locked
 2. Solutions — approved and locked
-3. Smart Living detail — first implementation
-4. Industrial Automation detail — first implementation
-5. Selected Projects — first implementation with engineering illustrations
-6. Company / About EVO — first implementation in the light EVO theme
-7. Contact CTA — first implementation
-8. Footer — first implementation
+3. Smart Living detail
+4. Industrial Automation detail
+5. Selected Projects
+6. Company / About EVO
+7. Contact CTA
+8. Footer
 
-## Public multi-page website now implemented
+## Public multi-page website implemented
 Core routes:
 - `/`
 - `/solutions`
@@ -82,9 +80,15 @@ Shared inner-page foundation:
 - `apps/web/src/styles/inner-pages.css`
 - `apps/web/src/styles/site-shell.css`
 
-Navigation now points to real public routes, and a first-pass mobile navigation menu has been added. Homepage Hero and Solutions visuals were preserved while their CTA targets were connected to the new routes.
-
-See `docs/PUBLIC_SITE_MAP.md` for the route map and review plan.
+## Public site technical foundation now added
+- Shared canonical/SEO metadata component: `apps/web/src/components/SeoHead.astro`.
+- Open Graph and Twitter card metadata.
+- EVO Organization JSON-LD structured data.
+- `robots.txt` and current-route `sitemap.xml`.
+- Active navigation state using `aria-current`.
+- Mobile menu and active mobile navigation state.
+- Keyboard focus-visible treatment.
+- Fixed-header scroll-margin behaviour for anchored sections.
 
 ## Current local stack
 - Web: Astro
@@ -96,17 +100,17 @@ See `docs/PUBLIC_SITE_MAP.md` for the route map and review plan.
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
 ## Next milestone
-**Public Website v1 — Full Route Build Review + Refinement**
+**Inquiry Flow v1 — Public Contact → FastAPI → PostgreSQL → Admin**
 
-Next review order:
-1. Pull latest `main` locally.
-2. Run Astro/Docker build and check all public routes.
-3. Fix any build, asset or responsive issues.
-4. Review inner-page visual consistency.
-5. Refine copy and project facts.
-6. Add/replace project imagery where needed.
-7. Connect contact inquiry flow to FastAPI/PostgreSQL.
-8. Final responsive QA.
-9. Production SEO and deployment configuration.
+Planned order:
+1. Create inquiry database model + migration.
+2. Add public inquiry POST API.
+3. Add real contact form on the public website.
+4. Store submissions in PostgreSQL.
+5. Add admin inquiry list/detail view.
+6. Add basic inquiry status workflow.
+7. Verify locally end-to-end.
 
-Do not deploy or change `evo.lk` DNS yet. First locally review and approve the complete public website.
+After Inquiry Flow v1, continue full responsive/visual refinement and replace temporary project visuals/copy where required.
+
+Do not deploy or change `evo.lk` DNS yet. Keep mail DNS records untouched until the production VPS/hosting move is explicitly planned.
