@@ -65,15 +65,33 @@
   filter: blur(20px);
 }
 
+/* A narrow four-edge feather hides the rectangular artwork boundary while
+   preserving the approved artwork itself. */
 .hero-visual::after {
   content: "";
   position: absolute;
   z-index: 2;
-  inset: -1px;
+  inset: -2px;
   pointer-events: none;
   background:
-    linear-gradient(90deg, #f5f8fa 0%, rgba(245, 248, 250, 0.92) 3%, rgba(245, 248, 250, 0) 11%, rgba(245, 248, 250, 0) 90%, rgba(245, 248, 250, 0.92) 97%, #f5f8fa 100%),
-    linear-gradient(180deg, #f5f8fa 0%, rgba(245, 248, 250, 0.88) 3%, rgba(245, 248, 250, 0) 10%, rgba(245, 248, 250, 0) 89%, rgba(245, 248, 250, 0.9) 97%, #f5f8fa 100%);
+    linear-gradient(90deg,
+      var(--color-bg) 0%,
+      rgba(245, 248, 250, 0.96) 1.5%,
+      rgba(245, 248, 250, 0.72) 3.5%,
+      rgba(245, 248, 250, 0) 7%,
+      rgba(245, 248, 250, 0) 93%,
+      rgba(245, 248, 250, 0.72) 96.5%,
+      rgba(245, 248, 250, 0.96) 98.5%,
+      var(--color-bg) 100%),
+    linear-gradient(180deg,
+      var(--color-bg) 0%,
+      rgba(245, 248, 250, 0.94) 1.5%,
+      rgba(245, 248, 250, 0.62) 3%,
+      rgba(245, 248, 250, 0) 6%,
+      rgba(245, 248, 250, 0) 94%,
+      rgba(245, 248, 250, 0.62) 97%,
+      rgba(245, 248, 250, 0.94) 98.5%,
+      var(--color-bg) 100%);
 }
 
 .hero-visual-glow {
@@ -96,6 +114,14 @@
   object-position: center;
   background: transparent;
   filter: drop-shadow(0 18px 26px rgba(35, 47, 60, 0.04));
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .hero-stats {
@@ -154,14 +180,16 @@
 
   .hero-visual::after {
     background:
-      linear-gradient(90deg, #f5f8fa 0%, rgba(245, 248, 250, 0) 8%, rgba(245, 248, 250, 0) 92%, #f5f8fa 100%),
-      linear-gradient(180deg, #f5f8fa 0%, rgba(245, 248, 250, 0) 7%, rgba(245, 248, 250, 0) 93%, #f5f8fa 100%);
+      linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 8%, rgba(245, 248, 250, 0) 92%, var(--color-bg) 100%),
+      linear-gradient(180deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 7%, rgba(245, 248, 250, 0) 93%, var(--color-bg) 100%);
   }
 
   .hero-spatial-image {
     width: min(100%, 860px);
     max-width: 860px;
     margin-inline: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 }
 
