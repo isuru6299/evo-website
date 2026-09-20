@@ -1,3 +1,14 @@
+---
+const pathname = Astro.url.pathname;
+const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+const navItems = [
+  { href: '/solutions', label: 'Solutions' },
+  { href: '/industries', label: 'Industries' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/company', label: 'Company' },
+];
+---
+
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="EVO home">
@@ -5,23 +16,21 @@
     </a>
 
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="/solutions">Solutions</a>
-      <a href="/industries">Industries</a>
-      <a href="/projects">Projects</a>
-      <a href="/company">Company</a>
+      {navItems.map((item) => (
+        <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
     </nav>
 
     <div class="header-actions">
-      <a class="header-cta" href="/contact">Talk to EVO</a>
+      <a class="header-cta" href="/contact" aria-current={isActive('/contact') ? 'page' : undefined}>Talk to EVO</a>
       <details class="mobile-menu">
-        <summary aria-label="Open navigation">☰</summary>
+        <summary aria-label="Open navigation"><span aria-hidden="true">☰</span></summary>
         <nav aria-label="Mobile navigation">
-          <a href="/">Home</a>
-          <a href="/solutions">Solutions</a>
-          <a href="/industries">Industries</a>
-          <a href="/projects">Projects</a>
-          <a href="/company">Company</a>
-          <a href="/contact">Contact</a>
+          <a href="/" aria-current={pathname === '/' ? 'page' : undefined}>Home</a>
+          {navItems.map((item) => (
+            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+          <a href="/contact" aria-current={isActive('/contact') ? 'page' : undefined}>Contact</a>
         </nav>
       </details>
     </div>
