@@ -1,0 +1,20 @@
+---
+import InnerLayout from '../layouts/InnerLayout.astro';
+---
+
+<InnerLayout
+  title="Page Not Found | EVO"
+  description="The requested EVO page could not be found."
+>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-copy">
+        <p class="eyebrow">404 · PAGE NOT FOUND</p>
+        <h1>This path needs a little <span>engineering.</span></h1>
+        <p>The page you requested does not exist or has moved. Head back to the EVO homepage or explore the current solution areas.</p>
+        <div class="page-hero-actions"><a class="page-button page-button-primary" href="/">Back Home ↗</a><a class="page-button page-button-secondary" href="/solutions">Explore Solutions</a></div>
+      </div>
+      <div class="page-hero-visual" aria-hidden="true"><div class="page-orb"></div><img src="/solutions/solution-custom-engineering.png" alt="" /></div>
+    </div>
+  </section>
+</InnerLayout>
