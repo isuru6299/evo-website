@@ -17,17 +17,28 @@ Internal project name: **EVO Digital Platform**
 ## Current implementation state
 The old static HTML/CSS/JavaScript prototype has been retired from `main` and preserved on the `legacy-static-test` branch.
 
-`main` now contains the first working platform scaffold:
+`main` contains the first verified platform scaffold:
 - `apps/web` — Astro public frontend scaffold
 - `apps/admin` — React + Vite admin scaffold
 - `apps/api` — FastAPI backend scaffold
-- PostgreSQL wired through Docker Compose
+- PostgreSQL 17 wired through Docker Compose
 - SQLAlchemy connection foundation
 - `/health` and `/health/db` API checks
 - root `docker-compose.yml`
 - canonical `docs/` memory and checkpoint files
 
-This scaffold has **not yet been run and verified on Isuru's local Windows development PC**. Do not describe it as fully tested until the local verification checkpoint is completed.
+Local verification was completed on Isuru's Windows development PC on 2026-09-20:
+- repository location: `C:\EVO\Development\evo-website`
+- WSL2 installed and working
+- Docker Desktop installed and working
+- `docker compose up --build` completed successfully
+- `docker compose ps` showed web, admin, api and db running
+- PostgreSQL reported healthy
+- Astro web verified at `http://localhost:4321`
+- React admin verified at `http://localhost:5173`
+- FastAPI root verified at `http://localhost:8000`
+- OpenAPI docs verified at `http://localhost:8000/docs`
+- PostgreSQL health verified at `http://localhost:8000/health/db`
 
 ## Current direction
 - Public frontend -> Astro
@@ -72,25 +83,35 @@ For visual website work, the owner prefers section-by-section approval rather th
 - Do not commit secrets or passwords.
 - Do not change `evo.lk` DNS/mail records as part of code work.
 - Do not assume chat memory is authoritative if repository docs state otherwise.
-- Do not claim local verification unless the stack has actually been run on the development PC.
+- Do not describe the local scaffold as production-ready; it is a verified development foundation only.
 
 ## Next recommended technical milestone
-**Local Foundation Verified**
+**Core Platform Foundation v1**
 
-On Isuru's development PC:
-1. clone `isuru6299/evo-website`
-2. copy `.env.example` to `.env`
-3. run `docker compose up --build`
-4. verify:
-   - `http://localhost:4321`
-   - `http://localhost:5173`
-   - `http://localhost:8000/health`
-   - `http://localhost:8000/health/db`
-   - `http://localhost:8000/docs`
-5. fix any environment-specific issues
-6. update `CHECKPOINT.md` to **Local Foundation Verified**
+Proceed in this order:
+1. create production design-system tokens/shared styling conventions
+2. configure Alembic migrations
+3. create the first real core database models:
+   - organizations
+   - service/product catalog registry
+4. expose minimal API endpoints for those models
+5. keep the admin and public UI modular and avoid premature feature expansion
+6. update checkpoint docs after the new foundation is locally verified
 
-After that, proceed to Alembic, the first real database models (organizations/catalog), design-system tokens and the new public website build.
+## How to run locally
+From `C:\EVO\Development\evo-website`:
+
+```powershell
+Copy-Item .env.example .env   # only if .env does not already exist
+docker compose up --build
+```
+
+Verify:
+- `http://localhost:4321`
+- `http://localhost:5173`
+- `http://localhost:8000`
+- `http://localhost:8000/health/db`
+- `http://localhost:8000/docs`
 
 ## How to update this handoff
 Whenever a major milestone is completed, replace the "Current implementation state" and "Next recommended technical milestone" sections so a new AI session can continue without reconstructing history from chat.
