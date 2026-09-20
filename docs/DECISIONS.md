@@ -153,3 +153,18 @@ This file records architectural decisions so future sessions do not accidentally
 - EVO orange stays the primary accent; logo greens remain restrained secondary accents.
 
 **Reason:** The owner specifically prefers the bright clean studio background visible inside the approved hero artwork and wants the surrounding website to feel like the same continuous canvas.
+
+## D-024 — Final hero implementation locked
+**Decision:** The locally reviewed hero version approved on 2026-09-21 is the final baseline for the public homepage hero.
+
+**Locked details:**
+- Headline: `Smarter Systems for a Brighter Tomorrow` with orange emphasis on `Brighter Tomorrow`.
+- Bright studio canvas using the locked `#f5f8fa` website background.
+- EVO logo/header/navigation treatment as currently implemented.
+- Smart-home + industrial robot artwork remains the hero focal visual.
+- Artwork uses one shared artwork frame so zoom, slight leveling rotation and all four edge fades stay synchronized.
+- Four-edge fade must follow the artwork frame and dissolve into the page canvas without visibly cutting into the subject.
+- Current desktop visual balance between copy and artwork is approved.
+- Do not rework the hero unless a future explicit request asks for a change.
+
+**Next public design task:** Continue with the Solutions section while preserving the same bright spatial design language.
