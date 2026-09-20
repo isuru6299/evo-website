@@ -11,9 +11,8 @@
   padding-bottom: 2rem;
   overflow: visible;
   background:
-    radial-gradient(circle at 78% 28%, rgba(86, 193, 70, 0.035), transparent 23%),
-    radial-gradient(circle at 54% 38%, rgba(255, 145, 55, 0.035), transparent 24%),
-    linear-gradient(180deg, #fbfcfd 0%, #fafbfd 50%, #f8fafb 100%);
+    radial-gradient(ellipse 66% 70% at 72% 36%, #edf2f6 0%, #f2f6f9 34%, #f7fafc 62%, rgba(247, 250, 252, 0) 78%),
+    linear-gradient(180deg, #fbfcfd 0%, #f6f9fb 56%, #f4f7f9 100%);
 }
 
 .hero-layout {
@@ -64,8 +63,19 @@
   inset: -8% -5% -10% -6%;
   pointer-events: none;
   border-radius: 48%;
-  background: radial-gradient(ellipse at center, rgba(248, 250, 251, 0.98) 0%, rgba(250, 251, 253, 0.92) 58%, rgba(250, 251, 253, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(239, 244, 248, 0.98) 0%, rgba(245, 248, 250, 0.9) 58%, rgba(245, 248, 250, 0) 100%);
   filter: blur(18px);
+}
+
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: -2%;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, #f6f9fb 0%, rgba(246, 249, 251, 0) 8%, rgba(246, 249, 251, 0) 93%, #f6f9fb 100%),
+    linear-gradient(180deg, #f7fafc 0%, rgba(247, 250, 252, 0) 7%, rgba(247, 250, 252, 0) 91%, #f4f7f9 100%);
 }
 
 .hero-visual-glow {
@@ -73,7 +83,7 @@
   height: 42%;
   left: 15%;
   bottom: 8%;
-  opacity: 0.28;
+  opacity: 0.24;
 }
 
 .hero-spatial-image {
@@ -87,9 +97,9 @@
   object-fit: contain;
   object-position: center;
   background: transparent;
-  filter: drop-shadow(0 22px 30px rgba(35, 47, 60, 0.05));
-  -webkit-mask-image: radial-gradient(ellipse 98% 94% at 50% 50%, #000 0%, #000 84%, rgba(0, 0, 0, 0.88) 90%, transparent 100%);
-  mask-image: radial-gradient(ellipse 98% 94% at 50% 50%, #000 0%, #000 84%, rgba(0, 0, 0, 0.88) 90%, transparent 100%);
+  filter: drop-shadow(0 20px 28px rgba(35, 47, 60, 0.045));
+  -webkit-mask-image: radial-gradient(ellipse 99% 96% at 50% 50%, #000 0%, #000 86%, rgba(0, 0, 0, 0.92) 92%, transparent 100%);
+  mask-image: radial-gradient(ellipse 99% 96% at 50% 50%, #000 0%, #000 86%, rgba(0, 0, 0, 0.92) 92%, transparent 100%);
 }
 
 .hero-stats {
@@ -125,7 +135,7 @@
 
   .hero {
     padding-top: calc(var(--header-height) + 2.5rem);
-    background: linear-gradient(180deg, #fbfcfd 0%, #f9fbfc 100%);
+    background: linear-gradient(180deg, #fbfcfd 0%, #f4f8fa 100%);
   }
 
   .hero-layout {
@@ -144,6 +154,10 @@
   .hero-visual {
     min-height: auto;
     margin-top: 0.25rem;
+  }
+
+  .hero-visual::after {
+    display: none;
   }
 
   .hero-spatial-image {
