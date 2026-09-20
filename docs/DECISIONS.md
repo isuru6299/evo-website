@@ -128,3 +128,16 @@ This file records architectural decisions so future sessions do not accidentally
 **Emphasis rule:** Keep `Smarter Systems for a` in near-black and use EVO orange for `Brighter Tomorrow`.
 
 **Reason:** The phrase is broader than the earlier smart-living/industrial-only wording and better supports EVO's long-term positioning across automation, smart living, custom engineering, software platforms and future subsidiaries while still fitting the approved visual direction.
+
+## D-022 — Hero implementation must not drift from the approved reference
+**Decision:** Preserve the approved simple hero composition and do not add extra cards, decorations, copy blocks or visual concepts unless explicitly approved.
+
+**Implementation rules:**
+- The smart-home + industrial robot visual must render fully without intentional cropping on normal desktop widths.
+- Use `object-fit: contain` style behaviour for the hero artwork and avoid negative margins or overscaling that cut off the artwork.
+- Keep the left headline visually strong but not oversized enough to overpower or push the artwork out of balance.
+- Preserve the white/light canvas, black typography, orange primary accent and restrained EVO-green secondary accents.
+- The hero artwork and HTML content must remain separate so text stays editable and responsive.
+- Prefer proportion, spacing and clarity over adding more visual elements.
+
+**Reason:** The approved reference was chosen specifically because it is simple, brilliant and balanced. Implementation should reproduce that character rather than reinterpret it.
