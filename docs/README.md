@@ -11,6 +11,7 @@ Future ChatGPT/Codex/AI sessions should read these files before making architect
 4. `ROADMAP.md` — phased delivery plan and current stage.
 5. `CHECKPOINT.md` — exact current working checkpoint and what is/not yet verified.
 6. `CODEX_HANDOFF.md` — current implementation state, how to continue, what not to change.
+7. `PROJECT_ARCHIVE.md` — canonical workflow for capturing past/future real projects from chat, photos and field notes.
 
 ## Rule
 Do not treat chat history as the only source of truth. Important decisions must be written into this folder.
@@ -18,6 +19,8 @@ Do not treat chat history as the only source of truth. Important decisions must 
 When a decision changes, update the relevant document and add an entry to `DECISIONS.md`.
 
 When a milestone is completed, update `ROADMAP.md`, `CHECKPOINT.md` and `CODEX_HANDOFF.md`.
+
+Real project facts should not live only in chat. Store each real project as one canonical record in `data/projects/` and follow `PROJECT_ARCHIVE.md`.
 
 ## Project identity
 - Repository: `isuru6299/evo-website`
