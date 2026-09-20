@@ -2,13 +2,14 @@
 
 ## Current state
 - The old static test website has been retired from `main` and preserved on the `legacy-static-test` branch.
-- `main` now holds the EVO Digital Platform structure.
+- `main` holds the EVO Digital Platform structure.
 - Astro public web scaffold exists in `apps/web`.
 - React/Vite admin scaffold exists in `apps/admin`.
-- FastAPI backend scaffold exists in `apps/api`.
-- PostgreSQL and all applications are wired through `docker-compose.yml`.
+- FastAPI backend exists in `apps/api`.
+- PostgreSQL 17 and all applications are wired through `docker-compose.yml`.
 - Canonical project memory lives in `docs/`.
 - The full local development stack has been verified on Isuru's Windows PC with WSL2 + Docker Desktop.
+- Alembic migrations, organizations, service registry and initial read APIs are locally verified.
 
 ## Phase 0 — Preserve and document
 - [x] Keep the existing repository.
@@ -44,18 +45,20 @@
 - [x] Add `/health` endpoint.
 - [x] Add SQLAlchemy and PostgreSQL connection foundation.
 - [x] Add database health endpoint.
-- [ ] Configure Alembic migrations.
+- [x] Configure Alembic migrations.
 - [ ] Add security/logging conventions.
-- [ ] Add OpenAPI organization/tags/versioning conventions.
+- [x] Add `/api/v1` routing structure.
 
 ## Phase 4 — Core business model
-- [ ] Organizations.
+- [x] Organizations foundation.
 - [ ] Users/roles/permissions.
-- [ ] Service/product catalog.
+- [x] Service/product/platform catalog foundation.
 - [ ] Industries/categories.
 - [ ] Projects.
 - [ ] Media metadata.
 - [ ] Audit log.
+- [x] Seed primary EVO organization and initial service registry.
+- [x] Verify organization/service read APIs locally.
 
 ## Phase 5 — Admin foundation
 - [x] Create `apps/admin` React/Vite project scaffold.
@@ -82,12 +85,13 @@
 - [ ] Content revision history.
 
 ## Phase 8 — Organization/subsidiary readiness
-- [ ] Organization-scoped records where needed.
+- [x] Organization-scoped service records established.
 - [ ] Organization-specific settings/branding hooks.
 - [ ] Role/access scope.
 - [ ] Evaluate PostgreSQL RLS only when needed.
 
 ## Phase 9 — Product integrations
+- [x] Catalog can identify software platforms separately from normal services.
 - [ ] EVO VMS integration boundary.
 - [ ] Customer/account/product mapping.
 - [ ] Status/subscription hooks.
@@ -108,14 +112,14 @@
 - [ ] HTTPS.
 - [ ] Backups.
 - [ ] Monitoring/logging.
-- [ ] Move `evo.lk` web DNS to VPS while preserving mail records.
+- [ ] Move `evo.lk` web DNS to production hosting while preserving mail records.
 - [ ] Add subdomains only as services actually need them.
 
 ## Delivery rule
-Work phase-by-phase and checkpoint working states.
+Work phase-by-phase and checkpoint working states. Do not mix unrelated backend, admin, website and product-integration work in one uncontrolled batch.
 
-The immediate next milestone is **Core Platform Foundation v1**:
-1. define production design-system tokens,
-2. configure Alembic migrations,
-3. create the first real database models for organizations and the service/catalog registry,
-4. keep the public website modular and section-by-section.
+The immediate next milestone is **Public Website v1 — Visual Foundation**:
+1. create production design-system tokens,
+2. build and locally review header/navigation,
+3. build and locally review the hero section,
+4. continue the public site section-by-section only after approval.
