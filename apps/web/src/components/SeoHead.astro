@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title,
+  description,
+  image = '/hero/evo-hero-spatial.png',
+  type = 'website',
+} = Astro.props;
+
+const siteOrigin = 'https://evo.lk';
+const canonical = new URL(Astro.url.pathname, siteOrigin).toString();
+const socialImage = new URL(image, siteOrigin).toString();
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/brand/evo-logo.png" />
+
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content="EVO" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={socialImage} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={socialImage} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'EVO (Pvt) Ltd',
+  url: siteOrigin,
+  logo: `${siteOrigin}/brand/evo-logo.png`,
+  email: 'info@evo.lk',
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'LK',
+  },
+})} />
