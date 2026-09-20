@@ -3,14 +3,16 @@ from sqlalchemy import text
 
 from app.core.config import get_settings
 from app.database.session import engine
+from app.router import api_v1_router
 
 settings = get_settings()
-app = FastAPI(title=settings.app_name, version="0.1.0")
+app = FastAPI(title=settings.app_name, version="0.2.0")
+app.include_router(api_v1_router)
 
 
 @app.get("/")
 def root():
-    return {"name": settings.app_name, "status": "running", "version": "0.1.0"}
+    return {"name": settings.app_name, "status": "running", "version": "0.2.0"}
 
 
 @app.get("/health")
