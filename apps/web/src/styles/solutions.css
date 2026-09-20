@@ -58,7 +58,9 @@
   box-shadow: 0 12px 28px rgba(34, 46, 58, 0.045);
 }
 
-.solutions-view-all span { color: var(--color-accent); }
+.solutions-view-all span {
+  color: var(--color-accent);
+}
 
 .solutions-grid {
   display: grid;
@@ -87,7 +89,7 @@
 .solution-card-copy {
   position: relative;
   z-index: 3;
-  width: 57%;
+  width: 55%;
   padding: 1.1rem 0 1rem 1.1rem;
 }
 
@@ -128,142 +130,64 @@
   box-shadow: 0 9px 20px rgba(255, 131, 24, 0.2);
 }
 
-.solution-photo,
-.solution-visual {
+/* Final generated object assets. The media zone is intentionally image-led,
+   matching the approved compact four-card reference while keeping text editable. */
+.solution-media {
   position: absolute;
   z-index: 1;
-  right: 0;
   top: 0;
-  width: 50%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  overflow: hidden;
   pointer-events: none;
+  background: #fff;
 }
 
-.solution-photo::after,
-.solution-visual::after {
+.solution-media::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.85) 8%, rgba(255,255,255,0) 30%);
+  z-index: 2;
+  inset: 0 auto 0 0;
+  width: 34%;
+  pointer-events: none;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.9) 24%, rgba(255,255,255,0) 100%);
 }
 
-.solution-photo-industrial,
-.solution-photo-smart {
-  background-image: url('/hero/evo-hero-spatial.png');
-  background-repeat: no-repeat;
-  background-size: 330% auto;
-}
-
-.solution-photo-industrial {
-  background-position: 87% 55%;
-}
-
-.solution-photo-smart {
-  background-position: 51% 55%;
-}
-
-.solution-card-smart .solution-photo::after {
-  background:
-    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.92) 9%, rgba(255,255,255,0) 30%),
-    linear-gradient(180deg, rgba(255,255,255,0) 52%, rgba(255,255,255,.8) 100%);
-}
-
-/* Custom engineering — compact modular cubes */
-.solution-visual-custom {
-  width: 49%;
-  overflow: hidden;
-}
-
-.custom-grid {
+.solution-card-image {
   position: absolute;
-  inset: 16% 4% 7% 8%;
-  opacity: 0.2;
-  background-image:
-    linear-gradient(rgba(98, 108, 120, 0.26) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(98, 108, 120, 0.26) 1px, transparent 1px);
-  background-size: 16px 16px;
-  transform: perspective(260px) rotateX(58deg) rotateZ(-18deg);
-  mask-image: linear-gradient(to top, #000 0%, transparent 92%);
+  z-index: 1;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  transform-origin: 50% 100%;
+  filter: saturate(1.02) contrast(1.01);
 }
 
-.custom-cube {
-  position: absolute;
-  width: 29%;
-  aspect-ratio: 1;
-  border-radius: 7px;
-  background: linear-gradient(145deg, #ffffff, #dfe4e8);
-  box-shadow: inset -10px -10px 16px rgba(17,24,39,.07), inset 7px 7px 12px rgba(255,255,255,.95), 0 15px 22px rgba(35,47,60,.11);
+.solution-card-image-industrial {
+  width: 118%;
+  right: -17%;
+  bottom: -8%;
 }
 
-.custom-cube-a { left: 15%; bottom: 25%; }
-.custom-cube-b { left: 42%; bottom: 18%; }
-.custom-cube-c { left: 31%; bottom: 48%; background: linear-gradient(145deg, #ffa356, #ff7410); }
-.custom-cube-d { left: 59%; bottom: 42%; transform: scale(.84); }
-
-/* Integration — layered platform object */
-.solution-visual-integration {
-  width: 50%;
+.solution-card-image-smart {
+  width: 119%;
+  right: -15%;
+  bottom: -8%;
 }
 
-.integration-shadow {
-  position: absolute;
-  left: 15%;
-  bottom: 13%;
-  width: 68%;
-  height: 13%;
-  border-radius: 50%;
-  background: rgba(34, 46, 58, 0.15);
-  filter: blur(14px);
+.solution-card-image-custom {
+  width: 113%;
+  right: -10%;
+  bottom: -5%;
 }
 
-.integration-layer {
-  position: absolute;
-  left: 22%;
-  width: 58%;
-  height: 22%;
-  border-radius: 17px;
-  box-shadow: 0 12px 22px rgba(35,47,60,.11), inset 0 0 0 1px rgba(17,24,39,.07);
+.solution-card-image-integration {
+  width: 112%;
+  right: -10%;
+  bottom: -5%;
 }
-
-.integration-layer-bottom {
-  bottom: 17%;
-  background: linear-gradient(145deg, #eff2f4, #cdd5db);
-}
-
-.integration-layer-middle {
-  bottom: 33%;
-  left: 25%;
-  background: linear-gradient(145deg, #ff9c43, #ff7410);
-}
-
-.integration-layer-top {
-  bottom: 50%;
-  left: 28%;
-  background: linear-gradient(145deg, #252b31, #090b0d);
-  color: white;
-}
-
-.integration-layer-top i {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.integration-leaf {
-  position: absolute;
-  width: 10%;
-  height: 13%;
-  border-radius: 90% 10% 90% 10%;
-  background: linear-gradient(145deg, #7edc53, #2fad36);
-}
-
-.integration-leaf-a { right: 10%; top: 18%; transform: rotate(30deg); }
-.integration-leaf-b { right: 2%; bottom: 25%; transform: rotate(-38deg) scale(.82); }
 
 .solutions-strip {
   display: grid;
@@ -326,9 +250,29 @@
 }
 
 @media (max-width: 1100px) {
-  .solutions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .solutions-strip { grid-template-columns: repeat(2, 1fr); }
-  .solutions-strip > a { grid-column: 1 / -1; }
+  .solutions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .solutions-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutions-strip > a {
+    grid-column: 1 / -1;
+  }
+
+  .solution-card-image-industrial,
+  .solution-card-image-smart {
+    width: 106%;
+    right: -7%;
+  }
+
+  .solution-card-image-custom,
+  .solution-card-image-integration {
+    width: 102%;
+    right: -4%;
+  }
 }
 
 @media (max-width: 780px) {
@@ -342,15 +286,39 @@
     margin-top: 2.5rem;
   }
 
-  .solution-card { min-height: 320px; }
-  .solution-card-copy { width: 58%; }
+  .solution-card {
+    min-height: 320px;
+  }
+
+  .solution-card-copy {
+    width: 52%;
+  }
+
+  .solution-media {
+    width: 60%;
+  }
 }
 
 @media (max-width: 640px) {
-  .solutions-inner { padding: 4.8rem 0 5.4rem; }
-  .solutions-heading h2 { font-size: clamp(2.45rem, 11.5vw, 3.8rem); }
-  .solutions-strip { grid-template-columns: 1fr; }
+  .solutions-inner {
+    padding: 4.8rem 0 5.4rem;
+  }
+
+  .solutions-heading h2 {
+    font-size: clamp(2.45rem, 11.5vw, 3.8rem);
+  }
+
+  .solutions-strip {
+    grid-template-columns: 1fr;
+  }
+
   .solutions-strip > div,
-  .solutions-strip > a { border-right: 0; border-bottom: 1px solid rgba(17,24,39,.07); }
-  .solutions-strip > a { border-bottom: 0; }
+  .solutions-strip > a {
+    border-right: 0;
+    border-bottom: 1px solid rgba(17,24,39,.07);
+  }
+
+  .solutions-strip > a {
+    border-bottom: 0;
+  }
 }
