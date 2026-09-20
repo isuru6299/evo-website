@@ -121,3 +121,10 @@ This file records architectural decisions so future sessions do not accidentally
 **Style rule:** Future public-site sections should feel like one visual system derived from this reference: premium, bright, spatial, minimal, object-led, slightly futuristic, and distinctive rather than generic corporate/SaaS.
 
 **Implementation note:** The generated reference is a design target, not a single flattened website image. Build the real page with HTML/CSS/components and separate visual assets so it remains responsive, editable, accessible and maintainable.
+
+## D-021 — Hero headline locked
+**Decision:** Use `Smarter Systems for a Brighter Tomorrow` as the primary public hero headline.
+
+**Emphasis rule:** Keep `Smarter Systems for a` in near-black and use EVO orange for `Brighter Tomorrow`.
+
+**Reason:** The phrase is broader than the earlier smart-living/industrial-only wording and better supports EVO's long-term positioning across automation, smart living, custom engineering, software platforms and future subsidiaries while still fitting the approved visual direction.
