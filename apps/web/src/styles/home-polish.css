@@ -1,0 +1,88 @@
+/* Homepage visual QA overrides — keep locked Hero and Solutions untouched. */
+
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Keep the full homepage inside the viewport even when decorative assets overscan. */
+main,
+.industrial-section,
+.projects-section,
+.company-section,
+.contact-section {
+  max-width: 100%;
+}
+
+/* Company section follows the approved EVO light spatial direction. */
+.company-section {
+  border-top: 1px solid rgba(17, 24, 39, 0.06);
+  background:
+    radial-gradient(circle at 16% 38%, rgba(255, 131, 24, 0.07), transparent 24%),
+    radial-gradient(circle at 82% 45%, rgba(76, 187, 62, 0.07), transparent 24%),
+    var(--color-bg);
+  color: var(--color-text);
+}
+
+.company-story h2 {
+  color: var(--color-text);
+}
+
+.company-story h2 span {
+  color: #47b83f;
+}
+
+.company-story > p {
+  color: var(--color-text-soft);
+}
+
+.company-principles article {
+  border: 1px solid rgba(17, 24, 39, 0.07);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 38px rgba(35, 47, 60, 0.045);
+}
+
+.company-principles span {
+  color: #9aa5b0;
+}
+
+.company-principles strong {
+  color: var(--color-text);
+}
+
+.company-principles p {
+  color: var(--color-text-muted);
+}
+
+/* Project 04 keeps contrast without breaking the light theme. */
+.project-visual-dark {
+  background:
+    radial-gradient(circle at 50% 58%, rgba(255, 131, 24, 0.10), transparent 34%),
+    linear-gradient(145deg, #ffffff 0%, #f1f4f6 100%);
+}
+
+.project-visual-dark span {
+  color: rgba(17, 24, 39, 0.48);
+}
+
+.project-visual-dark::before {
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  background: linear-gradient(145deg, #252c33, #11171d);
+  box-shadow: 0 0 0 1px rgba(255, 131, 24, 0.28), 0 16px 30px rgba(35, 47, 60, 0.10);
+}
+
+/* Slightly tighten the first-pass detail sections on desktop. */
+@media (min-width: 1101px) {
+  .smart-living-inner,
+  .projects-inner {
+    padding-top: 5.4rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .industrial-inner,
+  .company-inner,
+  .contact-inner {
+    padding-top: 5.6rem;
+    padding-bottom: 5.8rem;
+  }
+}
