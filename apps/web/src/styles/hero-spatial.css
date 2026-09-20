@@ -114,6 +114,8 @@
   object-position: center;
   background: transparent;
   filter: drop-shadow(0 18px 26px rgba(35, 47, 60, 0.04));
+  transform-origin: 50% 55%;
+  transform: translateY(4px) rotate(-0.35deg) scale(1.075);
   -webkit-mask-image:
     linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
@@ -146,6 +148,7 @@
   .hero-spatial-image {
     width: 100%;
     max-width: 800px;
+    transform: translateY(3px) rotate(-0.28deg) scale(1.055);
   }
 }
 
@@ -188,6 +191,7 @@
     width: min(100%, 860px);
     max-width: 860px;
     margin-inline: auto;
+    transform: none;
     -webkit-mask-image: none;
     mask-image: none;
   }
