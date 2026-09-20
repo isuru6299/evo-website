@@ -7,8 +7,8 @@
 }
 
 .hero {
-  padding-top: calc(var(--header-height) + 2.8rem);
-  padding-bottom: 2rem;
+  padding-top: calc(var(--header-height) + 4.8rem);
+  padding-bottom: 2.2rem;
   overflow: visible;
   background: linear-gradient(90deg, #fcfefd 0%, #fafbfc 46%, #f7f9fa 100%);
 }
@@ -16,10 +16,11 @@
 .hero-layout {
   grid-template-columns: minmax(430px, 0.88fr) minmax(620px, 1.28fr);
   gap: clamp(1.5rem, 2.8vw, 3.2rem);
+  align-items: center;
 }
 
 .hero-copy {
-  padding: 1.1rem 0 0.75rem;
+  padding: 0.35rem 0 0.75rem;
 }
 
 .hero-copy h1 {
@@ -44,11 +45,12 @@
 }
 
 .hero-visual {
-  min-height: 510px;
+  min-height: 525px;
   overflow: visible;
   align-items: center;
   justify-content: center;
   background: transparent;
+  padding-top: 0.75rem;
 }
 
 .hero-visual-glow {
@@ -61,8 +63,8 @@
 
 .hero-spatial-image {
   display: block;
-  width: min(100%, 920px);
-  max-width: 920px;
+  width: min(96%, 880px);
+  max-width: 880px;
   height: auto;
   margin: 0 auto;
   object-fit: contain;
@@ -72,7 +74,7 @@
 }
 
 .hero-stats {
-  margin-top: 0.9rem;
+  margin-top: 1.15rem;
 }
 
 @media (max-width: 1220px) {
@@ -91,8 +93,8 @@
   }
 
   .hero-spatial-image {
-    width: 100%;
-    max-width: 800px;
+    width: 96%;
+    max-width: 780px;
   }
 }
 
@@ -103,7 +105,7 @@
   }
 
   .hero {
-    padding-top: calc(var(--header-height) + 2.5rem);
+    padding-top: calc(var(--header-height) + 3.4rem);
     background: linear-gradient(180deg, #fcfefd 0%, #f8fafb 100%);
   }
 
@@ -122,7 +124,8 @@
 
   .hero-visual {
     min-height: auto;
-    margin-top: 0.25rem;
+    margin-top: 0.65rem;
+    padding-top: 0;
   }
 
   .hero-spatial-image {
@@ -136,6 +139,10 @@
   .hero-layout,
   .hero-stats {
     width: min(var(--container), calc(100% - 28px));
+  }
+
+  .hero {
+    padding-top: calc(var(--header-height) + 2.9rem);
   }
 
   .hero-copy h1 {
