@@ -17,28 +17,38 @@ Internal project name: **EVO Digital Platform**
 ## Current implementation state
 The old static HTML/CSS/JavaScript prototype has been retired from `main` and preserved on the `legacy-static-test` branch.
 
-`main` contains the first verified platform scaffold:
+`main` now contains a locally verified platform foundation:
 - `apps/web` — Astro public frontend scaffold
 - `apps/admin` — React + Vite admin scaffold
-- `apps/api` — FastAPI backend scaffold
+- `apps/api` — FastAPI backend
 - PostgreSQL 17 wired through Docker Compose
-- SQLAlchemy connection foundation
-- `/health` and `/health/db` API checks
-- root `docker-compose.yml`
+- SQLAlchemy ORM foundation
+- Alembic migration system configured and initial migration applied
+- organizations table/model
+- service/product/platform registry table/model
+- `/api/v1/organizations` read API
+- `/api/v1/services` read API
+- repeatable core seed script
 - canonical `docs/` memory and checkpoint files
 
 Local verification was completed on Isuru's Windows development PC on 2026-09-20:
 - repository location: `C:\EVO\Development\evo-website`
-- WSL2 installed and working
-- Docker Desktop installed and working
-- `docker compose up --build` completed successfully
-- `docker compose ps` showed web, admin, api and db running
-- PostgreSQL reported healthy
-- Astro web verified at `http://localhost:4321`
-- React admin verified at `http://localhost:5173`
-- FastAPI root verified at `http://localhost:8000`
-- OpenAPI docs verified at `http://localhost:8000/docs`
-- PostgreSQL health verified at `http://localhost:8000/health/db`
+- WSL2 + Docker Desktop working
+- web, admin, api and db containers running
+- PostgreSQL healthy
+- public web verified at `http://localhost:4321`
+- admin verified at `http://localhost:5173`
+- FastAPI/OpenAPI verified at `http://localhost:8000` and `/docs`
+- PostgreSQL health verified at `/health/db`
+- Alembic migration applied successfully
+- tables verified: `alembic_version`, `organizations`, `services`
+- primary organization seeded: `EVO (Pvt) Ltd`
+- seeded service registry:
+  - Industrial Automation — active / website visible
+  - Smart Living — active / website visible
+  - Custom Engineering — active / website visible
+  - EVO VMS — beta / website hidden
+- organization and service APIs verified locally
 
 ## Current direction
 - Public frontend -> Astro
@@ -81,37 +91,47 @@ For visual website work, the owner prefers section-by-section approval rather th
 - Do not start a microservice architecture without a demonstrated need.
 - Do not merge VMS streaming/recording engines into the website backend.
 - Do not commit secrets or passwords.
-- Do not change `evo.lk` DNS/mail records as part of code work.
+- Do not change `evo.lk` DNS/mail records as part of ordinary code work.
 - Do not assume chat memory is authoritative if repository docs state otherwise.
 - Do not describe the local scaffold as production-ready; it is a verified development foundation only.
+- Do not expand backend/admin scope while the current milestone is public website visual work unless required to unblock it.
 
 ## Next recommended technical milestone
-**Core Platform Foundation v1**
+**Public Website v1 — Visual Foundation**
 
 Proceed in this order:
 1. create production design-system tokens/shared styling conventions
-2. configure Alembic migrations
-3. create the first real core database models:
-   - organizations
-   - service/product catalog registry
-4. expose minimal API endpoints for those models
-5. keep the admin and public UI modular and avoid premature feature expansion
-6. update checkpoint docs after the new foundation is locally verified
+2. replace the temporary Astro foundation screen with the real public shell
+3. build header/navigation
+4. build the hero section and review locally
+5. after owner approval, continue section-by-section into services/solutions, smart living, industrial, projects, company and contact/footer
+6. verify responsive/mobile behaviour before any public deployment
+
+Preferred existing hero direction from prior review:
+- headline: `Where Smart Living Meets Industrial Automation`
+- supporting idea: EVO combines industrial-grade engineering, intelligent control and elegant smart living experiences
+- primary CTAs: `Explore Our Work` and `Talk to EVO`
+- visual direction: premium, modern, technical, not a generic WordPress/Elementor look
 
 ## How to run locally
 From `C:\EVO\Development\evo-website`:
 
 ```powershell
-Copy-Item .env.example .env   # only if .env does not already exist
-docker compose up --build
+docker compose up
 ```
 
-Verify:
+Key local URLs:
 - `http://localhost:4321`
 - `http://localhost:5173`
 - `http://localhost:8000`
 - `http://localhost:8000/health/db`
 - `http://localhost:8000/docs`
+
+Core seed, when needed:
+
+```powershell
+docker compose exec api python -m scripts.seed_core
+```
 
 ## How to update this handoff
 Whenever a major milestone is completed, replace the "Current implementation state" and "Next recommended technical milestone" sections so a new AI session can continue without reconstructing history from chat.
