@@ -1,24 +1,35 @@
 ---
+import '../styles/tokens.css';
 import '../styles/global.css';
-const apiBase = import.meta.env.PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+import SiteHeader from '../components/SiteHeader.astro';
+import Hero from '../components/Hero.astro';
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>EVO Digital Platform</title>
-    <meta name="description" content="EVO Digital Platform development foundation." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070a0d" />
+    <title>EVO | Engineering, Automation & Smart Living</title>
+    <meta
+      name="description"
+      content="EVO brings together industrial automation, smart living, and custom engineering solutions in one modern engineering platform."
+    />
   </head>
   <body>
-    <main class="shell">
-      <p class="eyebrow">EVO DIGITAL PLATFORM · FOUNDATION</p>
-      <h1>Public web foundation is ready.</h1>
-      <p class="lead">This Astro application is the future public-facing evo.lk experience. The production design will be built here section by section.</p>
-      <div class="cards">
-        <a href={`${apiBase}/docs`} target="_blank" rel="noreferrer"><strong>API Docs</strong><span>FastAPI / OpenAPI</span></a>
-        <a href="http://localhost:5173" target="_blank" rel="noreferrer"><strong>Admin</strong><span>React management UI</span></a>
-      </div>
-      <p class="note">Local target: <code>http://localhost:4321</code></p>
+    <SiteHeader />
+    <main>
+      <Hero />
+
+      <section class="next-section" id="solutions">
+        <div class="container next-section-inner">
+          <p class="eyebrow">NEXT SECTION</p>
+          <h2>Solutions and services will be built here after the hero is approved.</h2>
+          <p>
+            This placeholder intentionally keeps the first visual review focused on the header, navigation, design system, and hero only.
+          </p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
