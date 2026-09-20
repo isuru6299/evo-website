@@ -9,13 +9,13 @@
   position: relative;
   width: min(1480px, calc(100% - 40px));
   max-width: none;
-  padding: 4.2rem 0 5rem;
+  padding: 4rem 0 5rem;
 }
 
 .solutions-heading {
   display: grid;
-  grid-template-columns: minmax(520px, 1.35fr) minmax(360px, 0.9fr) auto;
-  gap: clamp(1.5rem, 3vw, 3.5rem);
+  grid-template-columns: minmax(560px, 1fr) minmax(390px, 0.78fr) auto;
+  gap: clamp(1.6rem, 2.7vw, 3rem);
   align-items: end;
 }
 
@@ -25,9 +25,9 @@
 
 .solutions-heading h2 {
   max-width: none;
-  margin: 0.72rem 0 0;
+  margin: 0.68rem 0 0;
   color: var(--color-text);
-  font-size: clamp(2.2rem, 2.7vw, 3.25rem);
+  font-size: clamp(2.15rem, 2.35vw, 2.75rem);
   line-height: 0.98;
   letter-spacing: -0.052em;
   white-space: nowrap;
@@ -39,10 +39,10 @@
 
 .solutions-heading-side p {
   max-width: 470px;
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.12rem;
   color: var(--color-text-soft);
-  font-size: 0.86rem;
-  line-height: 1.55;
+  font-size: 0.84rem;
+  line-height: 1.52;
 }
 
 .solutions-view-all {
@@ -52,32 +52,32 @@
   gap: 0.7rem;
   align-self: end;
   justify-self: end;
-  padding: 0.72rem 1rem;
+  padding: 0.68rem 0.9rem;
   border: 1px solid rgba(17, 24, 39, 0.09);
   border-radius: var(--radius-pill);
   background: #fff;
   color: var(--color-text);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
   box-shadow: 0 10px 24px rgba(34, 46, 58, 0.045);
 }
 
 .solutions-view-all span {
-  width: 1.85rem;
-  height: 1.85rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: grid;
   place-items: center;
   border: 1px solid rgba(64, 181, 74, 0.35);
   border-radius: 50%;
   color: #38a83e;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.9rem;
-  margin-top: 1.25rem;
+  margin-top: 1.2rem;
 }
 
 .solution-card {
@@ -100,44 +100,44 @@
 .solution-card-copy {
   position: relative;
   z-index: 3;
-  width: 51%;
+  width: 53%;
   padding: 1rem 0 0.9rem 1rem;
 }
 
 .solution-number {
   display: block;
   color: #9da7b2;
-  font-size: 0.66rem;
+  font-size: 0.65rem;
   font-weight: 900;
   letter-spacing: 0.14em;
 }
 
 .solution-card h3 {
-  margin: 0.48rem 0 0;
+  margin: 0.46rem 0 0;
   color: var(--color-text);
-  font-size: clamp(1.05rem, 1.28vw, 1.42rem);
+  font-size: clamp(1.03rem, 1.2vw, 1.34rem);
   line-height: 0.98;
   letter-spacing: -0.04em;
 }
 
 .solution-card p {
-  max-width: 170px;
-  margin: 0.55rem 0 0;
+  max-width: 172px;
+  margin: 0.52rem 0 0;
   color: var(--color-text-soft);
-  font-size: 0.7rem;
+  font-size: 0.69rem;
   line-height: 1.38;
 }
 
 .solution-arrow {
-  margin-top: 0.7rem;
-  width: 1.85rem;
-  height: 1.85rem;
+  margin-top: 0.68rem;
+  width: 1.82rem;
+  height: 1.82rem;
   display: inline-grid;
   place-items: center;
   border-radius: 50%;
   color: #fff;
   background: var(--color-accent);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 900;
   box-shadow: 0 8px 18px rgba(255, 131, 24, 0.18);
 }
@@ -157,50 +157,51 @@
   position: absolute;
   z-index: 2;
   inset: 0 auto 0 0;
-  width: 35%;
-  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.92) 24%, rgba(255,255,255,.5) 58%, rgba(255,255,255,0) 100%);
+  width: 27%;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.88) 24%, rgba(255,255,255,.32) 62%, rgba(255,255,255,0) 100%);
 }
 
 .solution-card-image {
   position: absolute;
   z-index: 1;
   display: block;
-  width: 118%;
   max-width: none;
-  height: 118%;
-  right: -10%;
-  bottom: -9%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  object-fit: contain;
+  transform-origin: 50% 100%;
   filter: saturate(1.02) contrast(1.01);
 }
 
 .solution-card-image-industrial {
-  transform: scale(1.02);
-  object-position: 48% 58%;
+  width: 96%;
+  right: -2%;
+  bottom: -4%;
 }
 
 .solution-card-image-smart {
-  transform: scale(1.02);
-  object-position: 50% 56%;
+  width: 100%;
+  right: -3%;
+  bottom: -4%;
 }
 
 .solution-card-image-custom {
-  transform: scale(1.01);
-  object-position: 50% 55%;
+  width: 96%;
+  right: -1%;
+  bottom: -4%;
 }
 
 .solution-card-image-integration {
-  transform: scale(1.01);
-  object-position: 50% 54%;
+  width: 94%;
+  right: 0;
+  bottom: -3%;
 }
 
 .solutions-strip {
   display: grid;
   grid-template-columns: 0.85fr 1fr 1.2fr 1.05fr 1.15fr;
   align-items: center;
-  margin-top: 0.85rem;
-  min-height: 62px;
+  margin-top: 0.82rem;
+  min-height: 60px;
   overflow: hidden;
   border: 1px solid rgba(17,24,39,.07);
   border-radius: 1rem;
@@ -210,11 +211,11 @@
 
 .solutions-strip > div,
 .solutions-strip > a {
-  min-height: 42px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.45rem 0.85rem;
+  padding: 0.42rem 0.85rem;
   border-right: 1px solid rgba(17,24,39,.07);
 }
 
@@ -222,20 +223,20 @@
   border-right: 0;
   justify-content: space-between;
   color: var(--color-text-muted);
-  font-size: 0.62rem;
+  font-size: 0.61rem;
   font-weight: 800;
   letter-spacing: .08em;
 }
 
 .solutions-strip strong {
   color: var(--color-text);
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   line-height: 1;
 }
 
 .solutions-strip span {
   color: var(--color-text-muted);
-  font-size: 0.61rem;
+  font-size: 0.6rem;
   line-height: 1.24;
 }
 
@@ -244,24 +245,24 @@
 }
 
 .solutions-strip > a span {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 1.86rem;
+  height: 1.86rem;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
   border-radius: 50%;
   background: var(--color-accent);
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 
 @media (max-width: 1280px) {
   .solutions-heading {
-    grid-template-columns: minmax(420px, 1.15fr) minmax(320px, 0.85fr) auto;
+    grid-template-columns: minmax(430px, 1.05fr) minmax(320px, 0.82fr) auto;
   }
 
   .solutions-heading h2 {
-    font-size: clamp(2rem, 2.75vw, 2.8rem);
+    font-size: clamp(2rem, 2.45vw, 2.55rem);
   }
 }
 
@@ -292,6 +293,15 @@
 
   .solution-card {
     min-height: 250px;
+  }
+
+  .solution-card-image-industrial,
+  .solution-card-image-smart,
+  .solution-card-image-custom,
+  .solution-card-image-integration {
+    width: 92%;
+    right: 0;
+    bottom: -3%;
   }
 
   .solutions-strip {
