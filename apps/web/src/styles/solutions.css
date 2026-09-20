@@ -178,16 +178,23 @@
   bottom: -5%;
 }
 
+/* These two square assets previously ended slightly below the card's top edge,
+   exposing a visible white seam. Overscan them vertically so the artwork
+   extends past every media edge while preserving the approved composition. */
 .solution-card-image-smart {
-  width: 105%;
-  right: -7%;
-  bottom: -5%;
+  width: 112%;
+  height: 112%;
+  right: -6%;
+  bottom: -6%;
+  object-fit: cover;
 }
 
 .solution-card-image-custom {
-  width: 102%;
-  right: -4%;
+  width: 110%;
+  height: 110%;
+  right: -5%;
   bottom: -5%;
+  object-fit: cover;
 }
 
 .solution-card-image-integration {
