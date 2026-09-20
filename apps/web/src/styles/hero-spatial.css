@@ -65,35 +65,6 @@
   filter: blur(20px);
 }
 
-/* A narrow four-edge feather hides the rectangular artwork boundary while
-   preserving the approved artwork itself. */
-.hero-visual::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: -2px;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg,
-      var(--color-bg) 0%,
-      rgba(245, 248, 250, 0.96) 1.5%,
-      rgba(245, 248, 250, 0.72) 3.5%,
-      rgba(245, 248, 250, 0) 7%,
-      rgba(245, 248, 250, 0) 93%,
-      rgba(245, 248, 250, 0.72) 96.5%,
-      rgba(245, 248, 250, 0.96) 98.5%,
-      var(--color-bg) 100%),
-    linear-gradient(180deg,
-      var(--color-bg) 0%,
-      rgba(245, 248, 250, 0.94) 1.5%,
-      rgba(245, 248, 250, 0.62) 3%,
-      rgba(245, 248, 250, 0) 6%,
-      rgba(245, 248, 250, 0) 94%,
-      rgba(245, 248, 250, 0.62) 97%,
-      rgba(245, 248, 250, 0.94) 98.5%,
-      var(--color-bg) 100%);
-}
-
 .hero-visual-glow {
   width: 70%;
   height: 42%;
@@ -102,28 +73,58 @@
   opacity: 0.2;
 }
 
+.hero-artwork-frame {
+  position: relative;
+  z-index: 1;
+  width: min(107.5%, 990px);
+  max-width: 990px;
+  margin: 0 auto;
+  isolation: isolate;
+  transform-origin: 50% 55%;
+  transform: translateY(4px) rotate(-0.18deg);
+}
+
+/* The feather now belongs to the same frame as the artwork, so increasing
+   the artwork size no longer pushes the fade into the visible subject. */
+.hero-artwork-frame::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: -1px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      var(--color-bg) 0%,
+      rgba(245, 248, 250, 0.94) 1%,
+      rgba(245, 248, 250, 0.58) 2.25%,
+      rgba(245, 248, 250, 0) 4.5%,
+      rgba(245, 248, 250, 0) 95.5%,
+      rgba(245, 248, 250, 0.58) 97.75%,
+      rgba(245, 248, 250, 0.94) 99%,
+      var(--color-bg) 100%),
+    linear-gradient(180deg,
+      var(--color-bg) 0%,
+      rgba(245, 248, 250, 0.92) 1%,
+      rgba(245, 248, 250, 0.5) 2%,
+      rgba(245, 248, 250, 0) 4%,
+      rgba(245, 248, 250, 0) 96%,
+      rgba(245, 248, 250, 0.5) 98%,
+      rgba(245, 248, 250, 0.92) 99%,
+      var(--color-bg) 100%);
+}
+
 .hero-spatial-image {
   position: relative;
   z-index: 1;
   display: block;
-  width: min(100%, 920px);
-  max-width: 920px;
+  width: 100%;
+  max-width: none;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
   object-fit: contain;
   object-position: center;
   background: transparent;
   filter: drop-shadow(0 18px 26px rgba(35, 47, 60, 0.04));
-  transform-origin: 50% 55%;
-  transform: translateY(4px) rotate(-0.35deg) scale(1.075);
-  -webkit-mask-image:
-    linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-image:
-    linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
-  mask-composite: intersect;
 }
 
 .hero-stats {
@@ -145,10 +146,10 @@
     font-size: clamp(3.2rem, 4.8vw, 5rem);
   }
 
-  .hero-spatial-image {
-    width: 100%;
-    max-width: 800px;
-    transform: translateY(3px) rotate(-0.28deg) scale(1.055);
+  .hero-artwork-frame {
+    width: min(105.5%, 850px);
+    max-width: 850px;
+    transform: translateY(3px) rotate(-0.14deg);
   }
 }
 
@@ -181,19 +182,17 @@
     margin-top: 0.25rem;
   }
 
-  .hero-visual::after {
-    background:
-      linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 8%, rgba(245, 248, 250, 0) 92%, var(--color-bg) 100%),
-      linear-gradient(180deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 7%, rgba(245, 248, 250, 0) 93%, var(--color-bg) 100%);
-  }
-
-  .hero-spatial-image {
+  .hero-artwork-frame {
     width: min(100%, 860px);
     max-width: 860px;
     margin-inline: auto;
     transform: none;
-    -webkit-mask-image: none;
-    mask-image: none;
+  }
+
+  .hero-artwork-frame::after {
+    background:
+      linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 5%, rgba(245, 248, 250, 0) 95%, var(--color-bg) 100%),
+      linear-gradient(180deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 4%, rgba(245, 248, 250, 0) 96%, var(--color-bg) 100%);
   }
 }
 
@@ -216,7 +215,7 @@
     margin-top: 1.2rem;
   }
 
-  .hero-spatial-image {
+  .hero-artwork-frame {
     width: 100%;
   }
 }
