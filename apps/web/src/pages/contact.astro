@@ -1,0 +1,56 @@
+---
+import InnerLayout from '../layouts/InnerLayout.astro';
+---
+
+<InnerLayout
+  title="Contact | EVO"
+  description="Contact EVO for industrial automation, smart living, custom engineering and connected technical systems."
+>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-copy">
+        <p class="eyebrow">START A CONVERSATION</p>
+        <h1>Have a problem worth <span>engineering?</span></h1>
+        <p>Tell EVO what you are trying to build, automate, improve or connect. We can start with the problem, define the scope and shape the right technical path from there.</p>
+      </div>
+      <div class="contact-stack">
+        <article class="contact-card"><h3>Email</h3><p><a href="mailto:info@evo.lk">info@evo.lk</a></p></article>
+        <article class="contact-card"><h3>Location</h3><p>Sri Lanka</p></article>
+        <article class="contact-card"><h3>Focus</h3><p>Engineering · Automation · Smart Living · Connected Systems</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container contact-layout">
+      <div class="split-copy">
+        <p class="eyebrow">WHAT TO SEND</p>
+        <h2>Start with what you <span>need solved.</span></h2>
+        <p>A useful first message does not need to be technical. Explain the problem, what exists now, what outcome you want and any major constraints such as site, time, budget or equipment.</p>
+        <div class="feature-list">
+          <article><span>01</span><strong>The Problem</strong><p>What is not working, missing or taking too much effort?</p></article>
+          <article><span>02</span><strong>The Environment</strong><p>Factory, machine, house, building or technical site.</p></article>
+          <article><span>03</span><strong>The Goal</strong><p>What should be better once the work is complete?</p></article>
+          <article><span>04</span><strong>Useful Material</strong><p>Photos, videos, drawings, model numbers or existing documents.</p></article>
+        </div>
+      </div>
+
+      <form class="contact-form" action="mailto:info@evo.lk" method="post" enctype="text/plain">
+        <label>Name<input type="text" name="name" placeholder="Your name" /></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+        <label>Area
+          <select name="area">
+            <option>Industrial Automation</option>
+            <option>Smart Living</option>
+            <option>Custom Engineering</option>
+            <option>Systems & Integrations</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Project / Problem<textarea name="message" placeholder="Tell us what you are trying to build, fix, automate or improve."></textarea></label>
+        <button class="page-button page-button-primary" type="submit">Prepare Email ↗</button>
+        <p class="form-note">This first version opens your email client. A database-backed inquiry form can replace it when the production backend is connected.</p>
+      </form>
+    </div>
+  </section>
+</InnerLayout>
