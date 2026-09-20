@@ -1,6 +1,6 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Public Website v1 — Hero + Solutions Locked / Smart Living In Progress**
+Checkpoint: **Public Website v1 — Full Homepage First Pass Built**
 
 Verified on Isuru's Windows development PC through 2026-09-21.
 
@@ -51,7 +51,19 @@ Verified on Isuru's Windows development PC through 2026-09-21.
 - Solutions compact proportions, image crops/positions, card copy, CTA styling, and bottom highlight strip are approved.
 - The corrected 02/03 top-edge image seam treatment is part of the locked implementation.
 - Hero and Solutions should not be reworked unless explicitly requested.
-- Smart Living detail section first implementation has been added and is awaiting local visual review/approval.
+
+## Homepage sections now implemented
+The first full homepage pass is now assembled in `apps/web` with:
+1. Hero — approved and locked
+2. Solutions — approved and locked
+3. Smart Living detail — first implementation
+4. Industrial Automation detail — first implementation
+5. Selected Projects — first implementation
+6. Company / About EVO — first implementation
+7. Contact CTA — first implementation
+8. Footer — first implementation
+
+The new sections intentionally continue the locked EVO visual language: bright spatial canvas, clean white surfaces, orange engineering accent, restrained green smart-living accent, rounded technical cards and compact premium typography.
 
 ## Current local stack
 - Web: Astro
@@ -63,16 +75,16 @@ Verified on Isuru's Windows development PC through 2026-09-21.
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
 ## Next milestone
-**Public Website v1 — Smart Living Detail Section Approval**
+**Public Website v1 — Full Homepage Visual Review + Responsive QA**
 
-Current order:
-1. hero — approved and locked,
-2. solutions — approved and locked,
-3. smart living detail — in progress,
-4. industrial detail,
-5. projects,
-6. company,
-7. contact,
-8. responsive/mobile polish and final homepage QA.
+Review order:
+1. Smart Living detail
+2. Industrial Automation detail
+3. Projects
+4. Company
+5. Contact + Footer
+6. Desktop spacing consistency
+7. Tablet/mobile responsive polish
+8. Final homepage QA and approval
 
-Do not deploy or change `evo.lk` DNS yet. First complete and locally approve the public website visual foundation.
+Do not deploy or change `evo.lk` DNS yet. First locally review and approve the complete homepage visual foundation.
