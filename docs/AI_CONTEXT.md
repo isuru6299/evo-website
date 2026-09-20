@@ -134,3 +134,15 @@ External costs may still exist for VPS, domain, backups, mail/SMS/WhatsApp APIs,
 Before changing architecture, a future AI agent should read all files in `docs/` starting with `docs/README.md`.
 
 Do not silently replace an agreed architecture because another framework is fashionable. If a change is justified, explain it and record the new decision in `DECISIONS.md`.
+
+## 12. Real project archive rule
+Past and future real projects must not depend on one chat thread for memory.
+
+- Follow `docs/PROJECT_ARCHIVE.md` for project intake.
+- Store one canonical JSON record per real project in `data/projects/`.
+- Check `data/projects/index.json` before creating a new project so duplicate records are avoided.
+- When the owner later provides more photos or facts, update the existing record.
+- Separate owner-confirmed facts from photo observations and unconfirmed details.
+- Do not invent dates, client names, hardware models, project outcomes or performance claims.
+- Archiving does not equal public approval. New project records default to `website.publish = false` and client/location publishing permission `unknown`.
+- Website-ready media belongs under `apps/web/public/projects/<project-slug>/` only after selection/optimization; keep project data independent from the current website layout.
