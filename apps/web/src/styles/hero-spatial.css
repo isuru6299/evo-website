@@ -73,44 +73,49 @@
   opacity: 0.2;
 }
 
+/* The image and its four-side fade are one transformed unit. Zoom, rotation
+   and feathering therefore stay aligned instead of drifting independently. */
 .hero-artwork-frame {
   position: relative;
   z-index: 1;
-  width: min(107.5%, 990px);
-  max-width: 990px;
+  width: min(100%, 920px);
+  max-width: 920px;
   margin: 0 auto;
-  isolation: isolate;
   transform-origin: 50% 55%;
-  transform: translateY(4px) rotate(-0.18deg);
-}
+  transform: translateY(4px) rotate(-0.18deg) scale(1.075);
 
-/* The feather now belongs to the same frame as the artwork, so increasing
-   the artwork size no longer pushes the fade into the visible subject. */
-.hero-artwork-frame::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: -1px;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg,
-      var(--color-bg) 0%,
-      rgba(245, 248, 250, 0.94) 1%,
-      rgba(245, 248, 250, 0.58) 2.25%,
-      rgba(245, 248, 250, 0) 4.5%,
-      rgba(245, 248, 250, 0) 95.5%,
-      rgba(245, 248, 250, 0.58) 97.75%,
-      rgba(245, 248, 250, 0.94) 99%,
-      var(--color-bg) 100%),
-    linear-gradient(180deg,
-      var(--color-bg) 0%,
-      rgba(245, 248, 250, 0.92) 1%,
-      rgba(245, 248, 250, 0.5) 2%,
-      rgba(245, 248, 250, 0) 4%,
-      rgba(245, 248, 250, 0) 96%,
-      rgba(245, 248, 250, 0.5) 98%,
-      rgba(245, 248, 250, 0.92) 99%,
-      var(--color-bg) 100%);
+  -webkit-mask-image:
+    linear-gradient(to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.28) 1.4%,
+      #000 4.2%,
+      #000 95.8%,
+      rgba(0, 0, 0, 0.28) 98.6%,
+      transparent 100%),
+    linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.3) 1.2%,
+      #000 3.6%,
+      #000 96.4%,
+      rgba(0, 0, 0, 0.3) 98.8%,
+      transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.28) 1.4%,
+      #000 4.2%,
+      #000 95.8%,
+      rgba(0, 0, 0, 0.28) 98.6%,
+      transparent 100%),
+    linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.3) 1.2%,
+      #000 3.6%,
+      #000 96.4%,
+      rgba(0, 0, 0, 0.3) 98.8%,
+      transparent 100%);
+  mask-composite: intersect;
 }
 
 .hero-spatial-image {
@@ -147,9 +152,9 @@
   }
 
   .hero-artwork-frame {
-    width: min(105.5%, 850px);
-    max-width: 850px;
-    transform: translateY(3px) rotate(-0.14deg);
+    width: min(100%, 800px);
+    max-width: 800px;
+    transform: translateY(3px) rotate(-0.14deg) scale(1.055);
   }
 }
 
@@ -187,12 +192,15 @@
     max-width: 860px;
     margin-inline: auto;
     transform: none;
-  }
 
-  .hero-artwork-frame::after {
-    background:
-      linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 5%, rgba(245, 248, 250, 0) 95%, var(--color-bg) 100%),
-      linear-gradient(180deg, var(--color-bg) 0%, rgba(245, 248, 250, 0) 4%, rgba(245, 248, 250, 0) 96%, var(--color-bg) 100%);
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%);
+    mask-composite: intersect;
   }
 }
 
