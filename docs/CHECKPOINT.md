@@ -1,47 +1,56 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Local Foundation Verified**
+Checkpoint: **Core Data + API v1 Verified**
 
 Verified on Isuru's Windows development PC on 2026-09-20.
 
-## Completed
-- Old static test website removed from `main`.
-- Old prototype preserved on `legacy-static-test`.
+## Completed foundation
+- Old static test website removed from `main` and preserved on `legacy-static-test`.
 - Canonical `docs/` project memory established.
-- Root Node workspace added.
 - Astro public web scaffold created in `apps/web`.
 - React + Vite admin scaffold created in `apps/admin`.
 - FastAPI backend scaffold created in `apps/api`.
-- SQLAlchemy/PostgreSQL connection foundation added.
-- `/health` and `/health/db` endpoints added.
-- PostgreSQL, web, admin and API wired through `docker-compose.yml`.
-- `.env.example` contains development configuration placeholders only; no real secrets are committed.
-- Repository cloned to `C:\EVO\Development\evo-website`.
-- WSL2 and Docker Desktop installed and working.
-- Local `.env` created from `.env.example`.
-- `docker compose up --build` completed successfully.
-- `docker compose ps` verified all four services are running.
-- PostgreSQL container verified healthy.
+- PostgreSQL 17 wired through Docker Compose.
+- Local WSL2 + Docker Desktop development stack verified.
+- `/health`, `/health/db`, OpenAPI docs, web and admin verified locally.
 
-## Local verification results
-- `http://localhost:4321` — Astro public app: verified.
-- `http://localhost:5173` — React admin app: verified.
-- `http://localhost:8000` — FastAPI root: verified, platform status running.
-- `http://localhost:8000/health/db` — PostgreSQL connectivity: verified `status: ok`.
-- `http://localhost:8000/docs` — OpenAPI documentation: verified.
+## Core database foundation verified
+- SQLAlchemy declarative base established.
+- Alembic configured and initial migration generated/applied.
+- PostgreSQL tables verified locally:
+  - `alembic_version`
+  - `organizations`
+  - `services`
+- Initial migration committed to the repository.
+
+## Core Data + API v1 verified
+- `EVO (Pvt) Ltd` seeded as the primary organization.
+- Service registry seeded with:
+  - Industrial Automation — active, website visible
+  - Smart Living — active, website visible
+  - Custom Engineering — active, website visible
+  - EVO VMS — beta, website hidden
+- Seed is designed to be repeatable without creating duplicates.
+- `/api/v1/organizations` verified locally.
+- `/api/v1/services` verified locally.
+- PostgreSQL query confirmed all four service records and visibility/status values.
 
 ## Current local stack
 - Web: Astro
 - Admin: React + Vite
 - API: FastAPI
+- ORM: SQLAlchemy
+- Migrations: Alembic
 - Database: PostgreSQL 17
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
-## Next action
-Proceed from infrastructure validation into the first real platform layer:
-1. establish production design-system tokens and shared UI conventions,
-2. configure Alembic migrations,
-3. define the first core database models, beginning with organizations and the service/catalog registry,
-4. keep public website work section-by-section and checkpoint approved states.
+## Next milestone
+**Public Website v1 — Visual Foundation**
 
-Do not treat this as production deployment; this checkpoint verifies the local development foundation only.
+Proceed section-by-section:
+1. establish production design-system tokens,
+2. build the public header/navigation,
+3. build and review the final hero section,
+4. then continue into services/solutions, smart living, industrial, projects, company and contact sections.
+
+Do not deploy or change `evo.lk` DNS yet. First complete and locally approve the public website visual foundation.
