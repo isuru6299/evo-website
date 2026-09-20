@@ -7,15 +7,15 @@
 
 .solutions-inner {
   position: relative;
-  width: min(1380px, calc(100% - 56px));
+  width: calc(100% - 28px);
   max-width: none;
-  padding: 3.9rem 0 4.8rem;
+  padding: 1.35rem 0 2.35rem;
 }
 
 .solutions-heading {
   display: grid;
-  grid-template-columns: minmax(520px, 1fr) minmax(370px, 0.8fr) auto;
-  gap: clamp(1.5rem, 2.6vw, 2.8rem);
+  grid-template-columns: minmax(520px, 1.12fr) minmax(430px, 0.95fr) auto;
+  gap: clamp(1.25rem, 2vw, 2.4rem);
   align-items: end;
 }
 
@@ -25,9 +25,9 @@
 
 .solutions-heading h2 {
   max-width: none;
-  margin: 0.66rem 0 0;
+  margin: 0.42rem 0 0;
   color: var(--color-text);
-  font-size: clamp(2.05rem, 2.2vw, 2.65rem);
+  font-size: clamp(2rem, 2.15vw, 2.55rem);
   line-height: 0.98;
   letter-spacing: -0.052em;
   white-space: nowrap;
@@ -38,115 +38,115 @@
 }
 
 .solutions-heading-side p {
-  max-width: 455px;
-  margin: 0 0 0.1rem;
+  max-width: 510px;
+  margin: 0 0 0.08rem;
   color: var(--color-text-soft);
-  font-size: 0.82rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.42;
 }
 
 .solutions-view-all {
   width: max-content;
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.7rem;
   align-self: end;
   justify-self: end;
-  padding: 0.66rem 0.88rem;
+  padding: 0.56rem 0.76rem 0.56rem 0.95rem;
   border: 1px solid rgba(17, 24, 39, 0.09);
   border-radius: var(--radius-pill);
   background: #fff;
   color: var(--color-text);
-  font-size: 0.71rem;
+  font-size: 0.7rem;
   font-weight: 800;
-  box-shadow: 0 10px 24px rgba(34, 46, 58, 0.045);
+  box-shadow: 0 9px 22px rgba(34, 46, 58, 0.04);
 }
 
 .solutions-view-all span {
-  width: 1.78rem;
-  height: 1.78rem;
+  width: 1.72rem;
+  height: 1.72rem;
   display: grid;
   place-items: center;
   border: 1px solid rgba(64, 181, 74, 0.35);
   border-radius: 50%;
   color: #38a83e;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
 }
 
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-top: 1.05rem;
+  gap: 1rem;
+  margin-top: 0.85rem;
 }
 
 .solution-card {
   position: relative;
-  min-height: 230px;
+  min-height: 186px;
   overflow: hidden;
   border: 1px solid rgba(17, 24, 39, 0.08);
-  border-radius: 1rem;
+  border-radius: 0.95rem;
   background: #fff;
-  box-shadow: 0 12px 30px rgba(35, 47, 60, 0.045);
+  box-shadow: 0 10px 26px rgba(35, 47, 60, 0.04);
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .solution-card:hover {
   transform: translateY(-3px);
   border-color: rgba(255, 131, 24, 0.22);
-  box-shadow: 0 18px 40px rgba(35, 47, 60, 0.075);
+  box-shadow: 0 16px 36px rgba(35, 47, 60, 0.07);
 }
 
 .solution-card-copy {
   position: relative;
   z-index: 3;
-  width: 46%;
-  padding: 1rem 0 0.9rem 1rem;
+  width: 44%;
+  padding: 0.9rem 0 0.75rem 0.95rem;
 }
 
 .solution-number {
   display: block;
   color: #9da7b2;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 900;
   letter-spacing: 0.14em;
 }
 
 .solution-card h3 {
-  margin: 0.46rem 0 0;
+  margin: 0.42rem 0 0;
   color: var(--color-text);
-  font-size: clamp(1.02rem, 1.18vw, 1.32rem);
-  line-height: 0.98;
+  font-size: clamp(1rem, 1.06vw, 1.24rem);
+  line-height: 0.97;
   letter-spacing: -0.04em;
 }
 
 .solution-card p {
-  max-width: 150px;
-  margin: 0.52rem 0 0;
+  max-width: 145px;
+  margin: 0.5rem 0 0;
   color: var(--color-text-soft);
-  font-size: 0.68rem;
-  line-height: 1.38;
+  font-size: 0.67rem;
+  line-height: 1.34;
 }
 
 .solution-arrow {
-  margin-top: 0.68rem;
-  width: 1.82rem;
-  height: 1.82rem;
+  margin-top: 0.62rem;
+  width: 1.78rem;
+  height: 1.78rem;
   display: inline-grid;
   place-items: center;
   border-radius: 50%;
   color: #fff;
   background: var(--color-accent);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 900;
-  box-shadow: 0 8px 18px rgba(255, 131, 24, 0.18);
+  box-shadow: 0 7px 16px rgba(255, 131, 24, 0.17);
 }
 
 .solution-media {
   position: absolute;
   z-index: 1;
   inset: 0 0 0 auto;
-  width: 64%;
+  width: 62%;
   overflow: hidden;
   pointer-events: none;
   background: #fff;
@@ -157,8 +157,8 @@
   position: absolute;
   z-index: 2;
   inset: 0 auto 0 0;
-  width: 23%;
-  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.86) 24%, rgba(255,255,255,.24) 66%, rgba(255,255,255,0) 100%);
+  width: 21%;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.86) 28%, rgba(255,255,255,.28) 66%, rgba(255,255,255,0) 100%);
 }
 
 .solution-card-image {
@@ -173,49 +173,49 @@
 }
 
 .solution-card-image-industrial {
-  width: 112%;
-  right: -7%;
-  bottom: -7%;
+  width: 102%;
+  right: -4%;
+  bottom: -5%;
 }
 
 .solution-card-image-smart {
-  width: 116%;
-  right: -8%;
-  bottom: -7%;
+  width: 105%;
+  right: -7%;
+  bottom: -5%;
 }
 
 .solution-card-image-custom {
-  width: 108%;
-  right: -5%;
-  bottom: -6%;
+  width: 102%;
+  right: -4%;
+  bottom: -5%;
 }
 
 .solution-card-image-integration {
-  width: 106%;
+  width: 100%;
   right: -3%;
-  bottom: -5%;
+  bottom: -4%;
 }
 
 .solutions-strip {
   display: grid;
-  grid-template-columns: 0.85fr 1fr 1.2fr 1.05fr 1.15fr;
+  grid-template-columns: 0.9fr 1fr 1.15fr 1.08fr 1.12fr;
   align-items: center;
-  margin-top: 0.78rem;
+  margin-top: 0.72rem;
   min-height: 58px;
   overflow: hidden;
   border: 1px solid rgba(17,24,39,.07);
-  border-radius: 1rem;
-  background: rgba(255,255,255,.92);
-  box-shadow: 0 10px 28px rgba(35,47,60,.035);
+  border-radius: 0.95rem;
+  background: rgba(255,255,255,.93);
+  box-shadow: 0 9px 24px rgba(35,47,60,.03);
 }
 
 .solutions-strip > div,
 .solutions-strip > a {
-  min-height: 39px;
+  min-height: 42px;
   display: flex;
   align-items: center;
-  gap: 0.52rem;
-  padding: 0.4rem 0.82rem;
+  gap: 0.58rem;
+  padding: 0.42rem 0.82rem;
   border-right: 1px solid rgba(17,24,39,.07);
 }
 
@@ -228,20 +228,45 @@
   letter-spacing: .08em;
 }
 
+.solutions-strip-icon {
+  width: 1.85rem;
+  height: 1.85rem;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  color: #7f8a96;
+}
+
+.solutions-strip-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .solutions-strip strong {
   color: var(--color-text);
   font-size: 0.93rem;
   line-height: 1;
 }
 
-.solutions-strip span {
+.solutions-strip span:not(.solutions-strip-icon) {
   color: var(--color-text-muted);
   font-size: 0.59rem;
   line-height: 1.22;
 }
 
+.solutions-strip-green .solutions-strip-icon,
 .solutions-strip-green strong {
   color: #40b54a;
+}
+
+.solutions-strip-leaf {
+  font-size: 1.5rem;
+  transform: rotate(-18deg);
 }
 
 .solutions-strip > a span {
@@ -253,26 +278,23 @@
   border-radius: 50%;
   background: var(--color-accent);
   color: #fff;
-  font-size: 0.77rem;
+  font-size: 0.78rem;
 }
 
 @media (max-width: 1280px) {
-  .solutions-inner {
-    width: min(1240px, calc(100% - 40px));
-  }
-
   .solutions-heading {
-    grid-template-columns: minmax(430px, 1.05fr) minmax(320px, 0.82fr) auto;
+    grid-template-columns: minmax(420px, 1.05fr) minmax(320px, 0.9fr) auto;
   }
 
   .solutions-heading h2 {
-    font-size: clamp(1.95rem, 2.35vw, 2.45rem);
+    font-size: clamp(1.95rem, 2.35vw, 2.4rem);
   }
 }
 
 @media (max-width: 1100px) {
   .solutions-inner {
     width: min(1180px, calc(100% - 40px));
+    padding-top: 3.3rem;
   }
 
   .solutions-heading {
@@ -293,10 +315,11 @@
 
   .solutions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
   }
 
   .solution-card {
-    min-height: 250px;
+    min-height: 235px;
   }
 
   .solution-card-copy {
@@ -304,16 +327,7 @@
   }
 
   .solution-media {
-    width: 62%;
-  }
-
-  .solution-card-image-industrial,
-  .solution-card-image-smart,
-  .solution-card-image-custom,
-  .solution-card-image-integration {
-    width: 100%;
-    right: -2%;
-    bottom: -4%;
+    width: 60%;
   }
 
   .solutions-strip {
@@ -340,26 +354,26 @@
   }
 
   .solution-card {
-    min-height: 300px;
+    min-height: 290px;
   }
 
   .solution-card-copy {
-    width: 52%;
+    width: 49%;
   }
 
   .solution-media {
-    width: 61%;
+    width: 63%;
   }
 }
 
 @media (max-width: 640px) {
   .solutions-inner {
     width: min(var(--container), calc(100% - 28px));
-    padding: 4.4rem 0 5rem;
+    padding: 4rem 0 4.7rem;
   }
 
   .solutions-heading h2 {
-    font-size: clamp(2.25rem, 10.8vw, 3.5rem);
+    font-size: clamp(2.2rem, 10.5vw, 3.4rem);
   }
 
   .solutions-strip {
