@@ -1,5 +1,21 @@
 {
   "schema_version": 1,
   "updated_at": "2026-09-21",
-  "projects": []
+  "projects": [
+    {
+      "id": "dscsc-network-cctv-2018",
+      "slug": "dscsc-network-cctv-infrastructure",
+      "title": "DSCSC Network & CCTV Infrastructure",
+      "year": 2018,
+      "date": {
+        "value": "2018-2019",
+        "precision": "range"
+      },
+      "client": "Defence Services Command and Staff College (DSCSC)",
+      "location": "Batalanda, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2018-dscsc-network-cctv-infrastructure.json"
+    }
+  ]
 }
