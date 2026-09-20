@@ -99,3 +99,25 @@ This file records architectural decisions so future sessions do not accidentally
 **Reference preference:** Of the reviewed inspiration images, the strongest reference is the fourth image: tall staggered white cards with different heights, minimal text, strong object imagery near the bottom, and a deliberately uneven spatial rhythm. The first three references reinforce the preference for clean white UI, floating/layered modules, soft depth and restrained accent color.
 
 **Reason:** This direction feels more distinctive, premium and approachable for a company spanning smart living, industrial automation and custom engineering, while giving EVO room to showcase real projects and products without making the whole site feel like a dark technology template.
+
+## D-020 — Final public visual reference locked
+**Decision:** Lock the second approved generated concept as the primary visual reference for EVO's public website direction.
+
+**Primary composition:**
+- Light/white premium canvas.
+- Large bold black headline with selective EVO orange emphasis.
+- Hero built around a sculptural smart-home model and industrial robot, not a full-bleed photographic background.
+- Floating rounded information cards arranged spatially around the main 3D objects.
+- Clean white platform/pedestal forms with soft shadows and subtle depth.
+- Solutions below the hero use object-led cards with restrained copy and generous negative space.
+- Orange remains the main action/engineering accent.
+
+**Brand color extension:**
+- The two green tones from the EVO leaf/logo are part of the approved theme and may be used selectively as a secondary accent family.
+- Green should support ideas such as smart living, sustainability, environment, energy efficiency, connected spaces and positive system status.
+- Green must not compete with orange as the primary accent; it should appear as a restrained complementary signal in icons, micro-lines, status indicators, leaves, small highlights or selected cards.
+- Avoid turning the interface into an orange-and-green multicolor theme. The base remains white + near-black + EVO orange, with the logo greens used intentionally.
+
+**Style rule:** Future public-site sections should feel like one visual system derived from this reference: premium, bright, spatial, minimal, object-led, slightly futuristic, and distinctive rather than generic corporate/SaaS.
+
+**Implementation note:** The generated reference is a design target, not a single flattened website image. Build the real page with HTML/CSS/components and separate visual assets so it remains responsive, editable, accessible and maintainable.
