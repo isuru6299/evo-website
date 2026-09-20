@@ -9,6 +9,8 @@
 .hero {
   padding-top: calc(var(--header-height) + 2.8rem);
   padding-bottom: 2rem;
+  overflow: visible;
+  background: linear-gradient(90deg, #fcfefd 0%, #fafbfc 46%, #f7f9fa 100%);
 }
 
 .hero-layout {
@@ -46,6 +48,7 @@
   overflow: visible;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
 
 .hero-visual-glow {
@@ -53,17 +56,19 @@
   height: 42%;
   left: 15%;
   bottom: 8%;
-  opacity: 0.7;
+  opacity: 0.45;
 }
 
 .hero-spatial-image {
+  display: block;
   width: min(100%, 920px);
   max-width: 920px;
   height: auto;
   margin: 0 auto;
   object-fit: contain;
   object-position: center;
-  filter: drop-shadow(0 24px 34px rgba(35, 47, 60, 0.08));
+  background: transparent;
+  filter: drop-shadow(0 24px 34px rgba(35, 47, 60, 0.06));
 }
 
 .hero-stats {
@@ -99,6 +104,7 @@
 
   .hero {
     padding-top: calc(var(--header-height) + 2.5rem);
+    background: linear-gradient(180deg, #fcfefd 0%, #f8fafb 100%);
   }
 
   .hero-layout {
