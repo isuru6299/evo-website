@@ -79,3 +79,23 @@ This file records architectural decisions so future sessions do not accidentally
 **Decision:** The owner confirmed the existing static website was only a test and did not need to remain live. It was removed from `main` so the repository can move directly to the EVO Digital Platform structure.
 
 **Safety:** The previous static prototype is preserved on the `legacy-static-test` branch. This decision supersedes D-017's requirement to keep the old prototype on `main`, while retaining recoverability.
+
+## D-019 — Public visual direction: light premium spatial system
+**Decision:** The default public EVO website direction is a light/white premium interface rather than a full dark theme.
+
+**Visual language:**
+- White and very light warm/neutral backgrounds with generous negative space.
+- Strong near-black typography with EVO orange used selectively for emphasis, CTAs and technical accents.
+- Rounded cards/panels with soft borders and soft realistic shadows; avoid heavy outlines and dark glass everywhere.
+- Prefer asymmetrical, staggered and layered compositions over repetitive equal-size card grids.
+- Cards may vary in height/width and visually overlap or step forward/back to create depth.
+- Use product/engineering visuals, devices, control interfaces, machinery details or refined 3D/photoreal objects as focal elements inside cards.
+- Allow objects/visuals to sit low in the card, crop naturally, or visually break the expected grid so the composition feels designed rather than templated.
+- Use subtle translucency/blur only where it adds depth; do not make glassmorphism the dominant style.
+- Keep UI clean and modern, but avoid generic SaaS-dashboard aesthetics.
+- The approved hero may keep its realistic smart-living + industrial image with a light fade/overlay because it communicates EVO immediately.
+- Dark backgrounds may still be used selectively for contrast-heavy media, industrial detail, footer, or special feature blocks, but not as the default whole-site theme.
+
+**Reference preference:** Of the reviewed inspiration images, the strongest reference is the fourth image: tall staggered white cards with different heights, minimal text, strong object imagery near the bottom, and a deliberately uneven spatial rhythm. The first three references reinforce the preference for clean white UI, floating/layered modules, soft depth and restrained accent color.
+
+**Reason:** This direction feels more distinctive, premium and approachable for a company spanning smart living, industrial automation and custom engineering, while giving EVO room to showcase real projects and products without making the whole site feel like a dark technology template.
