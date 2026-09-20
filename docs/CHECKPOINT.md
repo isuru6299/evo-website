@@ -1,8 +1,8 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Public Website v1 — Full Homepage First Pass Built**
+Checkpoint: **Public Website v1 — Full Multi-Page First Pass Built**
 
-Verified on Isuru's Windows development PC through 2026-09-21.
+Verified architecture and earlier local foundation through 2026-09-21. The new multi-page public website build has been committed and is awaiting the next local visual/build review.
 
 ## Completed foundation
 - Old static test website removed from `main` and preserved on `legacy-static-test`.
@@ -35,10 +35,9 @@ Verified on Isuru's Windows development PC through 2026-09-21.
 - `/api/v1/services` verified locally.
 - PostgreSQL query confirmed all four service records and visibility/status values.
 
-## Public Website v1 visual foundation
+## Homepage visual foundation
 - EVO light premium spatial design direction locked.
 - Bright cool-white website canvas locked to `#f5f8fa`.
-- Header/navigation established.
 - Final homepage hero approved and locked on 2026-09-21.
 - Hero headline locked: `Smarter Systems for a Brighter Tomorrow`.
 - Hero smart-home + industrial artwork, copy/image balance and synchronized four-edge fade treatment approved.
@@ -50,20 +49,42 @@ Verified on Isuru's Windows development PC through 2026-09-21.
   - Integrations & EVO VMS
 - Solutions compact proportions, image crops/positions, card copy, CTA styling, and bottom highlight strip are approved.
 - The corrected 02/03 top-edge image seam treatment is part of the locked implementation.
-- Hero and Solutions should not be reworked unless explicitly requested.
+- Hero and Solutions should not be visually reworked unless explicitly requested.
 
-## Homepage sections now implemented
-The first full homepage pass is now assembled in `apps/web` with:
+## Homepage sections implemented
 1. Hero — approved and locked
 2. Solutions — approved and locked
 3. Smart Living detail — first implementation
 4. Industrial Automation detail — first implementation
-5. Selected Projects — first implementation
-6. Company / About EVO — first implementation
+5. Selected Projects — first implementation with engineering illustrations
+6. Company / About EVO — first implementation in the light EVO theme
 7. Contact CTA — first implementation
 8. Footer — first implementation
 
-The new sections intentionally continue the locked EVO visual language: bright spatial canvas, clean white surfaces, orange engineering accent, restrained green smart-living accent, rounded technical cards and compact premium typography.
+## Public multi-page website now implemented
+Core routes:
+- `/`
+- `/solutions`
+- `/industries`
+- `/projects`
+- `/company`
+- `/contact`
+- `/404`
+
+Solution detail routes:
+- `/solutions/industrial-automation`
+- `/solutions/smart-living`
+- `/solutions/custom-engineering`
+- `/solutions/systems-integrations`
+
+Shared inner-page foundation:
+- `apps/web/src/layouts/InnerLayout.astro`
+- `apps/web/src/styles/inner-pages.css`
+- `apps/web/src/styles/site-shell.css`
+
+Navigation now points to real public routes, and a first-pass mobile navigation menu has been added. Homepage Hero and Solutions visuals were preserved while their CTA targets were connected to the new routes.
+
+See `docs/PUBLIC_SITE_MAP.md` for the route map and review plan.
 
 ## Current local stack
 - Web: Astro
@@ -75,16 +96,17 @@ The new sections intentionally continue the locked EVO visual language: bright s
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
 ## Next milestone
-**Public Website v1 — Full Homepage Visual Review + Responsive QA**
+**Public Website v1 — Full Route Build Review + Refinement**
 
-Review order:
-1. Smart Living detail
-2. Industrial Automation detail
-3. Projects
-4. Company
-5. Contact + Footer
-6. Desktop spacing consistency
-7. Tablet/mobile responsive polish
-8. Final homepage QA and approval
+Next review order:
+1. Pull latest `main` locally.
+2. Run Astro/Docker build and check all public routes.
+3. Fix any build, asset or responsive issues.
+4. Review inner-page visual consistency.
+5. Refine copy and project facts.
+6. Add/replace project imagery where needed.
+7. Connect contact inquiry flow to FastAPI/PostgreSQL.
+8. Final responsive QA.
+9. Production SEO and deployment configuration.
 
-Do not deploy or change `evo.lk` DNS yet. First locally review and approve the complete homepage visual foundation.
+Do not deploy or change `evo.lk` DNS yet. First locally review and approve the complete public website.
