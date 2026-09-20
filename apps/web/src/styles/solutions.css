@@ -1,10 +1,10 @@
 .solutions-section {
   position: relative;
   overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 138, 31, 0.08), transparent 26%),
-    linear-gradient(180deg, #0a0e12 0%, #0b1015 100%);
+    radial-gradient(circle at 12% 18%, rgba(255, 131, 24, 0.08), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f5f7f9 100%);
 }
 
 .solutions-section::after {
@@ -12,10 +12,10 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.18;
+  opacity: 0.28;
   background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    linear-gradient(rgba(17,24,39,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,24,39,.04) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: linear-gradient(to bottom, transparent, #000 28%, #000 72%, transparent);
 }
@@ -36,6 +36,7 @@
 .solutions-heading h2 {
   max-width: 850px;
   margin: 1rem 0 0;
+  color: var(--color-text);
   font-size: clamp(2.8rem, 5vw, 5.6rem);
   line-height: 0.96;
   letter-spacing: -0.058em;
@@ -63,11 +64,11 @@
   justify-content: space-between;
   padding: 1.6rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.105);
+  border: 1px solid rgba(17, 24, 39, 0.1);
   border-radius: 1.6rem;
-  background: linear-gradient(150deg, rgba(255,255,255,.065), rgba(255,255,255,.018));
-  box-shadow: 0 22px 60px rgba(0,0,0,.18);
-  transition: transform var(--transition-base), border-color var(--transition-base), background var(--transition-base);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 22px 60px rgba(31, 41, 55, 0.08);
+  transition: transform var(--transition-base), border-color var(--transition-base), background var(--transition-base), box-shadow var(--transition-base);
 }
 
 .solution-card::before {
@@ -77,31 +78,32 @@
   height: 55%;
   border-radius: 50%;
   filter: blur(48px);
-  opacity: 0.72;
+  opacity: 0.5;
   transition: opacity var(--transition-base), transform var(--transition-base);
 }
 
 .solution-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 138, 31, 0.35);
-  background: linear-gradient(150deg, rgba(255,255,255,.085), rgba(255,255,255,.025));
+  border-color: rgba(255, 131, 24, 0.32);
+  background: #ffffff;
+  box-shadow: 0 28px 70px rgba(31, 41, 55, 0.12);
 }
 
 .solution-card:hover::before {
-  opacity: 0.95;
+  opacity: 0.78;
   transform: scale(1.08);
 }
 
 .solution-card-industrial::before {
-  background: rgba(255, 138, 31, 0.14);
+  background: rgba(255, 131, 24, 0.13);
 }
 
 .solution-card-smart::before {
-  background: rgba(85, 143, 255, 0.13);
+  background: rgba(72, 132, 214, 0.11);
 }
 
 .solution-card-custom::before {
-  background: rgba(255, 184, 77, 0.11);
+  background: rgba(255, 184, 77, 0.1);
 }
 
 .solution-card-topline,
@@ -127,10 +129,10 @@
 
 .solution-status {
   padding: 0.42rem 0.65rem;
-  border: 1px solid rgba(255,255,255,.1);
+  border: 1px solid rgba(17,24,39,.1);
   border-radius: var(--radius-pill);
   color: var(--color-text-muted);
-  background: rgba(255,255,255,.025);
+  background: #f8fafb;
   font-size: 0.67rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -144,6 +146,7 @@
 
 .solution-card h3 {
   margin: 0;
+  color: var(--color-text);
   font-size: clamp(1.7rem, 2.4vw, 2.45rem);
   line-height: 1.02;
   letter-spacing: -0.045em;
@@ -164,10 +167,10 @@
 
 .solution-tags span {
   padding: 0.42rem 0.6rem;
-  border: 1px solid rgba(255,255,255,.085);
+  border: 1px solid rgba(17,24,39,.08);
   border-radius: var(--radius-pill);
   color: var(--color-text-muted);
-  background: rgba(7,10,13,.42);
+  background: #f7f9fb;
   font-size: 0.66rem;
   font-weight: 700;
 }
@@ -179,7 +182,7 @@
   gap: 1rem;
   margin-top: 1.65rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(17,24,39,.08);
   color: var(--color-text-soft);
   font-size: 0.82rem;
   font-weight: 800;
