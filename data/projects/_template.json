@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "",
+  "slug": "",
+  "title": "",
+  "year": null,
+  "date": {
+    "value": null,
+    "precision": "year",
+    "notes": null
+  },
+  "status": "archived",
+  "client": {
+    "name": null,
+    "publish_name": null,
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": null,
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": null,
+  "categories": [],
+  "tags": [],
+  "summary": "",
+  "problem": null,
+  "scope": [],
+  "technologies": [],
+  "equipment": [],
+  "outcome": null,
+  "evo_role": null,
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": null,
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [],
+  "verification": {
+    "confirmed_by_owner": [],
+    "photo_observations": [],
+    "needs_confirmation": [],
+    "do_not_claim": []
+  },
+  "source_notes": [],
+  "created_at": null,
+  "updated_at": null
+}
