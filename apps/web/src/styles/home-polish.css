@@ -54,21 +54,73 @@ main,
   color: var(--color-text-muted);
 }
 
-/* Project 04 keeps contrast without breaking the light theme. */
-.project-visual-dark {
+/* Selected work: replace placeholder geometry with clean engineering illustrations. */
+.project-card {
+  background: rgba(255, 255, 255, 0.96);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 131, 24, 0.2);
+  box-shadow: 0 20px 50px rgba(35, 47, 60, 0.075);
+}
+
+.project-visual-v2 {
+  height: 220px;
+  display: grid;
+  place-items: center;
   background:
-    radial-gradient(circle at 50% 58%, rgba(255, 131, 24, 0.10), transparent 34%),
-    linear-gradient(145deg, #ffffff 0%, #f1f4f6 100%);
+    radial-gradient(circle at 72% 48%, rgba(255, 131, 24, 0.075), transparent 31%),
+    linear-gradient(145deg, #ffffff 0%, #f5f8fa 100%);
 }
 
-.project-visual-dark span {
-  color: rgba(17, 24, 39, 0.48);
+.project-visual-v2::before,
+.project-visual-v2::after,
+.project-visual-v2 i {
+  display: none !important;
 }
 
-.project-visual-dark::before {
-  border: 1px solid rgba(17, 24, 39, 0.10);
-  background: linear-gradient(145deg, #252c33, #11171d);
-  box-shadow: 0 0 0 1px rgba(255, 131, 24, 0.28), 0 16px 30px rgba(35, 47, 60, 0.10);
+.project-visual-v2 span {
+  z-index: 3;
+}
+
+.project-visual-v2 svg {
+  width: 93%;
+  height: 93%;
+  overflow: visible;
+  filter: drop-shadow(0 14px 18px rgba(35, 47, 60, 0.065));
+}
+
+.project-visual-filling {
+  background:
+    radial-gradient(circle at 66% 50%, rgba(76, 187, 62, 0.08), transparent 30%),
+    linear-gradient(145deg, #ffffff 0%, #f4f8f5 100%);
+}
+
+.project-visual-weighing {
+  background:
+    linear-gradient(rgba(93, 106, 120, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(93, 106, 120, 0.055) 1px, transparent 1px),
+    linear-gradient(145deg, #ffffff 0%, #f6f8fa 100%);
+  background-size: 24px 24px, 24px 24px, auto;
+}
+
+.project-visual-upgrade {
+  background:
+    radial-gradient(circle at 50% 55%, rgba(255, 131, 24, 0.08), transparent 34%),
+    linear-gradient(145deg, #ffffff 0%, #f2f5f7 100%);
+}
+
+.project-copy {
+  min-height: 218px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-copy small {
+  margin-top: auto;
+  padding-top: 0.85rem;
 }
 
 /* Slightly tighten the first-pass detail sections on desktop. */
@@ -84,5 +136,21 @@ main,
   .contact-inner {
     padding-top: 5.6rem;
     padding-bottom: 5.8rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-visual-v2 {
+    height: 230px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-visual-v2 {
+    height: 205px;
+  }
+
+  .project-copy {
+    min-height: auto;
   }
 }
