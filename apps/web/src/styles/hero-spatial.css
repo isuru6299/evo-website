@@ -1,0 +1,151 @@
+/* Final hero polish for the locked EVO light spatial design direction.
+   Keep the approved visual intact: no cropping, no oversized type, no extra visual clutter. */
+
+.hero-layout,
+.hero-stats {
+  width: min(1360px, calc(100% - 56px));
+}
+
+.hero {
+  padding-top: calc(var(--header-height) + 2.8rem);
+  padding-bottom: 2rem;
+}
+
+.hero-layout {
+  grid-template-columns: minmax(430px, 0.88fr) minmax(620px, 1.28fr);
+  gap: clamp(1.5rem, 2.8vw, 3.2rem);
+}
+
+.hero-copy {
+  padding: 1.1rem 0 0.75rem;
+}
+
+.hero-copy h1 {
+  max-width: 650px;
+  margin-top: 1rem;
+  font-size: clamp(3.35rem, 4.65vw, 5.65rem);
+  line-height: 0.94;
+  letter-spacing: -0.058em;
+}
+
+.hero-lead {
+  max-width: 560px;
+  margin-top: 1.35rem;
+}
+
+.hero-actions {
+  margin-top: 1.45rem;
+}
+
+.hero-principles {
+  margin-top: 1.45rem;
+}
+
+.hero-visual {
+  min-height: 510px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual-glow {
+  width: 70%;
+  height: 42%;
+  left: 15%;
+  bottom: 8%;
+  opacity: 0.7;
+}
+
+.hero-spatial-image {
+  width: min(100%, 920px);
+  max-width: 920px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 24px 34px rgba(35, 47, 60, 0.08));
+}
+
+.hero-stats {
+  margin-top: 0.9rem;
+}
+
+@media (max-width: 1220px) {
+  .hero-layout,
+  .hero-stats {
+    width: min(1180px, calc(100% - 44px));
+  }
+
+  .hero-layout {
+    grid-template-columns: minmax(390px, 0.9fr) minmax(520px, 1.12fr);
+    gap: 1.5rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3.2rem, 4.8vw, 5rem);
+  }
+
+  .hero-spatial-image {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-layout,
+  .hero-stats {
+    width: min(var(--container), calc(100% - 40px));
+  }
+
+  .hero {
+    padding-top: calc(var(--header-height) + 2.5rem);
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hero-copy {
+    padding-top: 0.5rem;
+  }
+
+  .hero-copy h1 {
+    max-width: 720px;
+  }
+
+  .hero-visual {
+    min-height: auto;
+    margin-top: 0.25rem;
+  }
+
+  .hero-spatial-image {
+    width: min(100%, 860px);
+    max-width: 860px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-layout,
+  .hero-stats {
+    width: min(var(--container), calc(100% - 28px));
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.8rem, 13vw, 4.35rem);
+    line-height: 0.95;
+  }
+
+  .hero-lead {
+    margin-top: 1.15rem;
+  }
+
+  .hero-principles {
+    margin-top: 1.2rem;
+  }
+
+  .hero-spatial-image {
+    width: 100%;
+  }
+}
