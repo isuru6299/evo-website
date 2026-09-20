@@ -16,6 +16,10 @@ import Projects from '../components/Projects.astro';
 import Company from '../components/Company.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import SeoHead from '../components/SeoHead.astro';
+
+const title = 'EVO | Engineering, Automation & Smart Living';
+const description = 'EVO brings together industrial automation, smart living, custom engineering and connected technical systems in one modern engineering platform.';
 ---
 
 <html lang="en">
@@ -23,11 +27,7 @@ import Footer from '../components/Footer.astro';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f8fa" />
-    <title>EVO | Engineering, Automation & Smart Living</title>
-    <meta
-      name="description"
-      content="EVO brings together industrial automation, smart living, custom engineering and connected technical systems in one modern engineering platform."
-    />
+    <SeoHead title={title} description={description} />
   </head>
   <body id="top">
     <SiteHeader />
