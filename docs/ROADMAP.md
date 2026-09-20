@@ -8,7 +8,7 @@
 - FastAPI backend scaffold exists in `apps/api`.
 - PostgreSQL and all applications are wired through `docker-compose.yml`.
 - Canonical project memory lives in `docs/`.
-- The stack has not yet been cloned and verified on Isuru's local PC; that is the next checkpoint.
+- The full local development stack has been verified on Isuru's Windows PC with WSL2 + Docker Desktop.
 
 ## Phase 0 — Preserve and document
 - [x] Keep the existing repository.
@@ -17,12 +17,13 @@
 - [x] Remove the old test site from `main` and establish the new platform structure.
 
 ## Phase 1 — Local development foundation
-- [ ] Install/verify Docker Desktop and Git on the local PC.
+- [x] Install/verify Docker Desktop and Git on the local PC.
 - [x] Add `docker-compose.yml`.
 - [x] Add local PostgreSQL service.
 - [x] Establish environment-variable pattern and `.env.example`.
 - [x] Define one-command local startup target: `docker compose up --build`.
-- [ ] Clone to the local PC and verify all four services actually start.
+- [x] Clone to the local PC and verify all four services actually start.
+- [x] Verify Astro web, React admin, FastAPI root/docs, and PostgreSQL health locally.
 
 ## Phase 2 — Public website / Astro
 - [x] Create `apps/web` Astro project scaffold.
@@ -111,4 +112,10 @@
 - [ ] Add subdomains only as services actually need them.
 
 ## Delivery rule
-Work phase-by-phase and checkpoint working states. The immediate next milestone is **Local Foundation Verified**: clone this repository to the development PC and confirm web, admin, API and PostgreSQL all start together.
+Work phase-by-phase and checkpoint working states.
+
+The immediate next milestone is **Core Platform Foundation v1**:
+1. define production design-system tokens,
+2. configure Alembic migrations,
+3. create the first real database models for organizations and the service/catalog registry,
+4. keep the public website modular and section-by-section.
