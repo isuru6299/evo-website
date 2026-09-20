@@ -4,10 +4,16 @@ import '../styles/global.css';
 import '../styles/hero-spatial.css';
 import '../styles/solutions.css';
 import '../styles/smart-living.css';
+import '../styles/home-sections.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import Hero from '../components/Hero.astro';
 import Solutions from '../components/Solutions.astro';
 import SmartLiving from '../components/SmartLiving.astro';
+import Industrial from '../components/Industrial.astro';
+import Projects from '../components/Projects.astro';
+import Company from '../components/Company.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -18,15 +24,20 @@ import SmartLiving from '../components/SmartLiving.astro';
     <title>EVO | Engineering, Automation & Smart Living</title>
     <meta
       name="description"
-      content="EVO brings together industrial automation, smart living, and custom engineering solutions in one modern engineering platform."
+      content="EVO brings together industrial automation, smart living, custom engineering and connected technical systems in one modern engineering platform."
     />
   </head>
-  <body>
+  <body id="top">
     <SiteHeader />
     <main>
       <Hero />
       <Solutions />
       <SmartLiving />
+      <Industrial />
+      <Projects />
+      <Company />
+      <Contact />
     </main>
+    <Footer />
   </body>
 </html>
