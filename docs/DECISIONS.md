@@ -141,3 +141,15 @@ This file records architectural decisions so future sessions do not accidentally
 - Prefer proportion, spacing and clarity over adding more visual elements.
 
 **Reason:** The approved reference was chosen specifically because it is simple, brilliant and balanced. Implementation should reproduce that character rather than reinterpret it.
+
+## D-023 — Bright clean website background locked
+**Decision:** Lock the public website base background to the bright, clean cool-white studio tone used around the approved hero artwork. The design token is `#f5f8fa`.
+
+**Rules:**
+- Do not move the public site back toward dark, warm-grey or visibly tinted page backgrounds unless explicitly approved.
+- Hero artwork edges should visually dissolve into the page background rather than appear as a rectangular image/card.
+- Preserve the full hero artwork; use CSS edge feathering/blending instead of cropping the artwork to hide its background.
+- White elevated cards may remain brighter than the base canvas to preserve depth.
+- EVO orange stays the primary accent; logo greens remain restrained secondary accents.
+
+**Reason:** The owner specifically prefers the bright clean studio background visible inside the approved hero artwork and wants the surrounding website to feel like the same continuous canvas.
