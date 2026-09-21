@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "asian-group-xk45mt-3b-cnc-modernization-2026",
+  "slug": "asian-group-xk45mt-3b-cnc-modernization",
+  "title": "Asian Group – XK45MT-3B CNC Router Modernization",
+  "year": 2026,
+  "date": {
+    "value": "2025-11 to 2026-06",
+    "precision": "evidence_range",
+    "notes": "Supplied photos include November 2025 and May 2026 dates, and a related technical invoice is dated 21/06/2026. Exact project start/end dates were not separately confirmed by the owner."
+  },
+  "status": "archived",
+  "client": {
+    "name": "Asian Group of Companies (Pvt) Ltd",
+    "publish_name": "Asian Group of Companies (Pvt) Ltd",
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Kohilawatta Factory",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Woodworking and furniture manufacturing",
+  "categories": [
+    "CNC Machine Repair, Modernization & Recommissioning",
+    "Industrial Automation",
+    "Control System Retrofit",
+    "Electrical & Electronic Repair"
+  ],
+  "tags": [
+    "CNC router",
+    "XK45MT-3B",
+    "NCStudio",
+    "Mach3",
+    "motion control",
+    "control panel redesign",
+    "VFD",
+    "spindle motor",
+    "machine calibration",
+    "retrofit"
+  ],
+  "summary": "Modernization and restoration of an approximately 25-year-old XK45MT-3B three-spindle CNC router at Asian Group of Companies, Kohilawatta. The original NCStudio-based control platform was converted to Mach3, with control-panel redesign and rewiring, motion-control and parallel-interface integration, Mach3 configuration, three-spindle/VFD setup, electrical and pneumatic repairs, machine calibration, testing and recommissioning. The completed machine was handed over in working condition.",
+  "problem": "An aging CNC router required control-system modernization and restoration, including replacement of the original NCStudio-based control approach with a maintainable Mach3-based control solution and repair/configuration of related spindle, VFD, electrical and pneumatic systems.",
+  "scope": [
+    "NCStudio to Mach3 control-system conversion",
+    "Control-panel redesign and rewiring",
+    "Motion-controller setup and integration",
+    "Parallel/control-interface board repair, modification and integration",
+    "Mach3 software configuration",
+    "Three VFD setup, service, repair or replacement as required",
+    "Three spindle motor service and repair",
+    "Electrical system repair",
+    "Pneumatic system repair",
+    "Machine calibration",
+    "Final testing and recommissioning",
+    "Working-condition handover"
+  ],
+  "technologies": [
+    "Mach3 CNC control",
+    "NCStudio legacy CNC control",
+    "CNC motion control",
+    "Variable-frequency drives",
+    "Three-spindle CNC architecture",
+    "Industrial control-panel wiring",
+    "Parallel/control interface integration",
+    "Machine calibration"
+  ],
+  "equipment": [
+    "XK45MT-3B CNC Router",
+    "Three spindle motors",
+    "Three VFD units",
+    "Motion-control interface hardware",
+    "Parallel/control interface board",
+    "Industrial control-panel components"
+  ],
+  "outcome": "The NCStudio-based machine was converted to Mach3, calibrated, tested and handed over in working condition, as confirmed by the owner.",
+  "evo_role": "CNC control-system modernization, panel redesign/rewiring, motion-control integration, VFD and spindle work, electrical/pneumatic repair, calibration and recommissioning.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Modernization of an approximately 25-year-old three-spindle CNC router, converting the legacy NCStudio control system to Mach3 with panel redesign, motion-control integration, VFD/spindle work, calibration and recommissioning.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "IMG_20251119_175722_114.jpg",
+      "role": "machine",
+      "description": "XK45MT-3B CNC router / legacy control-system project photo.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20251119_174842_623.jpg",
+      "role": "panel",
+      "description": "CNC machine control cabinet and drive/control hardware.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20260504_105140_116.jpg",
+      "role": "result",
+      "description": "Later-stage CNC modernization / recommissioning project photo.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "The client was Asian Group of Companies (Pvt) Ltd.",
+      "This was a separate CNC modernization project and was not part of the flood-damage recovery project.",
+      "The machine was approximately 25 years old.",
+      "The original NCStudio control system was converted to Mach3.",
+      "The scope included control-panel redesign/rewiring, a new motion-control/parallel interface, Mach3 configuration, three VFD/spindle setup and calibration.",
+      "The machine was completed and handed over in working condition."
+    ],
+    "photo_observations": [
+      "Supplied photographs show the XK45MT-3B CNC machine/control hardware and an industrial CNC control cabinet.",
+      "The photographed system contains multiple drive/control components consistent with a multi-spindle CNC installation.",
+      "One supplied image is dated November 2025 and another May 2026 by filename."
+    ],
+    "needs_confirmation": [
+      "Exact project start and completion dates.",
+      "Permission to publish the client name and Kohilawatta factory location.",
+      "Exact Mach3 motion-controller model, if it is to be named publicly.",
+      "Which project photographs are approved for public website use."
+    ],
+    "do_not_claim": [
+      "Do not state an exact machine manufacturing year; the owner described it as approximately 25 years old.",
+      "Do not invent the exact Mach3 controller/interface model.",
+      "Do not publish detailed internal wiring or machine-control information unnecessarily."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history, technical scope and completion/handover confirmation in chat.",
+    "Owner-provided photographs reviewed as visual evidence.",
+    "Related technical service invoice dated 21/06/2026 documents XK45MT-3B work including three spindle motors, three VFD units, motion-controller setup, parallel-board work, electrical/pneumatic repairs, calibration and testing.",
+    "Mach3 conversion and panel-redesign details are owner-confirmed facts and are not derived solely from the invoice."
+  ],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
