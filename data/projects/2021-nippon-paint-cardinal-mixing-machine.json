@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "nippon-paint-cardinal-mixing-machine-2021",
+  "slug": "nippon-paint-cardinal-mixing-machine",
+  "title": "Nippon Paint – Cardinal Mixing Machine Automation",
+  "year": 2021,
+  "date": {
+    "value": "2021-2022",
+    "precision": "approximate_range",
+    "notes": "Owner recalls the project as approximately 2021-2022. Supplied panel-photo filenames indicate later capture dates and are not treated as project completion dates."
+  },
+  "status": "archived",
+  "client": {
+    "name": "Nippon Paint",
+    "publish_name": "Nippon Paint",
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Matara",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Paint manufacturing / industrial production",
+  "categories": [
+    "Custom Machinery & Industrial Automation"
+  ],
+  "tags": [
+    "industrial automation",
+    "custom machinery",
+    "control panel",
+    "mixing machine",
+    "motor control",
+    "pre-EVO"
+  ],
+  "summary": "A custom industrial automation and control-panel project for a Cardinal mixing machine at Nippon Paint, Matara. The work involved a purpose-built electrical control panel and machine-control integration for the mixing process.",
+  "problem": null,
+  "scope": [
+    "Custom industrial control-panel work",
+    "Machine-control integration for a Cardinal mixing machine",
+    "Electrical control and motor/drive-related integration"
+  ],
+  "technologies": [
+    "Industrial electrical control",
+    "Motor/drive control",
+    "PLC/logic-based machine control"
+  ],
+  "equipment": [],
+  "outcome": null,
+  "evo_role": "Pre-EVO professional custom machinery and industrial automation experience. This project predates EVO (Pvt) Ltd.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Custom industrial automation and control-panel work for a Cardinal mixing machine at Nippon Paint, Matara.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "IMG_20230328_115927.jpg",
+      "role": "panel",
+      "description": "Custom industrial control panel with protection, control, drive-related and interface components visible.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20230328_020130.jpg",
+      "role": "detail",
+      "description": "Control-panel door wiring and multiple control/interface modules.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "The project was for Nippon Paint in Matara.",
+      "The machine was a Cardinal mixing machine.",
+      "The project period is remembered as approximately 2021-2022.",
+      "The supplied large control-panel photographs relate to this Nippon Paint machine project."
+    ],
+    "photo_observations": [
+      "A custom electrical control enclosure is visible.",
+      "Motor/drive-related control equipment, circuit protection, terminal blocks, interface/control modules and organized wire ducting are visible.",
+      "Multiple door-mounted control/interface modules and switch-contact assemblies are visible.",
+      "A cooling fan and panel earthing/wiring arrangements are visible."
+    ],
+    "needs_confirmation": [
+      "Exact project completion date.",
+      "Exact detailed scope such as panel design, PLC programming, fabrication, field wiring and commissioning responsibilities.",
+      "Exact model numbers of the control devices if they are to be published.",
+      "Permission to publish the client name and project location.",
+      "Which project photographs are approved for public website use."
+    ],
+    "do_not_claim": [
+      "Do not claim an exact completion date beyond the owner's approximate 2021-2022 recollection.",
+      "Do not claim exact device models from the photographs unless readable or later confirmed.",
+      "Do not claim a final performance result unless later confirmed by the owner."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project description and role clarification in chat.",
+    "Owner-provided control-panel photographs reviewed as visual evidence.",
+    "Photo capture/file dates are not treated as project completion dates."
+  ],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
