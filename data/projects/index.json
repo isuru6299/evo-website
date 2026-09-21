@@ -196,6 +196,21 @@
       "status": "ongoing",
       "website_publish": false,
       "record_path": "data/projects/2026-asian-group-cncbuild-1530-cnc-diagnosis.json"
+    },
+    {
+      "id": "british-school-colombo-server-room-rack-cable-management-2026",
+      "slug": "british-school-colombo-server-room-rack-cable-management",
+      "title": "The British School in Colombo – Server Room Rack Neatening & Cable Management",
+      "year": 2026,
+      "date": {
+        "value": "2026",
+        "precision": "year"
+      },
+      "client": "The British School in Colombo",
+      "location": "Colombo, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2026-british-school-colombo-server-room-rack-cable-management.json"
     }
   ]
 }
