@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "asian-group-flood-machinery-recovery-2025",
+  "slug": "asian-group-flood-machinery-recovery",
+  "title": "Asian Group – Flood-Damaged Industrial Machinery Recovery & Recommissioning",
+  "year": 2025,
+  "date": {
+    "value": "2025-12 to 2026-01",
+    "precision": "photo_evidence_range",
+    "notes": "Owner identified this as the recent flood-recovery job. Supplied photo filenames span December 2025 to January 2026; the exact project start/end dates were not explicitly confirmed."
+  },
+  "status": "archived",
+  "client": {
+    "name": "Asian Group of Companies (Pvt) Ltd",
+    "publish_name": "Asian Group of Companies (Pvt) Ltd",
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Kohilawatta Factory",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Woodworking and furniture manufacturing",
+  "categories": [
+    "Industrial Machinery Repair & Recovery",
+    "Industrial Automation Service",
+    "Electrical & Electronic Repair",
+    "CNC & Woodworking Machinery"
+  ],
+  "tags": [
+    "flood recovery",
+    "machine repair",
+    "woodworking machinery",
+    "CNC",
+    "edge banding",
+    "automatic table saw",
+    "VFD",
+    "servo motor",
+    "induction motor",
+    "control panel",
+    "recommissioning"
+  ],
+  "summary": "A large-scale recovery, repair and servicing project carried out on multiple flood-affected industrial woodworking machines at the Asian Group of Companies factory in Kohilawatta. The work covered inspection, electrical and electronic troubleshooting, servicing, repair, component replacement and recommissioning across machine power and control systems. Equipment handled included edge-banding machines, CNC hole-cutting machines, automatic table saws and other production machinery. The recovery scope included VFDs, contactors, servo motors, induction motors, panel boards and associated electrical/electronic components.",
+  "problem": "Multiple industrial woodworking machines and their electrical/electronic control systems were affected by flood water and moisture damage, requiring inspection, fault finding, repair, servicing and component replacement.",
+  "scope": [
+    "Flood-damaged industrial machinery inspection and recovery",
+    "Electrical troubleshooting and repair",
+    "Electronic control-system troubleshooting and repair",
+    "VFD servicing, repair and replacement where required",
+    "Contactor servicing and replacement where required",
+    "Servo motor servicing and repair",
+    "Induction motor servicing and repair",
+    "Panel board servicing and repair",
+    "Electrical and electronic component servicing, repair and replacement",
+    "Machine control-system servicing",
+    "Machine recommissioning work",
+    "Edge-banding machine repair and service",
+    "CNC hole-cutting machine repair and service",
+    "Automatic table saw repair and service",
+    "Repair and servicing of additional factory production machinery"
+  ],
+  "technologies": [
+    "Industrial motor control",
+    "Variable-frequency drives",
+    "Servo systems",
+    "Induction motors",
+    "Industrial control panels",
+    "CNC machine controls",
+    "Industrial electrical protection and switching",
+    "Machine control electronics"
+  ],
+  "equipment": [
+    "VFDs",
+    "Contactors",
+    "Servo motors",
+    "Induction motors",
+    "Industrial panel boards",
+    "Machine control PCBs and electronic modules",
+    "CNC and woodworking machine control hardware"
+  ],
+  "outcome": "A broad recovery and repair program was carried out across multiple flood-affected machines. Exact final status and replaced-part counts for each individual machine have not yet been documented in the archive.",
+  "evo_role": "Industrial machinery repair, electrical/electronic troubleshooting, component servicing and replacement, and machine recovery/recommissioning work.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Large-scale repair and recovery of flood-affected industrial production machinery, covering VFDs, contactors, servo and induction motors, control panels, electronic components and machine-control systems across multiple woodworking machines.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "IMG_20260113_172419_214.jpg",
+      "role": "detail",
+      "description": "Flood/moisture-damaged machine control PCB showing visible corrosion and oxidation.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20260107_140606_835.jpg",
+      "role": "panel",
+      "description": "Industrial power/control panel with contactors, protection devices and visible corrosion at the cabinet base.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20251215_160253_655.jpg",
+      "role": "panel",
+      "description": "Machine control cabinet with multiple drive/control modules, industrial computer hardware, power supplies and field wiring.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "Client was Asian Group of Companies (Pvt) Ltd at the Kohilawatta factory.",
+      "The project involved repair and servicing of machines affected by the recent flood.",
+      "Machines included edge-banding machines, CNC hole cutters, automatic table saws and many other factory machines.",
+      "Work included servicing, repair and replacement of VFDs, contactors, servo motors, induction motors, panel boards and associated components.",
+      "This was a large repair and recovery job across multiple machines.",
+      "Additional machine and final-condition photos can be obtained later from the factory."
+    ],
+    "photo_observations": [
+      "One machine control PCB shows substantial corrosion/oxidation and rusted mounting hardware.",
+      "One industrial panel shows large contactors/protection equipment and visible corrosion or rusting near the cabinet base.",
+      "One machine control cabinet contains multiple YAKO-branded drive/control modules, industrial computer/control hardware, power supplies and extensive field wiring.",
+      "The visible condition of the photographed equipment is consistent with moisture/flood exposure, but the exact cause of each component failure cannot be established from photographs alone."
+    ],
+    "needs_confirmation": [
+      "Exact project start and completion dates.",
+      "Permission to publish the client name and factory location on the public EVO website.",
+      "Which repaired-machine and final-condition photographs are approved for public use.",
+      "Exact final operational status and replaced-part quantities for individual machines, if these are to be claimed publicly."
+    ],
+    "do_not_claim": [
+      "Do not invent exact replaced-part counts or machine quantities.",
+      "Do not claim exact fault causes for individual electronic components based only on photos.",
+      "Do not claim that every affected machine was fully restored unless the owner later confirms that outcome.",
+      "Do not publish internal factory electrical details or sensitive machine-control information unnecessarily."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history and scope in chat.",
+    "Owner-provided photographs reviewed as visual evidence.",
+    "Supplied photo filenames indicate December 2025 and January 2026, but exact project dates remain to be explicitly confirmed.",
+    "More complete machine and post-repair photographs are expected to be available later."
+  ],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
