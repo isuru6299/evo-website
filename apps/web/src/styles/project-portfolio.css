@@ -90,6 +90,13 @@
   border-radius: 0;
 }
 
+.page-hero-visual > .project-media-placeholder {
+  position: absolute;
+  inset: 1.1rem;
+  min-height: 0;
+  border-radius: 1.45rem;
+}
+
 .portfolio-home-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
