@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "shampoo-bottle-sticker-labeling-machine-undated",
+  "slug": "shampoo-bottle-sticker-labeling-machine",
+  "title": "Shampoo Bottle Automatic Sticker Labeling Machine",
+  "year": null,
+  "date": {
+    "value": null,
+    "precision": "unknown",
+    "notes": "Exact project date not yet confirmed."
+  },
+  "status": "archived",
+  "client": {
+    "name": null,
+    "publish_name": null,
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": null,
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Personal care packaging",
+  "categories": ["Custom Machinery & Industrial Automation"],
+  "tags": ["custom machinery", "industrial automation", "labeling machine", "sticker labeling", "bottle automation", "shampoo packaging"],
+  "summary": "A custom automatic sticker labeling machine developed for shampoo bottle packaging operations.",
+  "problem": null,
+  "scope": ["Custom automatic sticker labeling machine project for shampoo bottles"],
+  "technologies": ["Industrial automation", "Packaging machinery", "Automatic labeling"],
+  "equipment": [],
+  "outcome": null,
+  "evo_role": "Professional custom machinery and industrial automation project archived for future EVO portfolio use; client, date and exact business context remain to be confirmed.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Custom automatic sticker labeling machinery for shampoo bottle packaging.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [],
+  "verification": {
+    "confirmed_by_owner": ["A shampoo bottle automatic sticker labeling machine was completed."],
+    "photo_observations": [],
+    "needs_confirmation": ["Client name.", "Project location.", "Project year/date.", "Detailed machine design, fabrication, electrical/control and commissioning scope.", "Approved project photos/videos for public use."],
+    "do_not_claim": ["Do not invent labeling speed, bottle sizes, label dimensions, accuracy figures or client identity."]
+  },
+  "source_notes": ["Owner-provided project history in chat."],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
