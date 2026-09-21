@@ -151,6 +151,21 @@
       "status": "archived",
       "website_publish": false,
       "record_path": "data/projects/undated-wet-glue-labeling-machine.json"
+    },
+    {
+      "id": "asian-group-flood-machinery-recovery-2025",
+      "slug": "asian-group-flood-machinery-recovery",
+      "title": "Asian Group – Flood-Damaged Industrial Machinery Recovery & Recommissioning",
+      "year": 2025,
+      "date": {
+        "value": "2025-12 to 2026-01",
+        "precision": "photo_evidence_range"
+      },
+      "client": "Asian Group of Companies (Pvt) Ltd",
+      "location": "Kohilawatta Factory, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2025-asian-group-flood-machinery-recovery.json"
     }
   ]
 }
