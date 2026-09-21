@@ -211,6 +211,21 @@
       "status": "archived",
       "website_publish": false,
       "record_path": "data/projects/2026-british-school-colombo-server-room-rack-cable-management.json"
+    },
+    {
+      "id": "kollupitiya-residence-myhome-recovery-modernization-2026",
+      "slug": "kollupitiya-residence-myhome-recovery-modernization",
+      "title": "Kollupitiya Residence – Legrand / BTicino MyHOME System Recovery & Modernization",
+      "year": 2026,
+      "date": {
+        "value": "2026",
+        "precision": "year"
+      },
+      "client": "Private Residence",
+      "location": "Kollupitiya, Colombo, Sri Lanka",
+      "status": "ongoing",
+      "website_publish": false,
+      "record_path": "data/projects/2026-kollupitiya-residence-myhome-recovery-modernization.json"
     }
   ]
 }
