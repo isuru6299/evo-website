@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "british-school-colombo-server-room-rack-cable-management-2026",
+  "slug": "british-school-colombo-server-room-rack-cable-management",
+  "title": "The British School in Colombo – Server Room Rack Neatening & Cable Management",
+  "year": 2026,
+  "date": {
+    "value": "2026",
+    "precision": "year",
+    "notes": "Project year confirmed by the owner; exact project date has not been recorded."
+  },
+  "status": "archived",
+  "client": {
+    "name": "The British School in Colombo",
+    "publish_name": "The British School in Colombo",
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Colombo",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Education",
+  "categories": [
+    "Network Infrastructure & Wi-Fi",
+    "Server Room & Rack Management",
+    "Structured Cabling & Cable Management"
+  ],
+  "tags": [
+    "network rack",
+    "server room",
+    "cable management",
+    "rack neatening",
+    "patch cord management",
+    "network infrastructure",
+    "structured cabling"
+  ],
+  "summary": "Server-room network rack reorganization and cable-management work carried out at The British School in Colombo. The scope focused on neatening the existing rack, reorganizing patch cords, improving cable routing and arranging existing rack equipment in a more orderly and serviceable layout without changing the network design.",
+  "problem": "The existing server-room network rack had congested and disorganized cabling that required cleanup and better cable routing and organization.",
+  "scope": [
+    "Existing server-room network rack neatening",
+    "Patch-cord reorganization",
+    "Cable routing and cable management",
+    "Rack equipment arrangement cleanup",
+    "Reorganization of existing network connections without redesigning the network"
+  ],
+  "technologies": [
+    "Network rack organization",
+    "Structured cabling",
+    "Patch-cord management",
+    "Server-room cable management"
+  ],
+  "equipment": [
+    "Existing network rack",
+    "Patch panels",
+    "Network switches",
+    "Horizontal cable managers",
+    "Existing network patch cords"
+  ],
+  "outcome": "The existing rack and patching were reorganized into a substantially cleaner and more orderly layout, improving physical serviceability and cable organization.",
+  "evo_role": "Server-room network rack neatening, patch-cord reorganization and cable management only.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Reorganization and cable-management work for an existing server-room network rack at The British School in Colombo, improving rack layout, patch-cord routing and overall serviceability without altering the existing network design.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "WhatsApp Image 2026-09-22 at 1.23.46 AM (1).jpeg",
+      "role": "before",
+      "description": "Server-room network rack before cleanup, showing congested and loosely routed patch cords and cabling.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "WhatsApp Image 2026-09-22 at 1.23.46 AM.jpeg",
+      "role": "after",
+      "description": "Server-room network rack after reorganization, showing improved cable routing and use of horizontal cable-management covers.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "The project was completed at The British School in Colombo in 2026.",
+      "The owner's scope was rack neatening and cable management in the server room.",
+      "The work included organizing existing patch cords, cable routing and rack layout.",
+      "Firewall replacement and the five Starlink connections were not part of the owner's scope."
+    ],
+    "photo_observations": [
+      "The before photo shows a rack with congested and loosely routed copper/fiber patching and cabling.",
+      "The after photo shows a substantially cleaner rack layout with horizontal cable-management covers and more orderly cable routing.",
+      "Rack-mounted patch panels and network switching equipment are visible in both photos."
+    ],
+    "needs_confirmation": [
+      "Exact project date within 2026.",
+      "Permission to publish the client name and project photos on the public EVO website."
+    ],
+    "do_not_claim": [
+      "Do not claim firewall replacement, firewall configuration or firewall integration as part of this project's scope.",
+      "Do not claim installation, configuration or integration of the five Starlink connections as part of this project's scope.",
+      "Do not claim a full network redesign or network architecture change.",
+      "Do not infer exact switch, firewall or cabling models unless separately confirmed."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history and scope in chat.",
+    "Owner-provided before and after photographs reviewed as visual evidence.",
+    "Firewall upgrade and five Starlink links were present as site context only and were explicitly excluded from the owner's work scope.",
+    "Original photos are referenced as evidence and have not been copied into the repository."
+  ],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
