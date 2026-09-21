@@ -6,14 +6,14 @@ import { portfolioProjects } from '../data/projectPortfolio';
 
 <InnerLayout
   title="Projects | EVO"
-  description="Selected real engineering, automation, CNC modernization, machinery recovery and infrastructure projects from the EVO project archive."
+  description="Selected real engineering, automation, CNC modernization, machinery recovery, smart living and infrastructure projects from the EVO project archive."
 >
   <section class="page-hero">
     <div class="container page-hero-inner">
       <div class="page-hero-copy">
         <p class="eyebrow">REAL PROJECT PORTFOLIO</p>
         <h1>Engineering proven in <span>real working environments.</span></h1>
-        <p>Selected real projects from our growing archive, spanning CNC modernization, industrial machinery recovery, automation and technical infrastructure. Approved project photography will be added into the reserved media spaces as the portfolio is prepared for public release.</p>
+        <p>Selected real projects from our growing archive, spanning CNC modernization, industrial machinery recovery, automation, smart living and technical infrastructure. Approved project photography will be added into the reserved media spaces as the portfolio is prepared for public release.</p>
         <div class="page-hero-actions">
           <a class="page-button page-button-primary" href="/contact">Start a Project ↗</a>
           <a class="page-button page-button-secondary" href="/solutions">Explore Solutions</a>
@@ -43,7 +43,7 @@ import { portfolioProjects } from '../data/projectPortfolio';
             <div class="portfolio-list-copy">
               <div class="portfolio-list-meta">
                 <span>{project.category}</span>
-                <span class="portfolio-card-badge">{project.period}</span>
+                <span class="portfolio-card-badge">{project.status === 'Ongoing' ? `ONGOING · ${project.period}` : project.period}</span>
               </div>
               <h3>{project.title}</h3>
               <p>{project.summary}</p>
