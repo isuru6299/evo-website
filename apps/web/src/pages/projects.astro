@@ -1,36 +1,71 @@
 ---
 import InnerLayout from '../layouts/InnerLayout.astro';
+import ProjectPlaceholder from '../components/ProjectPlaceholder.astro';
+import { portfolioProjects } from '../data/projectPortfolio';
 ---
 
 <InnerLayout
   title="Projects | EVO"
-  description="Selected EVO engineering, automation and machine development projects."
+  description="Selected real engineering, automation, CNC modernization, machinery recovery and infrastructure projects from the EVO project archive."
 >
   <section class="page-hero">
     <div class="container page-hero-inner">
       <div class="page-hero-copy">
-        <p class="eyebrow">SELECTED WORK</p>
-        <h1>Engineering that moves from <span>idea to impact.</span></h1>
-        <p>A selection of automation, machine development, upgrades and technical problem-solving work that shows how EVO approaches real production challenges.</p>
-        <div class="page-hero-actions"><a class="page-button page-button-primary" href="/contact">Start a Project ↗</a><a class="page-button page-button-secondary" href="/solutions">Explore Solutions</a></div>
+        <p class="eyebrow">REAL PROJECT PORTFOLIO</p>
+        <h1>Engineering proven in <span>real working environments.</span></h1>
+        <p>Selected real projects from our growing archive, spanning CNC modernization, industrial machinery recovery, automation and technical infrastructure. Approved project photography will be added into the reserved media spaces as the portfolio is prepared for public release.</p>
+        <div class="page-hero-actions">
+          <a class="page-button page-button-primary" href="/contact">Start a Project ↗</a>
+          <a class="page-button page-button-secondary" href="/solutions">Explore Solutions</a>
+        </div>
       </div>
-      <div class="page-hero-visual" aria-hidden="true"><div class="page-orb"></div><img src="/solutions/solution-custom-engineering.png" alt="" /></div>
+      <div class="page-hero-visual" aria-hidden="true">
+        <div class="page-orb"></div>
+        <ProjectPlaceholder icon="cnc" label="PROJECT PORTFOLIO MEDIA" />
+      </div>
     </div>
   </section>
 
   <section class="page-section">
     <div class="container page-section-inner">
-      <div class="page-section-heading"><div><p class="eyebrow">PROJECT INDEX</p><h2>Built around <span>real constraints.</span></h2></div><p>These examples cover production automation, filling, weighing and machine improvement work. Detailed project pages can be added as the portfolio grows.</p></div>
-      <div class="project-listing">
-        <article><div class="project-meta"><span>01 · INDUSTRIAL AUTOMATION</span><span>STACKING</span></div><h3>Roofing Sheet Stacking System</h3><p>Automated handling concept developed for a demanding roofing-sheet production workflow.</p><small>Bluescope Lysaght Lanka</small></article>
-        <article><div class="project-meta"><span>02 · PROCESS AUTOMATION</span><span>FILLING</span></div><h3>Engine Oil Filling System</h3><p>Integrated filling and control solution focused on repeatability, practical operation and clean production handling.</p><small>Caltex Lanka</small></article>
-        <article><div class="project-meta"><span>03 · MACHINE CONTROL</span><span>WEIGHING</span></div><h3>50 kg Auto Weighing System</h3><p>Purpose-built automation for controlled material weighing and production handling.</p><small>Custom Engineering</small></article>
-        <article><div class="project-meta"><span>04 · RETROFIT &amp; MODIFICATION</span><span>UPGRADE</span></div><h3>Machine Upgrades &amp; Line Improvements</h3><p>Control, mechanical and process improvements for existing industrial equipment and production lines.</p><small>Production Environments</small></article>
-        <article><div class="project-meta"><span>05 · PACKAGING</span><span>MODIFICATION</span></div><h3>Packaging Machine Modification</h3><p>Engineering modifications intended to improve equipment fit, operation and production requirements.</p><small>Industrial Application</small></article>
-        <article><div class="project-meta"><span>06 · PROCESS LINE</span><span>AUTOMATION</span></div><h3>Production Line Automation</h3><p>Integrated control and machine coordination for process-line operation and improved workflow.</p><small>Engineering Integration</small></article>
+      <div class="page-section-heading">
+        <div>
+          <p class="eyebrow">SELECTED REAL WORK</p>
+          <h2>Different fields. <span>One engineering mindset.</span></h2>
+        </div>
+        <p>This first portfolio set is intentionally selective. It uses only archive-supported facts and keeps client-sensitive information out until public-use permissions and final media selections are confirmed.</p>
+      </div>
+
+      <div class="portfolio-list-grid">
+        {portfolioProjects.map((project) => (
+          <article class="portfolio-list-card">
+            <ProjectPlaceholder icon={project.icon} label="REAL PHOTO SPACE" />
+            <div class="portfolio-list-copy">
+              <div class="portfolio-list-meta">
+                <span>{project.category}</span>
+                <span class="portfolio-card-badge">{project.period}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.summary}</p>
+              {project.preEvo && <div class="portfolio-pre-evo">PRE-EVO PROFESSIONAL EXPERIENCE</div>}
+              <a class="portfolio-card-link" href={`/projects/${project.slug}`}>
+                View Project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   </section>
 
-  <section class="cta-band"><div class="container cta-panel"><div><p class="eyebrow">YOUR NEXT PROJECT</p><h2>Have a production problem that needs <span>engineering?</span></h2><p>Bring the problem, the constraints and the target. EVO can help shape the technical path.</p></div><a class="page-button page-button-primary" href="/contact">Talk to EVO ↗</a></div></section>
+  <section class="cta-band">
+    <div class="container cta-panel">
+      <div>
+        <p class="eyebrow">THE ARCHIVE KEEPS GROWING</p>
+        <h2>More real projects will be added <span>as evidence is prepared.</span></h2>
+        <p>The portfolio is being built from the EVO Project Archive, with project facts, technical scope and media reviewed before public use.</p>
+      </div>
+      <a class="page-button page-button-primary" href="/contact">Talk to EVO ↗</a>
+    </div>
+  </section>
 </InnerLayout>
