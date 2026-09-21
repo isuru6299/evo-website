@@ -1,4 +1,4 @@
-export type ProjectIcon = 'cnc' | 'recovery' | 'network' | 'rack' | 'automation';
+export type ProjectIcon = 'cnc' | 'recovery' | 'network' | 'rack' | 'automation' | 'smart-home';
 
 export interface PortfolioProject {
   slug: string;
@@ -14,6 +14,7 @@ export interface PortfolioProject {
   scope: string[];
   technologies: string[];
   result: string;
+  currentStatus?: string[];
 }
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -88,7 +89,7 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     technologies: ['Single-mode fiber networking', 'Managed Ethernet switching', 'VLAN-based segmentation', 'IP CCTV networking', 'Structured cabling'],
     result:
-      'Network and CCTV infrastructure implementation, configuration, testing and commissioning were completed under a contractor collaboration scope.',
+      'Network and CCTV infrastructure implementation, configuration, testing and commissioning were completed under a contractor collaboration scope.'
   },
   {
     slug: 'server-room-rack-cable-management',
@@ -134,6 +135,39 @@ export const portfolioProjects: PortfolioProject[] = [
     technologies: ['Industrial electrical control', 'Motor/drive control', 'PLC/logic-based machine control'],
     result:
       'The archived record confirms the custom control-panel and machine-control integration scope. No public performance figures are claimed.'
+  },
+  {
+    slug: 'legacy-myhome-smart-home-recovery',
+    sourceId: 'kollupitiya-residence-myhome-recovery-modernization-2026',
+    title: 'Legacy MyHOME Smart Home Recovery & Modernization',
+    category: 'SMART HOME RECOVERY',
+    period: '2026',
+    status: 'Ongoing',
+    icon: 'smart-home',
+    summary:
+      'Ongoing multi-floor recovery and modernization of a legacy Legrand / BTicino MyHOME automation system, covering reverse engineering, device mapping, fault diagnosis, panel restoration and staged recommissioning.',
+    challenge:
+      'The aging multi-floor automation system had incomplete legacy documentation and no usable original project file, requiring device discovery, physical verification, mapping and fault tracing before safe staged modernization could proceed.',
+    scope: [
+      'MyHOME SCS BUS reverse engineering and recovery',
+      'Bus scanning, device identification and address recovery',
+      'Room-by-room switch, relay and light-point mapping',
+      'Presence-sensor, relay-actuator and dimmer verification',
+      'Panel-board cleaning, identification and fault tracing',
+      'Lighting, dimming and automatic-lighting testing',
+      'Floor-by-floor recommissioning and user testing',
+      'Preparation for staged new-device integration and modernization'
+    ],
+    technologies: ['Legrand / BTicino MyHOME SCS BUS', 'MH202', 'F411/4', 'F420', 'F422', 'MyHOME Suite'],
+    result:
+      'Ground Floor and 3rd Floor main recovery stages are completed. 1st and 2nd Floor recovery and planned new-device integration remain pending, so the project is still ongoing.',
+    currentStatus: [
+      'Ground Floor main recovery — Completed',
+      '3rd Floor main recovery — Completed',
+      '1st Floor recovery — Pending',
+      '2nd Floor recovery — Pending',
+      'New-device integration — Pending'
+    ]
   }
 ];
 
