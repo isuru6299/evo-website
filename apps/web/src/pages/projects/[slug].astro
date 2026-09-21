@@ -21,7 +21,7 @@ const isOngoing = project.status === 'Ongoing';
     <div class="container project-detail-hero-inner">
       <div class="project-detail-copy">
         <div class="project-detail-meta">
-          <span>{project.category}</span>
+          <span>{project.archiveCode} · {project.category}</span>
           <span class="project-detail-badge">{isOngoing ? 'ONGOING PROJECT' : project.status}</span>
         </div>
         <h1>{project.title}</h1>
@@ -34,7 +34,7 @@ const isOngoing = project.status === 'Ongoing';
         {isOngoing && <div class="project-disclaimer">This project is currently in progress. Only completed stages and confirmed current status are shown here; no final project outcome is claimed yet.</div>}
       </div>
       <div class="project-detail-visual">
-        <ProjectPlaceholder icon={project.icon} label="COVER PHOTO SPACE" />
+        <ProjectPlaceholder icon={project.icon} label={`${project.archiveCode} · COVER PHOTO SPACE`} />
       </div>
     </div>
   </section>
