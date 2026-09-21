@@ -166,6 +166,36 @@
       "status": "archived",
       "website_publish": false,
       "record_path": "data/projects/2025-asian-group-flood-machinery-recovery.json"
+    },
+    {
+      "id": "asian-group-xk45mt-3b-cnc-modernization-2026",
+      "slug": "asian-group-xk45mt-3b-cnc-modernization",
+      "title": "Asian Group – XK45MT-3B CNC Router Modernization",
+      "year": 2026,
+      "date": {
+        "value": "2025-11 to 2026-06",
+        "precision": "evidence_range"
+      },
+      "client": "Asian Group of Companies (Pvt) Ltd",
+      "location": "Kohilawatta Factory, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2026-asian-group-xk45mt-3b-cnc-modernization.json"
+    },
+    {
+      "id": "asian-group-cncbuild-1530-cnc-diagnosis-2026",
+      "slug": "asian-group-cncbuild-1530-cnc-diagnosis",
+      "title": "Asian Group – CNCBUILD 1530 CNC Router Fault Diagnosis & Repair",
+      "year": 2026,
+      "date": {
+        "value": "2026",
+        "precision": "year"
+      },
+      "client": "Asian Group of Companies (Pvt) Ltd",
+      "location": "Kohilawatta Factory, Sri Lanka",
+      "status": "ongoing",
+      "website_publish": false,
+      "record_path": "data/projects/2026-asian-group-cncbuild-1530-cnc-diagnosis.json"
     }
   ]
 }
