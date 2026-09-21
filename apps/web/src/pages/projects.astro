@@ -2,18 +2,27 @@
 import InnerLayout from '../layouts/InnerLayout.astro';
 import ProjectPlaceholder from '../components/ProjectPlaceholder.astro';
 import { portfolioProjects } from '../data/projectPortfolio';
+
+const counts = {
+  all: portfolioProjects.length,
+  automation: portfolioProjects.filter((project) => project.group === 'automation').length,
+  machinery: portfolioProjects.filter((project) => project.group === 'machinery').length,
+  network: portfolioProjects.filter((project) => project.group === 'network-building').length,
+  smart: portfolioProjects.filter((project) => project.group === 'smart-living').length,
+  ongoing: portfolioProjects.filter((project) => project.status === 'Ongoing').length
+};
 ---
 
 <InnerLayout
   title="Projects | EVO"
-  description="Selected real engineering, automation, CNC modernization, machinery recovery, smart living and infrastructure projects from the EVO project archive."
+  description="Explore the EVO project archive across industrial automation, custom machinery, CNC modernization, infrastructure, building systems and smart living."
 >
   <section class="page-hero">
     <div class="container page-hero-inner">
       <div class="page-hero-copy">
-        <p class="eyebrow">REAL PROJECT PORTFOLIO</p>
-        <h1>Engineering proven in <span>real working environments.</span></h1>
-        <p>Selected real projects from our growing archive, spanning CNC modernization, industrial machinery recovery, automation, smart living and technical infrastructure. Approved project photography will be added into the reserved media spaces as the portfolio is prepared for public release.</p>
+        <p class="eyebrow">REAL PROJECT ARCHIVE</p>
+        <h1>Different fields. <span>One engineering mindset.</span></h1>
+        <p>Browse the current archive of real completed and ongoing work. Projects are grouped by field so the full history stays visible instead of showing only a small featured selection.</p>
         <div class="page-hero-actions">
           <a class="page-button page-button-primary" href="/contact">Start a Project ↗</a>
           <a class="page-button page-button-secondary" href="/solutions">Explore Solutions</a>
@@ -21,7 +30,7 @@ import { portfolioProjects } from '../data/projectPortfolio';
       </div>
       <div class="page-hero-visual" aria-hidden="true">
         <div class="page-orb"></div>
-        <ProjectPlaceholder icon="cnc" label="PROJECT PORTFOLIO MEDIA" />
+        <ProjectPlaceholder icon="automation" label={`${counts.all} PROJECTS IN ARCHIVE`} />
       </div>
     </div>
   </section>
@@ -30,22 +39,39 @@ import { portfolioProjects } from '../data/projectPortfolio';
     <div class="container page-section-inner">
       <div class="page-section-heading">
         <div>
-          <p class="eyebrow">SELECTED REAL WORK</p>
-          <h2>Different fields. <span>One engineering mindset.</span></h2>
+          <p class="eyebrow">ALL PROJECTS</p>
+          <h2>Explore the full <span>project archive.</span></h2>
         </div>
-        <p>This first portfolio set is intentionally selective. It uses only archive-supported facts and keeps client-sensitive information out until public-use permissions and final media selections are confirmed.</p>
+        <p>Every currently archived project is represented here. Where approved real photography is not yet prepared, the reserved visual space remains ready for future cover, before/after, process and technical-detail images.</p>
       </div>
 
-      <div class="portfolio-list-grid">
+      <div class="portfolio-filter" role="group" aria-label="Filter projects by category">
+        <button type="button" class="portfolio-filter-button is-active" data-project-filter="all" aria-pressed="true">ALL <span>{counts.all}</span></button>
+        <button type="button" class="portfolio-filter-button" data-project-filter="automation" aria-pressed="false">AUTOMATION &amp; CUSTOM MACHINERY <span>{counts.automation}</span></button>
+        <button type="button" class="portfolio-filter-button" data-project-filter="machinery" aria-pressed="false">CNC / MACHINERY <span>{counts.machinery}</span></button>
+        <button type="button" class="portfolio-filter-button" data-project-filter="network-building" aria-pressed="false">NETWORK &amp; BUILDING SYSTEMS <span>{counts.network}</span></button>
+        <button type="button" class="portfolio-filter-button" data-project-filter="smart-living" aria-pressed="false">SMART LIVING <span>{counts.smart}</span></button>
+        <button type="button" class="portfolio-filter-button" data-project-filter="ongoing" aria-pressed="false">ONGOING <span>{counts.ongoing}</span></button>
+      </div>
+
+      <div class="portfolio-list-grid" data-project-grid>
         {portfolioProjects.map((project) => (
-          <article class="portfolio-list-card">
-            <ProjectPlaceholder icon={project.icon} label="REAL PHOTO SPACE" />
+          <article
+            class:list={['portfolio-list-card', { 'is-ongoing': project.status === 'Ongoing' }]}
+            data-project-card
+            data-project-group={project.group}
+            data-project-status={project.status.toLowerCase()}
+          >
+            <ProjectPlaceholder icon={project.icon} label={`${project.archiveCode} · PHOTO SPACE`} />
             <div class="portfolio-list-copy">
               <div class="portfolio-list-meta">
-                <span>{project.category}</span>
-                <span class="portfolio-card-badge">{project.status === 'Ongoing' ? `ONGOING · ${project.period}` : project.period}</span>
+                <span>{project.archiveCode} · {project.category}</span>
+                <span class="portfolio-card-badge">{project.period}</span>
               </div>
-              <h3>{project.title}</h3>
+              <div class="portfolio-list-title-row">
+                <h3>{project.title}</h3>
+                {project.status === 'Ongoing' && <span class="portfolio-status-badge">ONGOING</span>}
+              </div>
               <p>{project.summary}</p>
               {project.preEvo && <div class="portfolio-pre-evo">PRE-EVO PROFESSIONAL EXPERIENCE</div>}
               <a class="portfolio-card-link" href={`/projects/${project.slug}`}>
@@ -55,6 +81,8 @@ import { portfolioProjects } from '../data/projectPortfolio';
           </article>
         ))}
       </div>
+
+      <p class="portfolio-filter-empty" data-project-empty hidden>No projects are currently available in this filter.</p>
     </div>
   </section>
 
@@ -62,10 +90,40 @@ import { portfolioProjects } from '../data/projectPortfolio';
     <div class="container cta-panel">
       <div>
         <p class="eyebrow">THE ARCHIVE KEEPS GROWING</p>
-        <h2>More real projects will be added <span>as evidence is prepared.</span></h2>
-        <p>The portfolio is being built from the EVO Project Archive, with project facts, technical scope and media reviewed before public use.</p>
+        <h2>New work can be added <span>without rebuilding the portfolio.</span></h2>
+        <p>The project archive is structured so future projects can join the same category, detail-page and media system as they are documented.</p>
       </div>
       <a class="page-button page-button-primary" href="/contact">Talk to EVO ↗</a>
     </div>
   </section>
 </InnerLayout>
+
+<script>
+  const buttons = Array.from(document.querySelectorAll('[data-project-filter]'));
+  const cards = Array.from(document.querySelectorAll('[data-project-card]'));
+  const emptyState = document.querySelector('[data-project-empty]');
+
+  const applyFilter = (filter) => {
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const group = card.getAttribute('data-project-group');
+      const status = card.getAttribute('data-project-status');
+      const matches = filter === 'all' || group === filter || (filter === 'ongoing' && status === 'ongoing');
+      card.toggleAttribute('hidden', !matches);
+      if (matches) visible += 1;
+    });
+
+    buttons.forEach((button) => {
+      const active = button.getAttribute('data-project-filter') === filter;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+
+    if (emptyState) emptyState.toggleAttribute('hidden', visible !== 0);
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => applyFilter(button.getAttribute('data-project-filter') || 'all'));
+  });
+</script>
