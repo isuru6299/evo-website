@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "id": "ibs-major-building-projects-2020",
+  "slug": "ibs-major-building-projects",
+  "title": "IBS Works – Major Building & High-Rise Projects",
+  "year": 2020,
+  "date": {
+    "value": "2020",
+    "precision": "year",
+    "notes": "Portfolio record combining multiple IBS project sites completed during 2020. Individual floor/level breakdown is intentionally omitted from the public-facing summary."
+  },
+  "status": "archived",
+  "client": {
+    "name": null,
+    "publish_name": null,
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Colombo",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Telecommunications / In-Building Solutions",
+  "categories": [
+    "IBS Works",
+    "Telecom Infrastructure",
+    "RF Infrastructure",
+    "Cabling & Installation"
+  ],
+  "tags": [
+    "pre-EVO",
+    "IBS",
+    "indoor building solution",
+    "telecom infrastructure",
+    "RF cabling",
+    "coaxial cabling",
+    "antenna installation",
+    "passive RF",
+    "high-rise",
+    "commercial buildings",
+    "institutional buildings"
+  ],
+  "summary": "A portfolio of Indoor Building Solution (IBS) infrastructure works carried out during 2020 across major commercial, residential and institutional developments in Colombo, including ITC One, 606 The Address, Havelock City and the New OPD Building of the National Hospital of Sri Lanka. Across these projects, the work included IBS equipment installation, antenna, splitter and jumper installations, RF/coaxial cabling, cable laying and routing, conduit and support installation, rack-related works and associated indoor telecom infrastructure installation. The National Hospital New OPD project included building-wide IBS cabling and installation works, carried out in collaboration with SLT Mobitel and ATSL International (Pvt) Ltd.",
+  "problem": null,
+  "scope": [
+    "IBS equipment installation",
+    "Antenna installation",
+    "Splitter installation",
+    "Jumper installation",
+    "RF and coaxial cabling",
+    "Telecom cable laying and routing",
+    "Conduit and cable-support installation",
+    "Rack-related installation work",
+    "TRM rack and battery-bank installation where documented in source posts",
+    "Building-wide IBS cabling and installation at the National Hospital New OPD project",
+    "On-site implementation and installation works"
+  ],
+  "technologies": [
+    "Indoor Building Solution (IBS) infrastructure",
+    "Passive RF distribution",
+    "Coaxial feeder and jumper cabling",
+    "Antenna distribution infrastructure",
+    "Telecom cable routing",
+    "Conduit and support systems"
+  ],
+  "equipment": [
+    "IBS antennas",
+    "RF splitters",
+    "RF jumpers",
+    "Coaxial feeder cabling",
+    "Telecom racks",
+    "TRM racks and battery-bank equipment where documented",
+    "Metal conduit and cable-support systems"
+  ],
+  "outcome": null,
+  "evo_role": "Pre-EVO professional experience. This portfolio records IBS installation work completed before EVO (Pvt) Ltd existed and must not be presented as work contracted by EVO (Pvt) Ltd.",
+  "partners": [
+    {
+      "name": "Sarasi Technologies (Pvt) Ltd",
+      "relationship": "Project party / collaboration context on documented IBS works"
+    },
+    {
+      "name": "Dialog PLC",
+      "relationship": "Project party / telecom operator context on documented IBS works"
+    },
+    {
+      "name": "ATSL International (Pvt) Ltd",
+      "relationship": "Project party / collaboration context on documented IBS works"
+    },
+    {
+      "name": "SLT Mobitel",
+      "relationship": "Project party / telecom operator context on the National Hospital New OPD IBS work"
+    }
+  ],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Indoor Building Solution infrastructure works delivered across several major developments, covering IBS equipment installation, RF cabling, antenna and passive-component installation, cable routing, conduit/support systems and associated telecom infrastructure works.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "bfb956ee-d7b2-44bc-86cf-c68532dacc6c.png",
+      "role": "result",
+      "description": "Source post for ITC One IBS work; level-specific detail retained as evidence but not highlighted in public copy.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "93e55f00-2039-413c-a9f7-831c36f9553b.png",
+      "role": "result",
+      "description": "Source post for 606 The Address IBS work.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "07c1c4c3-9eac-4d4b-9a51-cf67ec133c2a.png",
+      "role": "result",
+      "description": "Source post for Havelock City passive IBS work.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "4ec92c4b-da05-434f-b90d-3a4466727589.png",
+      "role": "result",
+      "description": "Additional source post for ITC One IBS work; level-specific detail retained as evidence but not highlighted in public copy.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20201014_133701.jpg",
+      "role": "detail",
+      "description": "Installed conduit and routed services at the National Hospital New OPD project.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20200917_144621.jpg",
+      "role": "process",
+      "description": "On-site overhead installation activity at the National Hospital New OPD project.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20201221_002139.jpg",
+      "role": "detail",
+      "description": "Passive RF/coaxial distribution hardware and cabling with SLT Mobitel labelling visible.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    },
+    {
+      "source_name": "IMG_20201217_221939.jpg",
+      "role": "detail",
+      "description": "Passive RF distribution component and connected cabling with SLT Mobitel labelling visible.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "ITC One, 606 The Address and Havelock City IBS works are to be grouped as one IBS portfolio record rather than separate canonical records.",
+      "Different ITC One levels are part of the same overall project experience and do not need to be highlighted separately.",
+      "A further IBS project was completed at the National Hospital of Sri Lanka New OPD Building in 2020.",
+      "The National Hospital New OPD work was carried out with SLT Mobitel and ATSL International (Pvt) Ltd.",
+      "The National Hospital New OPD scope included cabling and installation work across the building.",
+      "Project-party names may be retained as factual context but should not be repeatedly highlighted in public-facing copy."
+    ],
+    "photo_observations": [
+      "Owner-supplied source-post screenshots identify IBS equipment installation, antenna/splitter/jumper installation, cable laying, rack installation and TRM rack/battery-bank work across the documented 2020 projects.",
+      "National Hospital New OPD photographs show overhead installation activity, metal conduit/support routing, coaxial cabling and passive RF distribution hardware.",
+      "SLT Mobitel labels are visibly attached to passive RF components in the National Hospital New OPD photographs.",
+      "The supplied New OPD photo filenames span September to December 2020."
+    ],
+    "needs_confirmation": [
+      "Permission to publish individual project/site names and supplied photographs on the public EVO website.",
+      "Exact completion dates for each individual IBS site if a future detailed case study requires them.",
+      "Whether the National Hospital New OPD development's China-aid context should be included; the owner recalled this as likely but did not state it as a confirmed project fact.",
+      "Final measured outcomes or performance results, if any are to be claimed publicly."
+    ],
+    "do_not_claim": [
+      "Do not present these 2020 works as projects contracted or completed by EVO (Pvt) Ltd; they are pre-EVO professional experience.",
+      "Do not claim building-wide scope for ITC One, 606 The Address or Havelock City unless later confirmed by the owner.",
+      "Do not imply that any named partner was the direct client unless later confirmed.",
+      "Do not claim exact RF performance, coverage gains, quantities, cable lengths or project values without supporting evidence.",
+      "Do not invent equipment brands or model numbers that are not readable in the supplied evidence or confirmed by the owner."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history and grouping instructions in chat.",
+    "Owner-provided Facebook post screenshots were reviewed as source evidence for ITC One, 606 The Address and Havelock City IBS works.",
+    "Source-post publication dates visible in the supplied screenshots include 14 August 2020, 27 August 2020, 28 September 2020 and 17 October 2020.",
+    "Owner recalled the National Hospital New OPD IBS work as November 2020; supplied site-photo filenames span September, October and December 2020, so the canonical project date remains year-level 2020.",
+    "Owner-provided New OPD project photographs were reviewed as visual evidence.",
+    "Media files are recorded as source evidence only and have not been uploaded into the public website media directory."
+  ],
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21"
+}
