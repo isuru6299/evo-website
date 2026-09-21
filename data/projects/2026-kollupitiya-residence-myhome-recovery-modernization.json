@@ -91,7 +91,7 @@
   "evo_role": "System recovery, reverse engineering, device mapping, fault diagnosis, panel-board restoration, configuration recovery, testing, recommissioning, documentation and modernization planning for a legacy residential MyHOME automation installation.",
   "partners": [],
   "website": {
-    "publish": false,
+    "publish": true,
     "featured": false,
     "short_description": "Ongoing multi-floor recovery and modernization of a legacy Legrand / BTicino MyHOME automation system, including device reverse-engineering, lighting and sensor mapping, panel restoration, fault diagnosis, configuration recovery and staged preparation for modern device integration.",
     "case_study": null,
@@ -107,7 +107,8 @@
       "3rd Floor main recovery is completed.",
       "1st Floor and 2nd Floor work remain pending.",
       "New devices are expected to arrive soon for the next modernization / integration stage.",
-      "The work includes recovery, mapping, testing, panel work, calibration / adjustment and broader MyHOME system rehabilitation rather than a simple device replacement."
+      "The work includes recovery, mapping, testing, panel work, calibration / adjustment and broader MyHOME system rehabilitation rather than a simple device replacement.",
+      "The owner approved this ongoing project for inclusion in the EVO website portfolio using public-safe copy without private client or location details."
     ],
     "photo_observations": [],
     "needs_confirmation": [
