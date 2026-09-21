@@ -16,6 +16,36 @@
       "status": "archived",
       "website_publish": false,
       "record_path": "data/projects/2018-dscsc-network-cctv-infrastructure.json"
+    },
+    {
+      "id": "ibs-major-building-projects-2020",
+      "slug": "ibs-major-building-projects",
+      "title": "IBS Works – Major Building & High-Rise Projects",
+      "year": 2020,
+      "date": {
+        "value": "2020",
+        "precision": "year"
+      },
+      "client": null,
+      "location": "Colombo, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2020-ibs-major-building-projects.json"
+    },
+    {
+      "id": "itc-one-fire-security-2021",
+      "slug": "itc-one-fire-security-systems",
+      "title": "ITC One – Fire & Security System Installation",
+      "year": 2021,
+      "date": {
+        "value": "2021",
+        "precision": "year"
+      },
+      "client": null,
+      "location": "ITC One, Colombo, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2021-itc-one-fire-security-systems.json"
     }
   ]
 }
