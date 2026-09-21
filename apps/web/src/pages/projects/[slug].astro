@@ -13,6 +13,7 @@ export function getStaticPaths() {
 const { project } = Astro.props;
 const title = `${project.title} | EVO Projects`;
 const description = project.summary;
+const isOngoing = project.status === 'Ongoing';
 ---
 
 <InnerLayout title={title} description={description}>
@@ -21,7 +22,7 @@ const description = project.summary;
       <div class="project-detail-copy">
         <div class="project-detail-meta">
           <span>{project.category}</span>
-          <span class="project-detail-badge">{project.status}</span>
+          <span class="project-detail-badge">{isOngoing ? 'ONGOING PROJECT' : project.status}</span>
         </div>
         <h1>{project.title}</h1>
         <p>{project.summary}</p>
@@ -30,6 +31,7 @@ const description = project.summary;
           <a class="page-button page-button-primary" href="/contact">Discuss a Project ↗</a>
         </div>
         {project.preEvo && <div class="project-disclaimer">Pre-EVO professional experience. This work predates EVO (Pvt) Ltd and is presented as prior professional project experience.</div>}
+        {isOngoing && <div class="project-disclaimer">This project is currently in progress. Only completed stages and confirmed current status are shown here; no final project outcome is claimed yet.</div>}
       </div>
       <div class="project-detail-visual">
         <ProjectPlaceholder icon={project.icon} label="COVER PHOTO SPACE" />
@@ -75,10 +77,17 @@ const description = project.summary;
     <div class="container project-detail-inner">
       <div class="project-detail-grid">
         <div>
-          <span class="project-detail-label">RESULT</span>
-          <h2>Outcome recorded without overclaiming.</h2>
+          <span class="project-detail-label">{isOngoing ? 'CURRENT STATUS' : 'RESULT'}</span>
+          <h2>{isOngoing ? 'Progress recorded without pretending the project is finished.' : 'Outcome recorded without overclaiming.'}</h2>
         </div>
-        <div class="project-detail-body"><p>{project.result}</p></div>
+        <div class="project-detail-body">
+          <p>{project.result}</p>
+          {project.currentStatus && (
+            <ul class="project-detail-list">
+              {project.currentStatus.map((item) => <li>{item}</li>)}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   </section>
@@ -92,7 +101,7 @@ const description = project.summary;
       <div class="project-gallery-grid">
         <ProjectPlaceholder icon={project.icon} label="PRIMARY / COVER" />
         <ProjectPlaceholder icon={project.icon} label="PROCESS / DETAIL" />
-        <ProjectPlaceholder icon={project.icon} label="RESULT / AFTER" />
+        <ProjectPlaceholder icon={project.icon} label={isOngoing ? 'CURRENT PROGRESS' : 'RESULT / AFTER'} />
       </div>
     </div>
   </section>
