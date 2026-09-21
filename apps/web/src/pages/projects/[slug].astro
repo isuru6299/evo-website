@@ -1,0 +1,106 @@
+---
+import InnerLayout from '../../layouts/InnerLayout.astro';
+import ProjectPlaceholder from '../../components/ProjectPlaceholder.astro';
+import { portfolioProjects } from '../../data/projectPortfolio';
+
+export function getStaticPaths() {
+  return portfolioProjects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project }
+  }));
+}
+
+const { project } = Astro.props;
+const title = `${project.title} | EVO Projects`;
+const description = project.summary;
+---
+
+<InnerLayout title={title} description={description}>
+  <section class="project-detail-hero">
+    <div class="container project-detail-hero-inner">
+      <div class="project-detail-copy">
+        <div class="project-detail-meta">
+          <span>{project.category}</span>
+          <span class="project-detail-badge">{project.status}</span>
+        </div>
+        <h1>{project.title}</h1>
+        <p>{project.summary}</p>
+        <div class="page-hero-actions">
+          <a class="page-button page-button-secondary" href="/projects">← All Projects</a>
+          <a class="page-button page-button-primary" href="/contact">Discuss a Project ↗</a>
+        </div>
+        {project.preEvo && <div class="project-disclaimer">Pre-EVO professional experience. This work predates EVO (Pvt) Ltd and is presented as prior professional project experience.</div>}
+      </div>
+      <div class="project-detail-visual">
+        <ProjectPlaceholder icon={project.icon} label="COVER PHOTO SPACE" />
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail-section">
+    <div class="container project-detail-inner">
+      <div class="project-detail-grid">
+        <div>
+          <span class="project-detail-label">PROJECT OVERVIEW</span>
+          <h2>Real work. Clear technical scope.</h2>
+        </div>
+        <div class="project-detail-body">
+          <p>{project.challenge}</p>
+          <div class="project-tech-row">
+            <span>{project.period}</span>
+            {project.technologies.map((technology) => <span>{technology}</span>)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail-section">
+    <div class="container project-detail-inner">
+      <div class="project-detail-grid">
+        <div>
+          <span class="project-detail-label">SCOPE OF WORK</span>
+          <h2>What the project actually involved.</h2>
+        </div>
+        <div class="project-detail-body">
+          <ul class="project-detail-list">
+            {project.scope.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail-section">
+    <div class="container project-detail-inner">
+      <div class="project-detail-grid">
+        <div>
+          <span class="project-detail-label">RESULT</span>
+          <h2>Outcome recorded without overclaiming.</h2>
+        </div>
+        <div class="project-detail-body"><p>{project.result}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container page-section-inner">
+      <div class="page-section-heading">
+        <div><p class="eyebrow">PROJECT MEDIA</p><h2>Photo spaces ready for <span>real field evidence.</span></h2></div>
+        <p>These reserved slots will later receive approved cover, process, before/after and technical-detail photographs without changing the page structure.</p>
+      </div>
+      <div class="project-gallery-grid">
+        <ProjectPlaceholder icon={project.icon} label="PRIMARY / COVER" />
+        <ProjectPlaceholder icon={project.icon} label="PROCESS / DETAIL" />
+        <ProjectPlaceholder icon={project.icon} label="RESULT / AFTER" />
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-panel">
+      <div><p class="eyebrow">ENGINEERING AROUND REAL CONDITIONS</p><h2>Have a similar technical challenge?</h2><p>Bring the operating problem and constraints. EVO can help define the practical engineering path.</p></div>
+      <a class="page-button page-button-primary" href="/contact">Talk to EVO ↗</a>
+    </div>
+  </section>
+</InnerLayout>
