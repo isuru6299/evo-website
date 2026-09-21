@@ -224,7 +224,7 @@
       "client": "Private Residence",
       "location": "Kollupitiya, Colombo, Sri Lanka",
       "status": "ongoing",
-      "website_publish": false,
+      "website_publish": true,
       "record_path": "data/projects/2026-kollupitiya-residence-myhome-recovery-modernization.json"
     }
   ]
