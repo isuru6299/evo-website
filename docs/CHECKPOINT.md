@@ -1,8 +1,8 @@
 # EVO Digital Platform — Current Checkpoint
 
-Checkpoint: **Real Project Website System v1 Built — Awaiting Local Review + Real Media**
+Checkpoint: **Real Project Website System v1 — Full P01–P15 Archive Visible**
 
-Verified architecture and local platform foundation through 2026-09-22. The public website foundation is complete, 15 real projects are archived, and the first real-project website layer has now been built using photo-ready placeholders.
+Verified architecture and local platform foundation through 2026-09-22. The public website foundation is complete, 15 real projects are archived, and the Projects website layer now exposes all 15 records through a category-filtered portfolio while keeping homepage projects selective.
 
 ## Completed foundation
 - Repository / architecture established.
@@ -24,55 +24,72 @@ Current archive status:
 - P13 remains ongoing.
 - P15 remains ongoing.
 - Archive records remain conservative and evidence-based.
-- All archive records still retain `website.publish = false`; no archive publication flags were changed by the website build.
+- Canonical project facts remain separate from website presentation data.
 
-## Real Project Website System v1 — built 2026-09-22
-The old placeholder project portfolio has been replaced in the local website code by a real-project draft layer based on archive-supported facts.
+## Real Project Website System v1 — expanded 2026-09-22
+The old fake/placeholder project list has been replaced by a real-project website layer based on archive-supported facts.
 
-New shared files:
+Shared files:
 - `apps/web/src/data/projectPortfolio.ts`
 - `apps/web/src/components/ProjectPlaceholder.astro`
 - `apps/web/src/styles/project-portfolio.css`
 - `apps/web/src/pages/projects/[slug].astro`
 
-Updated:
-- homepage Projects section
-- `/projects` portfolio page
-- shared homepage/inner-page stylesheet loading
+Current behaviour:
+- Homepage keeps a small featured-project selection only.
+- `/projects` now contains all P01–P15 projects.
+- Every project has a generated detail route.
+- Projects can be filtered by:
+  - All
+  - Automation & Custom Machinery
+  - CNC / Machinery
+  - Network & Building Systems
+  - Smart Living
+  - Ongoing
+- P13 and P15 are visibly marked as ongoing.
+- Project cards and detail pages retain photo-ready placeholder spaces until approved real media is prepared.
 
-Initial selected portfolio set:
-1. Three-Spindle CNC Router Modernization (archive source P12)
-2. Flood-Damaged Industrial Machinery Recovery (P11)
-3. Network & CCTV Infrastructure (P01)
-4. Server Room Rack & Cable Management (P14)
-5. Cardinal Mixing Machine Automation (P04)
+## Project grouping
+### Network & Building Systems
+- P01 — Network & CCTV Infrastructure
+- P02 — IBS Works – Major Building & High-Rise Projects
+- P03 — Fire & Security System Installation
+- P14 — Server Room Rack & Cable Management
 
-Homepage currently uses the first four as featured projects. `/projects` uses all five.
+### Automation & Custom Machinery
+- P04 — Cardinal Mixing Machine Automation
+- P05 — Automatic Tin Capping Machines ×2
+- P06 — Twin Screw Conveyor System
+- P07 — PVC Pipe Automatic Sealing Machine
+- P08 — Jam Bottle Automatic Capping Machine
+- P09 — Shampoo Bottle Automatic Sticker Labeling Machine
+- P10 — Wet Glue Labeling Machine
+
+### CNC / Machinery
+- P11 — Flood-Damaged Industrial Machinery Recovery
+- P12 — Three-Spindle CNC Router Modernization
+- P13 — CNCBUILD 1530 CNC Fault Diagnosis & Repair — ongoing
+
+### Smart Living
+- P15 — Legacy MyHOME Smart Home Recovery & Modernization — ongoing
 
 ## Public-safety / archive rules preserved
-- Client names and exact sensitive locations are intentionally omitted from the draft portfolio display while publish permissions remain unresolved.
-- P01 and P04 are visibly marked as pre-EVO professional experience.
-- The website copy uses archive-supported technical scope and avoids invented performance claims.
-- Project JSON records were not changed by this website build.
-- P13 and P15 are not included in the initial public portfolio draft because they remain ongoing.
+- Client names and exact sensitive locations are intentionally omitted from website presentation where publication permission is unresolved.
+- Pre-EVO work is marked as prior professional experience rather than represented as work contracted by EVO (Pvt) Ltd.
+- Website copy uses archive-supported technical scope and avoids invented performance claims.
+- Ongoing projects do not claim final outcomes before completion.
+- Internal network addresses, security information, credentials and sensitive control topology remain excluded from public copy.
 
 ## Photo-ready media strategy
 Real photographs are not required to complete layout work.
 
-The project UI now reserves reusable media slots for:
+The project UI reserves reusable media slots for:
 - cover / primary photo
 - process / technical detail
 - result / after photo
+- current-progress photo for ongoing work
 
-Until approved real media is prepared, each slot uses a clean category-specific engineering icon/placeholder. Later real photos can replace these spaces without redesigning the page structure.
-
-## Current public-site project routes
-- `/projects`
-- `/projects/three-spindle-cnc-router-modernization`
-- `/projects/flood-damaged-industrial-machinery-recovery`
-- `/projects/network-cctv-infrastructure`
-- `/projects/server-room-rack-cable-management`
-- `/projects/cardinal-mixing-machine-automation`
+Until approved real media is prepared, category-specific engineering icons and clean placeholders are used. Later real photos can replace these spaces without redesigning the page structure.
 
 ## Current local stack
 - Web: Astro
@@ -84,13 +101,15 @@ Until approved real media is prepared, each slot uses a clean category-specific 
 - Runtime/orchestration: Docker Desktop + Docker Compose on Windows/WSL2
 
 ## Immediate next step
-**Local visual/build review of Project Website System v1.**
+**Local visual/build review of the full P01–P15 Projects system.**
 
 1. Pull latest `main`.
-2. Restart/rebuild the web service if needed.
-3. Review homepage Projects section, `/projects`, and one or two detail pages.
-4. Fix layout/responsive issues if any.
-5. Then gradually replace placeholders with approved real photos from the Project Archive workflow.
+2. Start Docker Desktop if it is not already running.
+3. Run `docker compose up -d`.
+4. Review `/projects` with each category filter.
+5. Open several project detail pages, including P13 and P15 ongoing pages.
+6. Fix any layout/responsive issues found during local review.
+7. Then gradually replace placeholders with approved real project photos.
 
 Inquiry/CRM, admin real functions, auth/permissions and production deployment remain deferred until the owner chooses to resume them.
 
