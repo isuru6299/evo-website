@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "projects": [
     {
       "id": "dscsc-network-cctv-2018",
@@ -46,6 +46,111 @@
       "status": "archived",
       "website_publish": false,
       "record_path": "data/projects/2021-itc-one-fire-security-systems.json"
+    },
+    {
+      "id": "nippon-paint-cardinal-mixing-machine-2021",
+      "slug": "nippon-paint-cardinal-mixing-machine",
+      "title": "Nippon Paint – Cardinal Mixing Machine Automation",
+      "year": 2021,
+      "date": {
+        "value": "2021-2022",
+        "precision": "approximate_range"
+      },
+      "client": "Nippon Paint",
+      "location": "Matara, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/2021-nippon-paint-cardinal-mixing-machine.json"
+    },
+    {
+      "id": "automatic-tin-capping-machines-undated",
+      "slug": "automatic-tin-capping-machines",
+      "title": "Automatic Tin Capping Machines ×2",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": null,
+      "location": "Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-automatic-tin-capping-machines.json"
+    },
+    {
+      "id": "bio-innovative-twin-screw-conveyors-undated",
+      "slug": "bio-innovative-twin-screw-conveyors",
+      "title": "Bio Innovative – Twin Screw Conveyor System",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": "Bio Innovative",
+      "location": "Puttalam, Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-bio-innovative-twin-screw-conveyors.json"
+    },
+    {
+      "id": "pvc-pipe-automatic-sealing-machine-undated",
+      "slug": "pvc-pipe-automatic-sealing-machine",
+      "title": "PVC Pipe Automatic Sealing Machine",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": null,
+      "location": "Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-pvc-pipe-automatic-sealing-machine.json"
+    },
+    {
+      "id": "jam-bottle-automatic-capping-machine-undated",
+      "slug": "jam-bottle-automatic-capping-machine",
+      "title": "Jam Bottle Automatic Capping Machine",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": null,
+      "location": "Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-jam-bottle-automatic-capping-machine.json"
+    },
+    {
+      "id": "shampoo-bottle-sticker-labeling-machine-undated",
+      "slug": "shampoo-bottle-sticker-labeling-machine",
+      "title": "Shampoo Bottle Automatic Sticker Labeling Machine",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": null,
+      "location": "Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-shampoo-bottle-sticker-labeling-machine.json"
+    },
+    {
+      "id": "wet-glue-labeling-machine-undated",
+      "slug": "wet-glue-labeling-machine",
+      "title": "Wet Glue Labeling Machine",
+      "year": null,
+      "date": {
+        "value": null,
+        "precision": "unknown"
+      },
+      "client": null,
+      "location": "Sri Lanka",
+      "status": "archived",
+      "website_publish": false,
+      "record_path": "data/projects/undated-wet-glue-labeling-machine.json"
     }
   ]
 }
