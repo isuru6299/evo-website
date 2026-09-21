@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "kollupitiya-residence-myhome-recovery-modernization-2026",
+  "slug": "kollupitiya-residence-myhome-recovery-modernization",
+  "title": "Kollupitiya Residence – Legrand / BTicino MyHOME System Recovery & Modernization",
+  "year": 2026,
+  "date": {
+    "value": "2026",
+    "precision": "year",
+    "notes": "Project is ongoing. Ground Floor and 3rd Floor main recovery stages are completed; 1st and 2nd Floor work and new-device integration remain pending."
+  },
+  "status": "ongoing",
+  "client": {
+    "name": "Private Residence",
+    "publish_name": null,
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "Kollupitiya, Colombo",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Residential smart home and building automation",
+  "categories": [
+    "Smart Home Automation & System Recovery",
+    "Building Automation",
+    "Legacy System Rehabilitation",
+    "Lighting & Sensor Automation"
+  ],
+  "tags": [
+    "Legrand",
+    "BTicino",
+    "MyHOME",
+    "SCS BUS",
+    "smart home recovery",
+    "home automation",
+    "lighting automation",
+    "presence sensors",
+    "dimmers",
+    "relay actuators",
+    "MH202",
+    "F411/4",
+    "F420",
+    "F422",
+    "system mapping",
+    "recommissioning"
+  ],
+  "summary": "Recovery and modernization of a large multi-floor legacy Legrand / BTicino MyHOME SCS home-automation installation at a private residence in Kollupitiya. The work involves reverse-engineering the existing system, identifying and mapping devices, recovering lighting and sensor functions, tracing faults, cleaning and reorganizing automation panels, validating floor-by-floor operation, and preparing the installation for staged modernization with new compatible devices. Ground Floor and 3rd Floor main recovery stages have been completed; the overall project remains ongoing.",
+  "problem": "The residence had an aging multi-floor MyHOME automation system with incomplete legacy documentation and no usable original project file, requiring device discovery, physical verification, mapping, fault tracing and staged recommissioning before modernization could proceed safely.",
+  "scope": [
+    "Existing MyHOME SCS BUS system reverse engineering and recovery",
+    "Bus scanning, device identification and address recovery",
+    "Room-by-room switch, relay and light-point mapping",
+    "Presence sensor identification, testing and timing verification",
+    "Relay actuator and dimmer channel verification",
+    "Wall-control and scenario-function checking",
+    "MH202 legacy controller / scenario-system investigation and recovery",
+    "F422 / BUS section topology investigation and verification",
+    "Panel-board cleaning, neatening, identification and fault tracing",
+    "Lighting, dimming and automatic-lighting testing",
+    "AC-control related point checking where connected to the MyHOME system",
+    "Firmware and legacy touchscreen investigation",
+    "Floor-by-floor recommissioning and user testing",
+    "Legacy multi-zone audio-system investigation",
+    "Energy-monitoring and door-entry modernization planning",
+    "Preparation of floor-wise mapping, device-ID and future-maintenance documentation",
+    "Staged planning for new-device integration and modernization"
+  ],
+  "technologies": [
+    "Legrand / BTicino MyHOME SCS BUS",
+    "MH202 scenario controller",
+    "F411/4 relay actuators",
+    "F420 dimming / scenario-related legacy devices",
+    "F422 BUS interfaces",
+    "067267 legacy touchscreens",
+    "067552 wall controls",
+    "Presence sensors",
+    "Legacy MyHOME multi-zone audio distribution",
+    "MyHOME Suite / bus scanning and configuration tools"
+  ],
+  "equipment": [
+    "BTicino / Legrand SCS BUS devices",
+    "Relay actuators and dimmers",
+    "Wall switches / controls",
+    "Presence sensors",
+    "Touchscreens",
+    "BUS interfaces and power-related modules",
+    "Automation DB / panel-board hardware"
+  ],
+  "outcome": "Ground Floor and 3rd Floor main recovery stages are completed. Device mapping, testing, panel work and functional recovery have progressed sufficiently for those floors to enter normal use / feedback stages. 1st and 2nd Floor work and planned integration of incoming new devices remain pending, so the overall project is still ongoing.",
+  "evo_role": "System recovery, reverse engineering, device mapping, fault diagnosis, panel-board restoration, configuration recovery, testing, recommissioning, documentation and modernization planning for a legacy residential MyHOME automation installation.",
+  "partners": [],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Ongoing multi-floor recovery and modernization of a legacy Legrand / BTicino MyHOME automation system, including device reverse-engineering, lighting and sensor mapping, panel restoration, fault diagnosis, configuration recovery and staged preparation for modern device integration.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [],
+  "verification": {
+    "confirmed_by_owner": [
+      "The project is the MyHOME Recovery Project at a residence in Kollupitiya.",
+      "The project is ongoing in 2026.",
+      "Ground Floor main recovery is completed.",
+      "3rd Floor main recovery is completed.",
+      "1st Floor and 2nd Floor work remain pending.",
+      "New devices are expected to arrive soon for the next modernization / integration stage.",
+      "The work includes recovery, mapping, testing, panel work, calibration / adjustment and broader MyHOME system rehabilitation rather than a simple device replacement."
+    ],
+    "photo_observations": [],
+    "needs_confirmation": [
+      "Exact models and quantities of the incoming new devices once they arrive.",
+      "Final architecture after the new-device pilot and compatibility testing.",
+      "Completion dates and final status for 1st Floor and 2nd Floor.",
+      "Final status of legacy audio, energy-monitoring and door-entry modernization phases.",
+      "Permission to publish the residence location and any project photos on the public EVO website."
+    ],
+    "do_not_claim": [
+      "Do not claim the full project is completed while 1st Floor, 2nd Floor and new-device integration remain pending.",
+      "Do not claim F460, HOMETOUCH or any other planned upgrade device is installed until the owner confirms actual installation.",
+      "Do not claim final compatibility or migration success for legacy audio, energy monitoring or door-entry functions before field validation.",
+      "Do not publish private residence network addresses, device IDs, detailed security information, credentials or sensitive internal control topology.",
+      "Do not invent exact device quantities, failed-component counts or final replacement models."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project history and current status in chat.",
+    "MyHOME_Automation_Work_Schedule.docx documents the floor-by-floor recovery plan, 3rd Floor completion status at that stage, access requirements and final documentation plan.",
+    "3rd_Floor_MyHOME_Complete_Mapping.xlsx and 3rd_Floor_MyHOME_Mapping.xlsx support the room-by-room relay, switch, light and sensor mapping workflow.",
+    "MyHOME_Recovery_F460_HOMETOUCH_Deep_Research.docx is a modernization / compatibility study and should be treated as a planned architecture reference, not evidence that the proposed new devices are already installed.",
+    "Latest owner update supersedes the older work-schedule status: Ground Floor and 3rd Floor are now main-recovery completed, while 1st Floor and 2nd Floor remain pending."
+  ],
+  "created_at": "2026-09-22",
+  "updated_at": "2026-09-22"
+}
