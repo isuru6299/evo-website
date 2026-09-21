@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "itc-one-fire-security-2021",
+  "slug": "itc-one-fire-security-systems",
+  "title": "ITC One – Fire & Security System Installation",
+  "year": 2021,
+  "date": {
+    "value": "2021",
+    "precision": "year",
+    "notes": "Owner-provided source post was published on 26 February 2021. Exact completion date is not independently confirmed."
+  },
+  "status": "archived",
+  "client": {
+    "name": null,
+    "publish_name": null,
+    "permission_to_publish": "unknown"
+  },
+  "location": {
+    "name": "ITC One, Colombo",
+    "country": "Sri Lanka",
+    "permission_to_publish": "unknown"
+  },
+  "industry": "Fire & Life Safety / Building Systems",
+  "categories": [
+    "Fire & Security Systems",
+    "Fire Alarm Systems",
+    "Building Systems Installation",
+    "Cabling & Installation"
+  ],
+  "tags": [
+    "pre-EVO",
+    "ITC One",
+    "fire alarm",
+    "fire security",
+    "FAS",
+    "smoke detectors",
+    "heat detectors",
+    "armoured cabling",
+    "access control",
+    "mimic panel"
+  ],
+  "summary": "Fire and security system installation works carried out at the ITC One development, covering fire alarm system equipment, field-device installation, armoured cabling and associated control and security-system components.",
+  "problem": null,
+  "scope": [
+    "FAS equipment installation",
+    "Smoke detector installation",
+    "Heat detector installation",
+    "Fire switch installation",
+    "Strobe installation",
+    "Fire telephone installation",
+    "Armoured cable laying",
+    "Access-control related installation",
+    "Relay module installation",
+    "Controller module installation",
+    "Mimic panel installation"
+  ],
+  "technologies": [
+    "Fire alarm system infrastructure",
+    "Fire detection field devices",
+    "Notification devices",
+    "Fire telephone infrastructure",
+    "Access-control related systems",
+    "Control and relay modules",
+    "Armoured cabling"
+  ],
+  "equipment": [
+    "FAS equipment",
+    "Smoke detectors",
+    "Heat detectors",
+    "Fire switches",
+    "Strobes",
+    "Fire telephones",
+    "Relay modules",
+    "Controller modules",
+    "Mimic panel",
+    "Armoured cabling"
+  ],
+  "outcome": null,
+  "evo_role": "Pre-EVO professional experience. This project predates EVO (Pvt) Ltd and must not be presented as a project contracted by EVO (Pvt) Ltd.",
+  "partners": [
+    {
+      "name": "Futuretech Engineering (Pvt) Ltd",
+      "relationship": "Project party / collaboration context shown in the owner-supplied source post"
+    },
+    {
+      "name": "MIT",
+      "relationship": "Project party / collaboration context shown in the owner-supplied source post"
+    },
+    {
+      "name": "Schneider Electrical (Pvt) Ltd",
+      "relationship": "Project party / collaboration context shown in the owner-supplied source post"
+    }
+  ],
+  "website": {
+    "publish": false,
+    "featured": false,
+    "short_description": "Installation of fire alarm and related security-system infrastructure, including field devices, armoured cabling, control modules and associated system components.",
+    "case_study": null,
+    "seo_title": null,
+    "seo_description": null
+  },
+  "media": [
+    {
+      "source_name": "1977d390-5dab-471b-b6f3-3cf8d0549dfb.png",
+      "role": "process",
+      "description": "Owner-supplied source-post screenshot showing ITC One fire and security system installation work and listed scope.",
+      "repository_path": null,
+      "status": "pending_review_upload"
+    }
+  ],
+  "verification": {
+    "confirmed_by_owner": [
+      "The ITC One fire/security work is to be archived separately from the IBS portfolio.",
+      "Partner/project-party names may be retained as factual context but should not be highlighted repeatedly in public-facing copy.",
+      "This work is pre-EVO professional experience."
+    ],
+    "photo_observations": [
+      "The owner-supplied source post identifies the project as ITC One Fire Security System installation.",
+      "The source post lists FAS equipment, smoke and heat detectors, fire switches, strobes, fire telephones, armoured cable laying, access-control items, relay modules, controller modules and mimic panel installations.",
+      "The source post shows on-site installation photographs associated with the fire/security work."
+    ],
+    "needs_confirmation": [
+      "Permission to publish the ITC One project/site name and supplied imagery on the public EVO website.",
+      "Exact project completion date if a future detailed case study requires it.",
+      "Exact direct-client relationship, if any, for the named project parties.",
+      "Final system outcome, commissioning results or measured performance if any are to be claimed publicly."
+    ],
+    "do_not_claim": [
+      "Do not present this work as a project contracted or completed by EVO (Pvt) Ltd; it predates EVO.",
+      "Do not imply that ITC One itself was the direct client unless later confirmed.",
+      "Do not claim exact system quantities, project value, commissioning results or equipment model numbers without supporting evidence.",
+      "Do not expand the scope beyond the installation items stated in the owner-supplied source post unless later confirmed by the owner."
+    ]
+  },
+  "source_notes": [
+    "Owner-provided project grouping and presentation instructions in chat.",
+    "Owner-provided Facebook post screenshot reviewed as source evidence.",
+    "The source-post publication date visible in the supplied screenshot is 26 February 2021.",
+    "The partner name Schneider Electrical (Pvt) Ltd is preserved as written in the supplied source post rather than silently corrected.",
+    "Media is recorded as source evidence only and has not been uploaded into the public website media directory."
+  ],
+  "created_at": "2026-09-21",
+  "updated_at": "2026-09-21"
+}
